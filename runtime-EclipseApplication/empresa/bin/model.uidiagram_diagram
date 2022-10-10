@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:uidiagram="http://uidiagram" xmi:id="_3ogzwEMxEe2ajffpwML4cQ" type="Uidiagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_zHt3MEMzEe2ygfKVlb56Rg" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_zHyvsEMzEe2ygfKVlb56Rg" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_zHyvsUMzEe2ygfKVlb56Rg" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_ZP8HIETDEe2oRbmpu_q7ZA" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ZP98UETDEe2oRbmpu_q7ZA" type="5018"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_ZP-jYETDEe2oRbmpu_q7ZA" type="7002">
+          <children xmi:type="notation:Shape" xmi:id="_-5bfMEOKEe2LCIOG19BoXg" type="3004" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_cNmyIETDEe2oRbmpu_q7ZA" type="5010"/>
+            <element xmi:type="uidiagram:Label" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.0/@lstChildModelElements.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-5bfMUOKEe2LCIOG19BoXg" x="40" y="46" width="61" height="21"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_0VUSwEMzEe2ygfKVlb56Rg" type="3004" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_cOBo4kTDEe2oRbmpu_q7ZA" type="5010"/>
+            <element xmi:type="uidiagram:Label" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.0/@lstChildModelElements.1"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0VUSwUMzEe2ygfKVlb56Rg" x="45" y="11" width="71" height="36"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_9p80UEOKEe2LCIOG19BoXg" type="3005" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_cOMA8ETDEe2oRbmpu_q7ZA" type="5011"/>
+            <element xmi:type="uidiagram:Input" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.0/@lstChildModelElements.2"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9p80UUOKEe2LCIOG19BoXg" x="110" y="6" width="126" height="26"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_AzgmQEOLEe2LCIOG19BoXg" type="3005" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_cOhYIETDEe2oRbmpu_q7ZA" type="5011"/>
+            <element xmi:type="uidiagram:Input" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.0/@lstChildModelElements.3"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AzgmQUOLEe2LCIOG19BoXg" x="110" y="41" width="131" height="26"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_GUVxkEOLEe2LCIOG19BoXg" type="3005" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_cOp7AETDEe2oRbmpu_q7ZA" type="5011"/>
+            <element xmi:type="uidiagram:Input" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.0/@lstChildModelElements.4"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GUVxkUOLEe2LCIOG19BoXg" x="110" y="76" width="126" height="26"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_DgslQEOLEe2LCIOG19BoXg" type="3004" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_cOzE8ETDEe2oRbmpu_q7ZA" type="5010"/>
+            <element xmi:type="uidiagram:Label" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.0/@lstChildModelElements.5"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DgslQUOLEe2LCIOG19BoXg" x="50" y="83" width="51" height="11"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_Hk1wIEOLEe2LCIOG19BoXg" type="3006" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_cO7AwETDEe2oRbmpu_q7ZA" type="5012"/>
+            <element xmi:type="uidiagram:Button" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.0/@lstChildModelElements.6"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hk1wIUOLEe2LCIOG19BoXg" x="90" y="123" width="91" height="26"/>
+          </children>
+        </children>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_ZP8HIUTDEe2oRbmpu_q7ZA"/>
+        <element xmi:type="uidiagram:Container" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZP8HIkTDEe2oRbmpu_q7ZA" x="5" y="3" width="301" height="191"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_uAwqsETDEe2oRbmpu_q7ZA" type="3017" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_uAyf4ETDEe2oRbmpu_q7ZA" type="5022"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_uAyf4UTDEe2oRbmpu_q7ZA" type="7008">
+          <children xmi:type="notation:Shape" xmi:id="_vUKMQETDEe2oRbmpu_q7ZA" type="3021" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_vUKzUETDEe2oRbmpu_q7ZA" type="5026"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_vUKzUUTDEe2oRbmpu_q7ZA" type="7007"/>
+            <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_vUKMQUTDEe2oRbmpu_q7ZA"/>
+            <element xmi:type="uidiagram:Column" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.1/@lstChildModelElements.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vUKMQkTDEe2oRbmpu_q7ZA" y="3"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_w2VJoETDEe2oRbmpu_q7ZA" type="3021" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_w2VJo0TDEe2oRbmpu_q7ZA" type="5026"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_w2VJpETDEe2oRbmpu_q7ZA" type="7007"/>
+            <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_w2VJoUTDEe2oRbmpu_q7ZA"/>
+            <element xmi:type="uidiagram:Column" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.1/@lstChildModelElements.1"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w2VJokTDEe2oRbmpu_q7ZA" x="95" y="3"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_x692cETDEe2oRbmpu_q7ZA" type="3021" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_x6_EkETDEe2oRbmpu_q7ZA" type="5026"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_x6_EkUTDEe2oRbmpu_q7ZA" type="7007"/>
+            <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_x6-dgETDEe2oRbmpu_q7ZA"/>
+            <element xmi:type="uidiagram:Column" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.1/@lstChildModelElements.2"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x6-dgUTDEe2oRbmpu_q7ZA" x="200" y="3"/>
+          </children>
+        </children>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_uAwqsUTDEe2oRbmpu_q7ZA"/>
+        <element xmi:type="uidiagram:Table" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface/@lstModelElements.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uAwqskTDEe2oRbmpu_q7ZA" x="20" y="208" width="286" height="131"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_zHt3MUMzEe2ygfKVlb56Rg"/>
+    <element xmi:type="uidiagram:UserInterface" href="model.uidiagram#//@lstUI_Diagrams.0/@userInterface"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zHt3MkMzEe2ygfKVlb56Rg" x="25" y="10" width="336" height="396"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_3ogzwUMxEe2ajffpwML4cQ"/>
+  <element xmi:type="uidiagram:UI_Diagram" href="model.uidiagram#//@lstUI_Diagrams.0"/>
+</notation:Diagram>

@@ -1,0 +1,105 @@
+@namespace(uri="http://uidiagram", prefix="uidiagram")
+@gmf
+package uidiagram;
+
+class ModelFactory {
+	 val UI_Diagram[*] lstUI_Diagrams;
+}
+
+@gmf.diagram
+class UI_Diagram {
+	attr String nombre;
+    val UserInterface userInterface;
+}
+
+@gmf.node(label = "title")
+class UserInterface {
+    attr String title;
+    attr String positionX;
+    attr String positionY;
+    attr String width;
+    attr String heigth;
+    attr String backgroundColor;
+    attr String titleFont;
+    attr String titleFontSize;
+   
+   	@gmf.compartment
+    val ModelElement[*] lstModelElements;   	
+    
+}
+
+abstract class ModelElement  {
+    attr String title;
+    attr String positionX;
+    attr String positionY;
+    attr String width;
+    attr String heigth;
+    attr String backgroundColor;
+    attr String titleFont;
+    attr String titleFontSize;
+}
+
+abstract class GraphicalContainer extends ModelElement {
+	 @gmf.compartment
+	 val ModelElement[*] lstChildModelElements; 
+}
+
+abstract class GraphicalIndividual extends ModelElement {
+	
+}
+
+@gmf.node( label = "title")
+class Container extends GraphicalContainer {
+	
+}
+
+@gmf.node(label = "title")
+class IFrame extends GraphicalContainer {
+	
+}
+
+
+@gmf.node( figure = "rectangle" ,label = "title", label.icon = "false")
+class Label extends GraphicalIndividual {
+	
+}
+
+@gmf.node( label = "title", label.icon = "false")
+class Input extends GraphicalIndividual {
+	
+}
+
+@gmf.node(label = "title", label.icon = "false")
+class Button extends GraphicalIndividual {
+	
+}
+
+@gmf.node(label = "title")
+class Select extends GraphicalIndividual {
+	
+}
+
+@gmf.node( label= "title" )
+class Table extends GraphicalContainer {
+	val Column[*] lstColumns;
+}
+
+@gmf.node( label= "title" )
+class Column extends GraphicalContainer {
+	
+}
+
+@gmf.node(label = "title")
+class ImageView extends GraphicalIndividual {
+	
+}
+
+@gmf.node(label = "title")
+class Blockquote extends GraphicalIndividual {
+	
+}
+
+@gmf.node( label = "title")
+class Ul extends GraphicalIndividual {
+	
+}

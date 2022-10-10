@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uidiagram:ModelFactory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uidiagram="http://uidiagram">
+  <lstUI_Diagrams>
+    <userInterface title="Registro cliente">
+      <lstModelElements xsi:type="uidiagram:Container" title="Detalle Clientes">
+        <lstChildModelElements xsi:type="uidiagram:Label" title="Apellido:"/>
+        <lstChildModelElements xsi:type="uidiagram:Label" title="Nombre:"/>
+        <lstChildModelElements xsi:type="uidiagram:Input"/>
+        <lstChildModelElements xsi:type="uidiagram:Input"/>
+        <lstChildModelElements xsi:type="uidiagram:Input"/>
+        <lstChildModelElements xsi:type="uidiagram:Label" title="Email:"/>
+        <lstChildModelElements xsi:type="uidiagram:Button" title="Guardar"/>
+      </lstModelElements>
+      <lstModelElements xsi:type="uidiagram:Table" title="Tabla1">
+        <lstChildModelElements xsi:type="uidiagram:Column" title="nombre"/>
+        <lstChildModelElements xsi:type="uidiagram:Column" title="Apellido"/>
+        <lstChildModelElements xsi:type="uidiagram:Column" title="Email"/>
+      </lstModelElements>
+    </userInterface>
+  </lstUI_Diagrams>
+</uidiagram:ModelFactory>
