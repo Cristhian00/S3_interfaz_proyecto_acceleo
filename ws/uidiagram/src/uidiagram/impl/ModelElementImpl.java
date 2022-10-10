@@ -28,6 +28,10 @@ import uidiagram.UidiagramPackage;
  *   <li>{@link uidiagram.impl.ModelElementImpl#getBackgroundColor <em>Background Color</em>}</li>
  *   <li>{@link uidiagram.impl.ModelElementImpl#getTitleFont <em>Title Font</em>}</li>
  *   <li>{@link uidiagram.impl.ModelElementImpl#getTitleFontSize <em>Title Font Size</em>}</li>
+ *   <li>{@link uidiagram.impl.ModelElementImpl#getFont <em>Font</em>}</li>
+ *   <li>{@link uidiagram.impl.ModelElementImpl#getTextStyle <em>Text Style</em>}</li>
+ *   <li>{@link uidiagram.impl.ModelElementImpl#getTextColor <em>Text Color</em>}</li>
+ *   <li>{@link uidiagram.impl.ModelElementImpl#getTextSize <em>Text Size</em>}</li>
  * </ul>
  *
  * @generated
@@ -61,7 +65,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String POSITION_X_EDEFAULT = null;
+	protected static final int POSITION_X_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getPositionX() <em>Position X</em>}' attribute.
@@ -71,7 +75,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * @generated
 	 * @ordered
 	 */
-	protected String positionX = POSITION_X_EDEFAULT;
+	protected int positionX = POSITION_X_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getPositionY() <em>Position Y</em>}' attribute.
@@ -81,7 +85,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String POSITION_Y_EDEFAULT = null;
+	protected static final int POSITION_Y_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getPositionY() <em>Position Y</em>}' attribute.
@@ -91,7 +95,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * @generated
 	 * @ordered
 	 */
-	protected String positionY = POSITION_Y_EDEFAULT;
+	protected int positionY = POSITION_Y_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getWidth() <em>Width</em>}' attribute.
@@ -101,7 +105,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String WIDTH_EDEFAULT = null;
+	protected static final int WIDTH_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getWidth() <em>Width</em>}' attribute.
@@ -111,7 +115,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * @generated
 	 * @ordered
 	 */
-	protected String width = WIDTH_EDEFAULT;
+	protected int width = WIDTH_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getHeigth() <em>Heigth</em>}' attribute.
@@ -121,7 +125,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HEIGTH_EDEFAULT = null;
+	protected static final int HEIGTH_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getHeigth() <em>Heigth</em>}' attribute.
@@ -131,7 +135,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * @generated
 	 * @ordered
 	 */
-	protected String heigth = HEIGTH_EDEFAULT;
+	protected int heigth = HEIGTH_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getBackgroundColor() <em>Background Color</em>}' attribute.
@@ -181,7 +185,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TITLE_FONT_SIZE_EDEFAULT = null;
+	protected static final int TITLE_FONT_SIZE_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getTitleFontSize() <em>Title Font Size</em>}' attribute.
@@ -191,7 +195,87 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * @generated
 	 * @ordered
 	 */
-	protected String titleFontSize = TITLE_FONT_SIZE_EDEFAULT;
+	protected int titleFontSize = TITLE_FONT_SIZE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getFont() <em>Font</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFont()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String FONT_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getFont() <em>Font</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFont()
+	 * @generated
+	 * @ordered
+	 */
+	protected String font = FONT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTextStyle() <em>Text Style</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTextStyle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TEXT_STYLE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTextStyle() <em>Text Style</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTextStyle()
+	 * @generated
+	 * @ordered
+	 */
+	protected String textStyle = TEXT_STYLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTextColor() <em>Text Color</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTextColor()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TEXT_COLOR_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTextColor() <em>Text Color</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTextColor()
+	 * @generated
+	 * @ordered
+	 */
+	protected String textColor = TEXT_COLOR_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTextSize() <em>Text Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTextSize()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int TEXT_SIZE_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getTextSize() <em>Text Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTextSize()
+	 * @generated
+	 * @ordered
+	 */
+	protected int textSize = TEXT_SIZE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,7 +322,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPositionX() {
+	public int getPositionX() {
 		return positionX;
 	}
 
@@ -247,8 +331,8 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPositionX(String newPositionX) {
-		String oldPositionX = positionX;
+	public void setPositionX(int newPositionX) {
+		int oldPositionX = positionX;
 		positionX = newPositionX;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__POSITION_X, oldPositionX, positionX));
@@ -259,7 +343,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPositionY() {
+	public int getPositionY() {
 		return positionY;
 	}
 
@@ -268,8 +352,8 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPositionY(String newPositionY) {
-		String oldPositionY = positionY;
+	public void setPositionY(int newPositionY) {
+		int oldPositionY = positionY;
 		positionY = newPositionY;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__POSITION_Y, oldPositionY, positionY));
@@ -280,7 +364,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getWidth() {
+	public int getWidth() {
 		return width;
 	}
 
@@ -289,8 +373,8 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setWidth(String newWidth) {
-		String oldWidth = width;
+	public void setWidth(int newWidth) {
+		int oldWidth = width;
 		width = newWidth;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__WIDTH, oldWidth, width));
@@ -301,7 +385,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHeigth() {
+	public int getHeigth() {
 		return heigth;
 	}
 
@@ -310,8 +394,8 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHeigth(String newHeigth) {
-		String oldHeigth = heigth;
+	public void setHeigth(int newHeigth) {
+		int oldHeigth = heigth;
 		heigth = newHeigth;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__HEIGTH, oldHeigth, heigth));
@@ -364,7 +448,7 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTitleFontSize() {
+	public int getTitleFontSize() {
 		return titleFontSize;
 	}
 
@@ -373,11 +457,95 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTitleFontSize(String newTitleFontSize) {
-		String oldTitleFontSize = titleFontSize;
+	public void setTitleFontSize(int newTitleFontSize) {
+		int oldTitleFontSize = titleFontSize;
 		titleFontSize = newTitleFontSize;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__TITLE_FONT_SIZE, oldTitleFontSize, titleFontSize));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getFont() {
+		return font;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setFont(String newFont) {
+		String oldFont = font;
+		font = newFont;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__FONT, oldFont, font));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTextStyle() {
+		return textStyle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTextStyle(String newTextStyle) {
+		String oldTextStyle = textStyle;
+		textStyle = newTextStyle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__TEXT_STYLE, oldTextStyle, textStyle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTextColor() {
+		return textColor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTextColor(String newTextColor) {
+		String oldTextColor = textColor;
+		textColor = newTextColor;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__TEXT_COLOR, oldTextColor, textColor));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getTextSize() {
+		return textSize;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTextSize(int newTextSize) {
+		int oldTextSize = textSize;
+		textSize = newTextSize;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__TEXT_SIZE, oldTextSize, textSize));
 	}
 
 	/**
@@ -404,6 +572,14 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 				return getTitleFont();
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT_SIZE:
 				return getTitleFontSize();
+			case UidiagramPackage.MODEL_ELEMENT__FONT:
+				return getFont();
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_STYLE:
+				return getTextStyle();
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_COLOR:
+				return getTextColor();
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_SIZE:
+				return getTextSize();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -420,16 +596,16 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 				setTitle((String)newValue);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__POSITION_X:
-				setPositionX((String)newValue);
+				setPositionX((Integer)newValue);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__POSITION_Y:
-				setPositionY((String)newValue);
+				setPositionY((Integer)newValue);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__WIDTH:
-				setWidth((String)newValue);
+				setWidth((Integer)newValue);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__HEIGTH:
-				setHeigth((String)newValue);
+				setHeigth((Integer)newValue);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__BACKGROUND_COLOR:
 				setBackgroundColor((String)newValue);
@@ -438,7 +614,19 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 				setTitleFont((String)newValue);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT_SIZE:
-				setTitleFontSize((String)newValue);
+				setTitleFontSize((Integer)newValue);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__FONT:
+				setFont((String)newValue);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_STYLE:
+				setTextStyle((String)newValue);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_COLOR:
+				setTextColor((String)newValue);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_SIZE:
+				setTextSize((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -476,6 +664,18 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT_SIZE:
 				setTitleFontSize(TITLE_FONT_SIZE_EDEFAULT);
 				return;
+			case UidiagramPackage.MODEL_ELEMENT__FONT:
+				setFont(FONT_EDEFAULT);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_STYLE:
+				setTextStyle(TEXT_STYLE_EDEFAULT);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_COLOR:
+				setTextColor(TEXT_COLOR_EDEFAULT);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_SIZE:
+				setTextSize(TEXT_SIZE_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -491,19 +691,27 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 			case UidiagramPackage.MODEL_ELEMENT__TITLE:
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
 			case UidiagramPackage.MODEL_ELEMENT__POSITION_X:
-				return POSITION_X_EDEFAULT == null ? positionX != null : !POSITION_X_EDEFAULT.equals(positionX);
+				return positionX != POSITION_X_EDEFAULT;
 			case UidiagramPackage.MODEL_ELEMENT__POSITION_Y:
-				return POSITION_Y_EDEFAULT == null ? positionY != null : !POSITION_Y_EDEFAULT.equals(positionY);
+				return positionY != POSITION_Y_EDEFAULT;
 			case UidiagramPackage.MODEL_ELEMENT__WIDTH:
-				return WIDTH_EDEFAULT == null ? width != null : !WIDTH_EDEFAULT.equals(width);
+				return width != WIDTH_EDEFAULT;
 			case UidiagramPackage.MODEL_ELEMENT__HEIGTH:
-				return HEIGTH_EDEFAULT == null ? heigth != null : !HEIGTH_EDEFAULT.equals(heigth);
+				return heigth != HEIGTH_EDEFAULT;
 			case UidiagramPackage.MODEL_ELEMENT__BACKGROUND_COLOR:
 				return BACKGROUND_COLOR_EDEFAULT == null ? backgroundColor != null : !BACKGROUND_COLOR_EDEFAULT.equals(backgroundColor);
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT:
 				return TITLE_FONT_EDEFAULT == null ? titleFont != null : !TITLE_FONT_EDEFAULT.equals(titleFont);
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT_SIZE:
-				return TITLE_FONT_SIZE_EDEFAULT == null ? titleFontSize != null : !TITLE_FONT_SIZE_EDEFAULT.equals(titleFontSize);
+				return titleFontSize != TITLE_FONT_SIZE_EDEFAULT;
+			case UidiagramPackage.MODEL_ELEMENT__FONT:
+				return FONT_EDEFAULT == null ? font != null : !FONT_EDEFAULT.equals(font);
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_STYLE:
+				return TEXT_STYLE_EDEFAULT == null ? textStyle != null : !TEXT_STYLE_EDEFAULT.equals(textStyle);
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_COLOR:
+				return TEXT_COLOR_EDEFAULT == null ? textColor != null : !TEXT_COLOR_EDEFAULT.equals(textColor);
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_SIZE:
+				return textSize != TEXT_SIZE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -534,6 +742,14 @@ public abstract class ModelElementImpl extends EObjectImpl implements ModelEleme
 		result.append(titleFont);
 		result.append(", titleFontSize: ");
 		result.append(titleFontSize);
+		result.append(", font: ");
+		result.append(font);
+		result.append(", textStyle: ");
+		result.append(textStyle);
+		result.append(", textColor: ");
+		result.append(textColor);
+		result.append(", textSize: ");
+		result.append(textSize);
 		result.append(')');
 		return result.toString();
 	}

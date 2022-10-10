@@ -68,6 +68,10 @@ public class ModelElementItemProvider
 			addBackgroundColorPropertyDescriptor(object);
 			addTitleFontPropertyDescriptor(object);
 			addTitleFontSizePropertyDescriptor(object);
+			addFontPropertyDescriptor(object);
+			addTextStylePropertyDescriptor(object);
+			addTextColorPropertyDescriptor(object);
+			addTextSizePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -111,7 +115,7 @@ public class ModelElementItemProvider
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -133,7 +137,7 @@ public class ModelElementItemProvider
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -155,7 +159,7 @@ public class ModelElementItemProvider
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -177,7 +181,7 @@ public class ModelElementItemProvider
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -243,7 +247,95 @@ public class ModelElementItemProvider
 				 true,
 				 false,
 				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Font feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addFontPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ModelElement_font_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ModelElement_font_feature", "_UI_ModelElement_type"),
+				 UidiagramPackage.Literals.MODEL_ELEMENT__FONT,
+				 true,
+				 false,
+				 false,
 				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Text Style feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTextStylePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ModelElement_textStyle_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ModelElement_textStyle_feature", "_UI_ModelElement_type"),
+				 UidiagramPackage.Literals.MODEL_ELEMENT__TEXT_STYLE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Text Color feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTextColorPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ModelElement_textColor_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ModelElement_textColor_feature", "_UI_ModelElement_type"),
+				 UidiagramPackage.Literals.MODEL_ELEMENT__TEXT_COLOR,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Text Size feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTextSizePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ModelElement_textSize_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ModelElement_textSize_feature", "_UI_ModelElement_type"),
+				 UidiagramPackage.Literals.MODEL_ELEMENT__TEXT_SIZE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -283,6 +375,10 @@ public class ModelElementItemProvider
 			case UidiagramPackage.MODEL_ELEMENT__BACKGROUND_COLOR:
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT:
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT_SIZE:
+			case UidiagramPackage.MODEL_ELEMENT__FONT:
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_STYLE:
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_COLOR:
+			case UidiagramPackage.MODEL_ELEMENT__TEXT_SIZE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

@@ -203,13 +203,49 @@ public interface UidiagramPackage extends EPackage {
 	int USER_INTERFACE__TITLE_FONT_SIZE = 7;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INTERFACE__FONT = 8;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INTERFACE__TEXT_STYLE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INTERFACE__TEXT_COLOR = 10;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INTERFACE__TEXT_SIZE = 11;
+
+	/**
 	 * The feature id for the '<em><b>Lst Model Elements</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_INTERFACE__LST_MODEL_ELEMENTS = 8;
+	int USER_INTERFACE__LST_MODEL_ELEMENTS = 12;
 
 	/**
 	 * The number of structural features of the '<em>User Interface</em>' class.
@@ -218,7 +254,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_INTERFACE_FEATURE_COUNT = 9;
+	int USER_INTERFACE_FEATURE_COUNT = 13;
 
 
 	/**
@@ -304,13 +340,49 @@ public interface UidiagramPackage extends EPackage {
 	int MODEL_ELEMENT__TITLE_FONT_SIZE = 7;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ELEMENT__FONT = 8;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ELEMENT__TEXT_STYLE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ELEMENT__TEXT_COLOR = 10;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ELEMENT__TEXT_SIZE = 11;
+
+	/**
 	 * The number of structural features of the '<em>Model Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_ELEMENT_FEATURE_COUNT = 8;
+	int MODEL_ELEMENT_FEATURE_COUNT = 12;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.GraphicalContainerImpl <em>Graphical Container</em>}' class.
@@ -393,6 +465,42 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int GRAPHICAL_CONTAINER__TITLE_FONT_SIZE = MODEL_ELEMENT__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_CONTAINER__FONT = MODEL_ELEMENT__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_CONTAINER__TEXT_STYLE = MODEL_ELEMENT__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_CONTAINER__TEXT_COLOR = MODEL_ELEMENT__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_CONTAINER__TEXT_SIZE = MODEL_ELEMENT__TEXT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
@@ -495,6 +603,42 @@ public interface UidiagramPackage extends EPackage {
 	int GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE = MODEL_ELEMENT__TITLE_FONT_SIZE;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_INDIVIDUAL__FONT = MODEL_ELEMENT__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_INDIVIDUAL__TEXT_STYLE = MODEL_ELEMENT__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_INDIVIDUAL__TEXT_COLOR = MODEL_ELEMENT__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_INDIVIDUAL__TEXT_SIZE = MODEL_ELEMENT__TEXT_SIZE;
+
+	/**
 	 * The number of structural features of the '<em>Graphical Individual</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -584,6 +728,42 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONTAINER__TITLE_FONT_SIZE = GRAPHICAL_CONTAINER__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__FONT = GRAPHICAL_CONTAINER__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__TEXT_STYLE = GRAPHICAL_CONTAINER__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__TEXT_COLOR = GRAPHICAL_CONTAINER__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__TEXT_SIZE = GRAPHICAL_CONTAINER__TEXT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
@@ -686,6 +866,42 @@ public interface UidiagramPackage extends EPackage {
 	int IFRAME__TITLE_FONT_SIZE = GRAPHICAL_CONTAINER__TITLE_FONT_SIZE;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IFRAME__FONT = GRAPHICAL_CONTAINER__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IFRAME__TEXT_STYLE = GRAPHICAL_CONTAINER__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IFRAME__TEXT_COLOR = GRAPHICAL_CONTAINER__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IFRAME__TEXT_SIZE = GRAPHICAL_CONTAINER__TEXT_SIZE;
+
+	/**
 	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -786,6 +1002,42 @@ public interface UidiagramPackage extends EPackage {
 	int LABEL__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
+
+	/**
 	 * The number of structural features of the '<em>Label</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -875,6 +1127,42 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int INPUT__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INPUT__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INPUT__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INPUT__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INPUT__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
 
 	/**
 	 * The number of structural features of the '<em>Input</em>' class.
@@ -968,6 +1256,42 @@ public interface UidiagramPackage extends EPackage {
 	int BUTTON__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUTTON__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUTTON__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUTTON__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUTTON__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
+
+	/**
 	 * The number of structural features of the '<em>Button</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1059,6 +1383,42 @@ public interface UidiagramPackage extends EPackage {
 	int SELECT__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECT__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECT__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECT__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECT__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
+
+	/**
 	 * The number of structural features of the '<em>Select</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1148,6 +1508,42 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int TABLE__TITLE_FONT_SIZE = GRAPHICAL_CONTAINER__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TABLE__FONT = GRAPHICAL_CONTAINER__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TABLE__TEXT_STYLE = GRAPHICAL_CONTAINER__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TABLE__TEXT_COLOR = GRAPHICAL_CONTAINER__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TABLE__TEXT_SIZE = GRAPHICAL_CONTAINER__TEXT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
@@ -1259,6 +1655,42 @@ public interface UidiagramPackage extends EPackage {
 	int COLUMN__TITLE_FONT_SIZE = GRAPHICAL_CONTAINER__TITLE_FONT_SIZE;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__FONT = GRAPHICAL_CONTAINER__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__TEXT_STYLE = GRAPHICAL_CONTAINER__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__TEXT_COLOR = GRAPHICAL_CONTAINER__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__TEXT_SIZE = GRAPHICAL_CONTAINER__TEXT_SIZE;
+
+	/**
 	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1359,6 +1791,42 @@ public interface UidiagramPackage extends EPackage {
 	int IMAGE_VIEW__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_VIEW__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_VIEW__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_VIEW__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_VIEW__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
+
+	/**
 	 * The number of structural features of the '<em>Image View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1450,6 +1918,42 @@ public interface UidiagramPackage extends EPackage {
 	int BLOCKQUOTE__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCKQUOTE__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCKQUOTE__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCKQUOTE__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCKQUOTE__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
+
+	/**
 	 * The number of structural features of the '<em>Blockquote</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1539,6 +2043,42 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int UL__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UL__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UL__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UL__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UL__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
 
 	/**
 	 * The number of structural features of the '<em>Ul</em>' class.
@@ -1702,6 +2242,50 @@ public interface UidiagramPackage extends EPackage {
 	EAttribute getUserInterface_TitleFontSize();
 
 	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.UserInterface#getFont <em>Font</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Font</em>'.
+	 * @see uidiagram.UserInterface#getFont()
+	 * @see #getUserInterface()
+	 * @generated
+	 */
+	EAttribute getUserInterface_Font();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.UserInterface#getTextStyle <em>Text Style</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Text Style</em>'.
+	 * @see uidiagram.UserInterface#getTextStyle()
+	 * @see #getUserInterface()
+	 * @generated
+	 */
+	EAttribute getUserInterface_TextStyle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.UserInterface#getTextColor <em>Text Color</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Text Color</em>'.
+	 * @see uidiagram.UserInterface#getTextColor()
+	 * @see #getUserInterface()
+	 * @generated
+	 */
+	EAttribute getUserInterface_TextColor();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.UserInterface#getTextSize <em>Text Size</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Text Size</em>'.
+	 * @see uidiagram.UserInterface#getTextSize()
+	 * @see #getUserInterface()
+	 * @generated
+	 */
+	EAttribute getUserInterface_TextSize();
+
+	/**
 	 * Returns the meta object for the containment reference list '{@link uidiagram.UserInterface#getLstModelElements <em>Lst Model Elements</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1809,6 +2393,50 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getModelElement_TitleFontSize();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.ModelElement#getFont <em>Font</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Font</em>'.
+	 * @see uidiagram.ModelElement#getFont()
+	 * @see #getModelElement()
+	 * @generated
+	 */
+	EAttribute getModelElement_Font();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.ModelElement#getTextStyle <em>Text Style</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Text Style</em>'.
+	 * @see uidiagram.ModelElement#getTextStyle()
+	 * @see #getModelElement()
+	 * @generated
+	 */
+	EAttribute getModelElement_TextStyle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.ModelElement#getTextColor <em>Text Color</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Text Color</em>'.
+	 * @see uidiagram.ModelElement#getTextColor()
+	 * @see #getModelElement()
+	 * @generated
+	 */
+	EAttribute getModelElement_TextColor();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.ModelElement#getTextSize <em>Text Size</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Text Size</em>'.
+	 * @see uidiagram.ModelElement#getTextSize()
+	 * @see #getModelElement()
+	 * @generated
+	 */
+	EAttribute getModelElement_TextSize();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.GraphicalContainer <em>Graphical Container</em>}'.
@@ -2103,6 +2731,38 @@ public interface UidiagramPackage extends EPackage {
 		EAttribute USER_INTERFACE__TITLE_FONT_SIZE = eINSTANCE.getUserInterface_TitleFontSize();
 
 		/**
+		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INTERFACE__FONT = eINSTANCE.getUserInterface_Font();
+
+		/**
+		 * The meta object literal for the '<em><b>Text Style</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INTERFACE__TEXT_STYLE = eINSTANCE.getUserInterface_TextStyle();
+
+		/**
+		 * The meta object literal for the '<em><b>Text Color</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INTERFACE__TEXT_COLOR = eINSTANCE.getUserInterface_TextColor();
+
+		/**
+		 * The meta object literal for the '<em><b>Text Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INTERFACE__TEXT_SIZE = eINSTANCE.getUserInterface_TextSize();
+
+		/**
 		 * The meta object literal for the '<em><b>Lst Model Elements</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2183,6 +2843,38 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute MODEL_ELEMENT__TITLE_FONT_SIZE = eINSTANCE.getModelElement_TitleFontSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_ELEMENT__FONT = eINSTANCE.getModelElement_Font();
+
+		/**
+		 * The meta object literal for the '<em><b>Text Style</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_ELEMENT__TEXT_STYLE = eINSTANCE.getModelElement_TextStyle();
+
+		/**
+		 * The meta object literal for the '<em><b>Text Color</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_ELEMENT__TEXT_COLOR = eINSTANCE.getModelElement_TextColor();
+
+		/**
+		 * The meta object literal for the '<em><b>Text Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_ELEMENT__TEXT_SIZE = eINSTANCE.getModelElement_TextSize();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.GraphicalContainerImpl <em>Graphical Container</em>}' class.

@@ -15,13 +15,17 @@ class UI_Diagram {
 @gmf.node(label = "title")
 class UserInterface {
     attr String title;
-    attr String positionX;
-    attr String positionY;
-    attr String width;
-    attr String heigth;
+    attr int positionX;
+    attr int positionY;
+    attr int width;
+    attr int heigth;
     attr String backgroundColor;
     attr String titleFont;
-    attr String titleFontSize;
+    attr int titleFontSize;
+    attr String font;
+    attr String textStyle;
+    attr String textColor;
+    attr int textSize;
    
    	@gmf.compartment
     val ModelElement[*] lstModelElements;   	
@@ -30,13 +34,18 @@ class UserInterface {
 
 abstract class ModelElement  {
     attr String title;
-    attr String positionX;
-    attr String positionY;
-    attr String width;
-    attr String heigth;
+    attr int positionX;
+    attr int positionY;
+    attr int width;
+    attr int heigth;
     attr String backgroundColor;
     attr String titleFont;
-    attr String titleFontSize;
+    attr int titleFontSize;
+    
+    attr String font;
+    attr String textStyle;
+    attr String textColor;
+    attr int textSize;
 }
 
 abstract class GraphicalContainer extends ModelElement {

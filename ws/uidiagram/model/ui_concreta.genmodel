@@ -21,6 +21,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//UserInterface/backgroundColor"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//UserInterface/titleFont"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//UserInterface/titleFontSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//UserInterface/font"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//UserInterface/textStyle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//UserInterface/textColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//UserInterface/textSize"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ui_concreta.ecore#//UserInterface/lstModelElements"/>
     </genClasses>
     <genClasses image="false" ecoreClass="ui_concreta.ecore#//ModelElement">
@@ -32,6 +36,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//ModelElement/backgroundColor"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//ModelElement/titleFont"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//ModelElement/titleFontSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//ModelElement/font"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//ModelElement/textStyle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//ModelElement/textColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//ModelElement/textSize"/>
     </genClasses>
     <genClasses image="false" ecoreClass="ui_concreta.ecore#//GraphicalContainer">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>

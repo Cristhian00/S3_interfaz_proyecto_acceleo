@@ -21,6 +21,10 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link uidiagram.ModelElement#getBackgroundColor <em>Background Color</em>}</li>
  *   <li>{@link uidiagram.ModelElement#getTitleFont <em>Title Font</em>}</li>
  *   <li>{@link uidiagram.ModelElement#getTitleFontSize <em>Title Font Size</em>}</li>
+ *   <li>{@link uidiagram.ModelElement#getFont <em>Font</em>}</li>
+ *   <li>{@link uidiagram.ModelElement#getTextStyle <em>Text Style</em>}</li>
+ *   <li>{@link uidiagram.ModelElement#getTextColor <em>Text Color</em>}</li>
+ *   <li>{@link uidiagram.ModelElement#getTextSize <em>Text Size</em>}</li>
  * </ul>
  *
  * @see uidiagram.UidiagramPackage#getModelElement()
@@ -63,12 +67,12 @@ public interface ModelElement extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Position X</em>' attribute.
-	 * @see #setPositionX(String)
+	 * @see #setPositionX(int)
 	 * @see uidiagram.UidiagramPackage#getModelElement_PositionX()
 	 * @model
 	 * @generated
 	 */
-	String getPositionX();
+	int getPositionX();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.ModelElement#getPositionX <em>Position X</em>}' attribute.
@@ -78,7 +82,7 @@ public interface ModelElement extends EObject {
 	 * @see #getPositionX()
 	 * @generated
 	 */
-	void setPositionX(String value);
+	void setPositionX(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Position Y</b></em>' attribute.
@@ -89,12 +93,12 @@ public interface ModelElement extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Position Y</em>' attribute.
-	 * @see #setPositionY(String)
+	 * @see #setPositionY(int)
 	 * @see uidiagram.UidiagramPackage#getModelElement_PositionY()
 	 * @model
 	 * @generated
 	 */
-	String getPositionY();
+	int getPositionY();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.ModelElement#getPositionY <em>Position Y</em>}' attribute.
@@ -104,7 +108,7 @@ public interface ModelElement extends EObject {
 	 * @see #getPositionY()
 	 * @generated
 	 */
-	void setPositionY(String value);
+	void setPositionY(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Width</b></em>' attribute.
@@ -115,12 +119,12 @@ public interface ModelElement extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Width</em>' attribute.
-	 * @see #setWidth(String)
+	 * @see #setWidth(int)
 	 * @see uidiagram.UidiagramPackage#getModelElement_Width()
 	 * @model
 	 * @generated
 	 */
-	String getWidth();
+	int getWidth();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.ModelElement#getWidth <em>Width</em>}' attribute.
@@ -130,7 +134,7 @@ public interface ModelElement extends EObject {
 	 * @see #getWidth()
 	 * @generated
 	 */
-	void setWidth(String value);
+	void setWidth(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Heigth</b></em>' attribute.
@@ -141,12 +145,12 @@ public interface ModelElement extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Heigth</em>' attribute.
-	 * @see #setHeigth(String)
+	 * @see #setHeigth(int)
 	 * @see uidiagram.UidiagramPackage#getModelElement_Heigth()
 	 * @model
 	 * @generated
 	 */
-	String getHeigth();
+	int getHeigth();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.ModelElement#getHeigth <em>Heigth</em>}' attribute.
@@ -156,7 +160,7 @@ public interface ModelElement extends EObject {
 	 * @see #getHeigth()
 	 * @generated
 	 */
-	void setHeigth(String value);
+	void setHeigth(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Background Color</b></em>' attribute.
@@ -219,12 +223,12 @@ public interface ModelElement extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Title Font Size</em>' attribute.
-	 * @see #setTitleFontSize(String)
+	 * @see #setTitleFontSize(int)
 	 * @see uidiagram.UidiagramPackage#getModelElement_TitleFontSize()
 	 * @model
 	 * @generated
 	 */
-	String getTitleFontSize();
+	int getTitleFontSize();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.ModelElement#getTitleFontSize <em>Title Font Size</em>}' attribute.
@@ -234,6 +238,110 @@ public interface ModelElement extends EObject {
 	 * @see #getTitleFontSize()
 	 * @generated
 	 */
-	void setTitleFontSize(String value);
+	void setTitleFontSize(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Font</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Font</em>' attribute.
+	 * @see #setFont(String)
+	 * @see uidiagram.UidiagramPackage#getModelElement_Font()
+	 * @model
+	 * @generated
+	 */
+	String getFont();
+
+	/**
+	 * Sets the value of the '{@link uidiagram.ModelElement#getFont <em>Font</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Font</em>' attribute.
+	 * @see #getFont()
+	 * @generated
+	 */
+	void setFont(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Text Style</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Text Style</em>' attribute.
+	 * @see #setTextStyle(String)
+	 * @see uidiagram.UidiagramPackage#getModelElement_TextStyle()
+	 * @model
+	 * @generated
+	 */
+	String getTextStyle();
+
+	/**
+	 * Sets the value of the '{@link uidiagram.ModelElement#getTextStyle <em>Text Style</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Text Style</em>' attribute.
+	 * @see #getTextStyle()
+	 * @generated
+	 */
+	void setTextStyle(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Text Color</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Text Color</em>' attribute.
+	 * @see #setTextColor(String)
+	 * @see uidiagram.UidiagramPackage#getModelElement_TextColor()
+	 * @model
+	 * @generated
+	 */
+	String getTextColor();
+
+	/**
+	 * Sets the value of the '{@link uidiagram.ModelElement#getTextColor <em>Text Color</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Text Color</em>' attribute.
+	 * @see #getTextColor()
+	 * @generated
+	 */
+	void setTextColor(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Text Size</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Text Size</em>' attribute.
+	 * @see #setTextSize(int)
+	 * @see uidiagram.UidiagramPackage#getModelElement_TextSize()
+	 * @model
+	 * @generated
+	 */
+	int getTextSize();
+
+	/**
+	 * Sets the value of the '{@link uidiagram.ModelElement#getTextSize <em>Text Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Text Size</em>' attribute.
+	 * @see #getTextSize()
+	 * @generated
+	 */
+	void setTextSize(int value);
 
 } // ModelElement
