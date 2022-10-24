@@ -14,7 +14,7 @@ import uidiagram.UidiagramPackage;
  *
  * @generated
  */
-public class ColumnImpl extends GraphicalContainerImpl implements Column {
+public class ColumnImpl extends GraphicalIndividualImpl implements Column {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

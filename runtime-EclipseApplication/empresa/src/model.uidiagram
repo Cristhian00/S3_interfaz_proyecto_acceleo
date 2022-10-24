@@ -2,19 +2,36 @@
 <uidiagram:ModelFactory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uidiagram="http://uidiagram">
   <lstUI_Diagrams>
     <userInterface title="Registro cliente">
-      <lstModelElements xsi:type="uidiagram:Container" title="Detalle Clientes">
-        <lstChildModelElements xsi:type="uidiagram:Label" title="Apellido:"/>
-        <lstChildModelElements xsi:type="uidiagram:Label" title="Nombre:"/>
-        <lstChildModelElements xsi:type="uidiagram:Input"/>
-        <lstChildModelElements xsi:type="uidiagram:Input"/>
-        <lstChildModelElements xsi:type="uidiagram:Input"/>
-        <lstChildModelElements xsi:type="uidiagram:Label" title="Email:"/>
-        <lstChildModelElements xsi:type="uidiagram:Button" title="Guardar"/>
+      <lstModelElements xsi:type="uidiagram:Container" title="Detalle Clientes" positionX="5" positionY="3" width="301" heigth="201" textStyle="">
+        <lstChildModelElements xsi:type="uidiagram:Label" title="Apellido:" positionX="10" positionY="68" width="61" heigth="21"/>
+        <lstChildModelElements xsi:type="uidiagram:Label" title="Nombre:" positionX="10" positionY="33" width="71" heigth="21"/>
+        <lstChildModelElements xsi:type="uidiagram:Input" title="INombre" positionX="110" positionY="31" width="131" heigth="26"/>
+        <lstChildModelElements xsi:type="uidiagram:Input" title="IApellido" positionX="110" positionY="66" width="131" heigth="26" titleFont=""/>
+        <lstChildModelElements xsi:type="uidiagram:Input" title="IEmail" positionX="110" positionY="101" width="131" heigth="26"/>
+        <lstChildModelElements xsi:type="uidiagram:Label" title="Email:" positionX="10" positionY="103" width="51" heigth="21"/>
+        <lstChildModelElements xsi:type="uidiagram:Button" title="guardar" positionX="55" positionY="133" width="136" heigth="35"/>
+        <lstChildModelElements xsi:type="uidiagram:Label" title="Registrar Cliente" positionX="65" positionY="3" width="161" heigth="23" textStyle=""/>
       </lstModelElements>
-      <lstModelElements xsi:type="uidiagram:Table" title="Tabla1">
-        <lstChildModelElements xsi:type="uidiagram:Column" title="nombre"/>
-        <lstChildModelElements xsi:type="uidiagram:Column" title="Apellido"/>
-        <lstChildModelElements xsi:type="uidiagram:Column" title="Email"/>
+      <lstModelElements xsi:type="uidiagram:Container" title="Otros tipos" positionX="325" positionY="3" width="686" heigth="521">
+        <lstChildModelElements xsi:type="uidiagram:Blockquote" title="TextoLargo" positionY="50" width="206" heigth="126" url="http://www.worldwildlife.org/who/index.html" contenido="For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2"/>
+        <lstChildModelElements xsi:type="uidiagram:Label" title="The blockquote element:" positionX="5" positionY="8" width="191" heigth="21"/>
+        <lstChildModelElements xsi:type="uidiagram:IFrame" title="W3Schools" positionX="5" positionY="240" width="541" heigth="256" font="" url="https://www.w3schools.com"/>
+        <lstChildModelElements xsi:type="uidiagram:Object" title="Imagen cualquiera" positionX="415" positionY="33" width="229" heigth="150" src="img.jgp"/>
+        <lstChildModelElements xsi:type="uidiagram:Select" title="Select language" positionX="240" positionY="38" width="101" heigth="141">
+          <lstChildModelElements xsi:type="uidiagram:Option" title="Java" positionY="3" width="120" heigth="26"/>
+          <lstChildModelElements xsi:type="uidiagram:Option" title="Elixir" positionY="28" width="120" heigth="26"/>
+          <lstChildModelElements xsi:type="uidiagram:Option" title="Ruby" positionY="56" width="120" heigth="21"/>
+        </lstChildModelElements>
+        <lstChildModelElements xsi:type="uidiagram:Label" title="Iframe:" positionX="5" positionY="200" width="96" heigth="24"/>
+        <lstChildModelElements xsi:type="uidiagram:Label" title="Select(radio button): " positionX="235" positionY="10" width="161" heigth="24"/>
+      </lstModelElements>
+      <lstModelElements xsi:type="uidiagram:Container" title="tabla" positionX="10" positionY="218" width="296" heigth="289">
+        <lstChildModelElements xsi:type="uidiagram:Table" positionX="5" positionY="38" width="246" heigth="101">
+          <lstChildModelElements xsi:type="uidiagram:Column" title="nombre" positionX="65" positionY="7" width="120" heigth="24"/>
+          <lstChildModelElements xsi:type="uidiagram:Column" title="apellido" positionX="145" positionY="13" width="120" heigth="29"/>
+          <lstChildModelElements xsi:type="uidiagram:Column" title="email" positionX="5" positionY="6" width="120" heigth="22"/>
+        </lstChildModelElements>
+        <lstChildModelElements xsi:type="uidiagram:Label" title="Lista de clientes" positionX="10" positionY="8" width="154" heigth="19"/>
       </lstModelElements>
     </userInterface>
   </lstUI_Diagrams>

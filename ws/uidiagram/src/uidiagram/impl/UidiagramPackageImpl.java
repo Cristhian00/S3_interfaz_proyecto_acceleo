@@ -15,17 +15,17 @@ import uidiagram.Column;
 import uidiagram.GraphicalContainer;
 import uidiagram.GraphicalIndividual;
 import uidiagram.IFrame;
-import uidiagram.ImageView;
 import uidiagram.Input;
 import uidiagram.Label;
 import uidiagram.ModelElement;
 import uidiagram.ModelFactory;
+import uidiagram.Option;
+import uidiagram.Radio;
 import uidiagram.Select;
 import uidiagram.Table;
 import uidiagram.UI_Diagram;
 import uidiagram.UidiagramFactory;
 import uidiagram.UidiagramPackage;
-import uidiagram.Ul;
 import uidiagram.UserInterface;
 
 /**
@@ -117,7 +117,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass selectEClass = null;
+	private EClass radioEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -138,7 +138,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass imageViewEClass = null;
+	private EClass objectEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,7 +152,14 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ulEClass = null;
+	private EClass selectEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass optionEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -553,6 +560,15 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getIFrame_Url() {
+		return (EAttribute)iFrameEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getLabel() {
 		return labelEClass;
 	}
@@ -580,8 +596,17 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSelect() {
-		return selectEClass;
+	public EClass getRadio() {
+		return radioEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getRadio_Name() {
+		return (EAttribute)radioEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -616,8 +641,17 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getImageView() {
-		return imageViewEClass;
+	public EClass getObject() {
+		return objectEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getObject_Src() {
+		return (EAttribute)objectEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -634,8 +668,44 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUl() {
-		return ulEClass;
+	public EAttribute getBlockquote_Url() {
+		return (EAttribute)blockquoteEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getBlockquote_Contenido() {
+		return (EAttribute)blockquoteEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSelect() {
+		return selectEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSelect_LstOption() {
+		return (EReference)selectEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getOption() {
+		return optionEClass;
 	}
 
 	/**
@@ -710,6 +780,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		containerEClass = createEClass(CONTAINER);
 
 		iFrameEClass = createEClass(IFRAME);
+		createEAttribute(iFrameEClass, IFRAME__URL);
 
 		labelEClass = createEClass(LABEL);
 
@@ -717,18 +788,25 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 
 		buttonEClass = createEClass(BUTTON);
 
-		selectEClass = createEClass(SELECT);
+		radioEClass = createEClass(RADIO);
+		createEAttribute(radioEClass, RADIO__NAME);
 
 		tableEClass = createEClass(TABLE);
 		createEReference(tableEClass, TABLE__LST_COLUMNS);
 
 		columnEClass = createEClass(COLUMN);
 
-		imageViewEClass = createEClass(IMAGE_VIEW);
+		objectEClass = createEClass(OBJECT);
+		createEAttribute(objectEClass, OBJECT__SRC);
 
 		blockquoteEClass = createEClass(BLOCKQUOTE);
+		createEAttribute(blockquoteEClass, BLOCKQUOTE__URL);
+		createEAttribute(blockquoteEClass, BLOCKQUOTE__CONTENIDO);
 
-		ulEClass = createEClass(UL);
+		selectEClass = createEClass(SELECT);
+		createEReference(selectEClass, SELECT__LST_OPTION);
+
+		optionEClass = createEClass(OPTION);
 	}
 
 	/**
@@ -762,16 +840,17 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		graphicalContainerEClass.getESuperTypes().add(this.getModelElement());
 		graphicalIndividualEClass.getESuperTypes().add(this.getModelElement());
 		containerEClass.getESuperTypes().add(this.getGraphicalContainer());
-		iFrameEClass.getESuperTypes().add(this.getGraphicalContainer());
+		iFrameEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		labelEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		inputEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		buttonEClass.getESuperTypes().add(this.getGraphicalIndividual());
-		selectEClass.getESuperTypes().add(this.getGraphicalIndividual());
+		radioEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		tableEClass.getESuperTypes().add(this.getGraphicalContainer());
-		columnEClass.getESuperTypes().add(this.getGraphicalContainer());
-		imageViewEClass.getESuperTypes().add(this.getGraphicalIndividual());
+		columnEClass.getESuperTypes().add(this.getGraphicalIndividual());
+		objectEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		blockquoteEClass.getESuperTypes().add(this.getGraphicalIndividual());
-		ulEClass.getESuperTypes().add(this.getGraphicalIndividual());
+		selectEClass.getESuperTypes().add(this.getGraphicalContainer());
+		optionEClass.getESuperTypes().add(this.getGraphicalIndividual());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelFactoryEClass, ModelFactory.class, "ModelFactory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -818,6 +897,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		initEClass(containerEClass, uidiagram.Container.class, "Container", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(iFrameEClass, IFrame.class, "IFrame", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getIFrame_Url(), ecorePackage.getEString(), "url", null, 0, 1, IFrame.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(labelEClass, Label.class, "Label", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -825,18 +905,25 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 
 		initEClass(buttonEClass, Button.class, "Button", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(selectEClass, Select.class, "Select", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(radioEClass, Radio.class, "Radio", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRadio_Name(), ecorePackage.getEString(), "name", null, 0, 1, Radio.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(tableEClass, Table.class, "Table", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTable_LstColumns(), this.getColumn(), null, "lstColumns", null, 0, -1, Table.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(columnEClass, Column.class, "Column", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(imageViewEClass, ImageView.class, "ImageView", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(objectEClass, uidiagram.Object.class, "Object", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getObject_Src(), ecorePackage.getEString(), "src", null, 0, 1, uidiagram.Object.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(blockquoteEClass, Blockquote.class, "Blockquote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBlockquote_Url(), ecorePackage.getEString(), "url", null, 0, 1, Blockquote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockquote_Contenido(), ecorePackage.getEString(), "contenido", null, 0, 1, Blockquote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(ulEClass, Ul.class, "Ul", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(selectEClass, Select.class, "Select", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSelect_LstOption(), this.getOption(), null, "lstOption", null, 0, -1, Select.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(optionEClass, Option.class, "Option", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -931,7 +1018,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 			 "label.icon", "false"
 		   });	
 		addAnnotation
-		  (selectEClass, 
+		  (radioEClass, 
 		   source, 
 		   new String[] {
 			 "label", "title"
@@ -949,7 +1036,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 			 "label", "title"
 		   });	
 		addAnnotation
-		  (imageViewEClass, 
+		  (objectEClass, 
 		   source, 
 		   new String[] {
 			 "label", "title"
@@ -961,7 +1048,13 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 			 "label", "title"
 		   });	
 		addAnnotation
-		  (ulEClass, 
+		  (selectEClass, 
+		   source, 
+		   new String[] {
+			 "label", "title"
+		   });	
+		addAnnotation
+		  (optionEClass, 
 		   source, 
 		   new String[] {
 			 "label", "title"
@@ -983,6 +1076,16 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		   });	
 		addAnnotation
 		  (getGraphicalContainer_LstChildModelElements(), 
+		   source, 
+		   new String[] {
+		   });	
+		addAnnotation
+		  (getTable_LstColumns(), 
+		   source, 
+		   new String[] {
+		   });	
+		addAnnotation
+		  (getSelect_LstOption(), 
 		   source, 
 		   new String[] {
 		   });

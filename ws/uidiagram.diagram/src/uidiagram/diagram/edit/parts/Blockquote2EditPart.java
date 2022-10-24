@@ -253,13 +253,13 @@ public class Blockquote2EditPart extends ShapeNodeEditPart {
 	public class BlockquoteFigure extends RoundedRectangle {
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private WrappingLabel fFigureBlockquoteLabelFigure;
 
 		/**
-			 * @generated
-			 */
+		 * @generated
+		 */
 		public BlockquoteFigure() {
 			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8), getMapMode().DPtoLP(8)));
 			this.setBorder(new MarginBorder(getMapMode().DPtoLP(5), getMapMode().DPtoLP(5), getMapMode().DPtoLP(5),
@@ -268,8 +268,8 @@ public class Blockquote2EditPart extends ShapeNodeEditPart {
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private void createContents() {
 
 			fFigureBlockquoteLabelFigure = new WrappingLabel();
@@ -281,8 +281,8 @@ public class Blockquote2EditPart extends ShapeNodeEditPart {
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		public WrappingLabel getFigureBlockquoteLabelFigure() {
 			return fFigureBlockquoteLabelFigure;
 		}

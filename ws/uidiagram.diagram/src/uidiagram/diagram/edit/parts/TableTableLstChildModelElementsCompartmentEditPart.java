@@ -106,7 +106,7 @@ public class TableTableLstChildModelElementsCompartmentEditPart extends ShapeCom
 			if (type == UidiagramElementTypes.Button_3006) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.Select_3007) {
+			if (type == UidiagramElementTypes.Radio_3023) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.Table_3008) {
@@ -115,13 +115,16 @@ public class TableTableLstChildModelElementsCompartmentEditPart extends ShapeCom
 			if (type == UidiagramElementTypes.Column_3021) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.ImageView_3009) {
+			if (type == UidiagramElementTypes.Object_3024) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.Blockquote_3010) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.Ul_3011) {
+			if (type == UidiagramElementTypes.Select_3007) {
+				return this;
+			}
+			if (type == UidiagramElementTypes.Option_3025) {
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

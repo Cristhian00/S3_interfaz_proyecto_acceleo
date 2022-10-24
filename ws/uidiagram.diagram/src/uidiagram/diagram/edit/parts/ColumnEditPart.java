@@ -5,7 +5,6 @@ package uidiagram.diagram.edit.parts;
 
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.MarginBorder;
-import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
@@ -34,7 +33,6 @@ import org.eclipse.swt.graphics.Color;
 
 import uidiagram.ModelElement;
 import uidiagram.diagram.edit.policies.ColumnItemSemanticEditPolicy;
-import uidiagram.diagram.edit.policies.OpenDiagramEditPolicy;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
 
 /**
@@ -71,7 +69,7 @@ public class ColumnEditPart extends ShapeNodeEditPart {
 		super.createDefaultEditPolicies();
 		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new ColumnItemSemanticEditPolicy());
 		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
-		installEditPolicy(EditPolicyRoles.OPEN_ROLE, new OpenDiagramEditPolicy()); // XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
 		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
 	}
 
@@ -122,12 +120,6 @@ public class ColumnEditPart extends ShapeNodeEditPart {
 			((ColumnTitleEditPart) childEditPart).setLabel(getPrimaryShape().getFigureColumnLabelFigure());
 			return true;
 		}
-		if (childEditPart instanceof ColumnColumnLstChildModelElementsCompartmentEditPart) {
-			IFigure pane = getPrimaryShape().getColumnLstChildModelElementsCompartmentFigure();
-			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
-			pane.add(((ColumnColumnLstChildModelElementsCompartmentEditPart) childEditPart).getFigure());
-			return true;
-		}
 		return false;
 	}
 
@@ -136,11 +128,6 @@ public class ColumnEditPart extends ShapeNodeEditPart {
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof ColumnTitleEditPart) {
-			return true;
-		}
-		if (childEditPart instanceof ColumnColumnLstChildModelElementsCompartmentEditPart) {
-			IFigure pane = getPrimaryShape().getColumnLstChildModelElementsCompartmentFigure();
-			pane.remove(((ColumnColumnLstChildModelElementsCompartmentEditPart) childEditPart).getFigure());
 			return true;
 		}
 		return false;
@@ -170,9 +157,6 @@ public class ColumnEditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-		if (editPart instanceof ColumnColumnLstChildModelElementsCompartmentEditPart) {
-			return getPrimaryShape().getColumnLstChildModelElementsCompartmentFigure();
-		}
 		return getContentPane();
 	}
 
@@ -278,10 +262,6 @@ public class ColumnEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		private WrappingLabel fFigureColumnLabelFigure;
-		/**
-		 * @generated
-		 */
-		private RectangleFigure fColumnLstChildModelElementsCompartmentFigure;
 
 		/**
 		 * @generated
@@ -301,15 +281,8 @@ public class ColumnEditPart extends ShapeNodeEditPart {
 			fFigureColumnLabelFigure = new WrappingLabel();
 
 			fFigureColumnLabelFigure.setText("Column");
-			fFigureColumnLabelFigure.setMaximumSize(new Dimension(getMapMode().DPtoLP(10000), getMapMode().DPtoLP(50)));
 
 			this.add(fFigureColumnLabelFigure);
-
-			fColumnLstChildModelElementsCompartmentFigure = new RectangleFigure();
-
-			fColumnLstChildModelElementsCompartmentFigure.setOutline(false);
-
-			this.add(fColumnLstChildModelElementsCompartmentFigure);
 
 		}
 
@@ -320,15 +293,8 @@ public class ColumnEditPart extends ShapeNodeEditPart {
 			return fFigureColumnLabelFigure;
 		}
 
-		/**
-		 * @generated
-		 */
-		public RectangleFigure getColumnLstChildModelElementsCompartmentFigure() {
-			return fColumnLstChildModelElementsCompartmentFigure;
-		}
-
 	}
-	
+
 	protected void handleNotificationEvent(Notification arg0) {
 		// SET was the type i need
 		if (arg0.getEventType() == Notification.SET) {

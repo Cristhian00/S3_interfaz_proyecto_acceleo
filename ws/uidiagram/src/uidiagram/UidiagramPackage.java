@@ -256,7 +256,6 @@ public interface UidiagramPackage extends EPackage {
 	 */
 	int USER_INTERFACE_FEATURE_COUNT = 13;
 
-
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.ModelElementImpl <em>Model Element</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -800,7 +799,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__TITLE = GRAPHICAL_CONTAINER__TITLE;
+	int IFRAME__TITLE = GRAPHICAL_INDIVIDUAL__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -809,7 +808,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__POSITION_X = GRAPHICAL_CONTAINER__POSITION_X;
+	int IFRAME__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -818,7 +817,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__POSITION_Y = GRAPHICAL_CONTAINER__POSITION_Y;
+	int IFRAME__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -827,7 +826,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__WIDTH = GRAPHICAL_CONTAINER__WIDTH;
+	int IFRAME__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
@@ -836,7 +835,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__HEIGTH = GRAPHICAL_CONTAINER__HEIGTH;
+	int IFRAME__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -845,7 +844,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__BACKGROUND_COLOR = GRAPHICAL_CONTAINER__BACKGROUND_COLOR;
+	int IFRAME__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
@@ -854,7 +853,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__TITLE_FONT = GRAPHICAL_CONTAINER__TITLE_FONT;
+	int IFRAME__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
 
 	/**
 	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
@@ -863,7 +862,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__TITLE_FONT_SIZE = GRAPHICAL_CONTAINER__TITLE_FONT_SIZE;
+	int IFRAME__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Font</b></em>' attribute.
@@ -872,7 +871,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__FONT = GRAPHICAL_CONTAINER__FONT;
+	int IFRAME__FONT = GRAPHICAL_INDIVIDUAL__FONT;
 
 	/**
 	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
@@ -881,7 +880,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__TEXT_STYLE = GRAPHICAL_CONTAINER__TEXT_STYLE;
+	int IFRAME__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
 
 	/**
 	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
@@ -890,7 +889,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__TEXT_COLOR = GRAPHICAL_CONTAINER__TEXT_COLOR;
+	int IFRAME__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
@@ -899,16 +898,16 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__TEXT_SIZE = GRAPHICAL_CONTAINER__TEXT_SIZE;
+	int IFRAME__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
 
 	/**
-	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME__LST_CHILD_MODEL_ELEMENTS = GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS;
+	int IFRAME__URL = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>IFrame</em>' class.
@@ -917,7 +916,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IFRAME_FEATURE_COUNT = GRAPHICAL_CONTAINER_FEATURE_COUNT + 0;
+	int IFRAME_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.LabelImpl <em>Label</em>}' class.
@@ -1301,14 +1300,14 @@ public interface UidiagramPackage extends EPackage {
 	int BUTTON_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.SelectImpl <em>Select</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.RadioImpl <em>Radio</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.SelectImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getSelect()
+	 * @see uidiagram.impl.RadioImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getRadio()
 	 * @generated
 	 */
-	int SELECT = 11;
+	int RADIO = 11;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
@@ -1317,7 +1316,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__TITLE = GRAPHICAL_INDIVIDUAL__TITLE;
+	int RADIO__TITLE = GRAPHICAL_INDIVIDUAL__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -1326,7 +1325,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
+	int RADIO__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -1335,7 +1334,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
+	int RADIO__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -1344,7 +1343,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
+	int RADIO__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
@@ -1353,7 +1352,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int RADIO__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1362,7 +1361,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
+	int RADIO__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
@@ -1371,7 +1370,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
+	int RADIO__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
 
 	/**
 	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
@@ -1380,7 +1379,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+	int RADIO__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Font</b></em>' attribute.
@@ -1389,7 +1388,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+	int RADIO__FONT = GRAPHICAL_INDIVIDUAL__FONT;
 
 	/**
 	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
@@ -1398,7 +1397,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+	int RADIO__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
 
 	/**
 	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
@@ -1407,7 +1406,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+	int RADIO__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
@@ -1416,16 +1415,25 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
+	int RADIO__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
 
 	/**
-	 * The number of structural features of the '<em>Select</em>' class.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SELECT_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
+	int RADIO__NAME = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Radio</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RADIO_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.TableImpl <em>Table</em>}' class.
@@ -1589,7 +1597,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__TITLE = GRAPHICAL_CONTAINER__TITLE;
+	int COLUMN__TITLE = GRAPHICAL_INDIVIDUAL__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -1598,7 +1606,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__POSITION_X = GRAPHICAL_CONTAINER__POSITION_X;
+	int COLUMN__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -1607,7 +1615,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__POSITION_Y = GRAPHICAL_CONTAINER__POSITION_Y;
+	int COLUMN__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -1616,7 +1624,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__WIDTH = GRAPHICAL_CONTAINER__WIDTH;
+	int COLUMN__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
@@ -1625,7 +1633,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__HEIGTH = GRAPHICAL_CONTAINER__HEIGTH;
+	int COLUMN__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1634,7 +1642,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__BACKGROUND_COLOR = GRAPHICAL_CONTAINER__BACKGROUND_COLOR;
+	int COLUMN__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
@@ -1643,7 +1651,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__TITLE_FONT = GRAPHICAL_CONTAINER__TITLE_FONT;
+	int COLUMN__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
 
 	/**
 	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
@@ -1652,7 +1660,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__TITLE_FONT_SIZE = GRAPHICAL_CONTAINER__TITLE_FONT_SIZE;
+	int COLUMN__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Font</b></em>' attribute.
@@ -1661,7 +1669,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__FONT = GRAPHICAL_CONTAINER__FONT;
+	int COLUMN__FONT = GRAPHICAL_INDIVIDUAL__FONT;
 
 	/**
 	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
@@ -1670,7 +1678,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__TEXT_STYLE = GRAPHICAL_CONTAINER__TEXT_STYLE;
+	int COLUMN__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
 
 	/**
 	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
@@ -1679,7 +1687,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__TEXT_COLOR = GRAPHICAL_CONTAINER__TEXT_COLOR;
+	int COLUMN__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
@@ -1688,16 +1696,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__TEXT_SIZE = GRAPHICAL_CONTAINER__TEXT_SIZE;
-
-	/**
-	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLUMN__LST_CHILD_MODEL_ELEMENTS = GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS;
+	int COLUMN__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
 
 	/**
 	 * The number of structural features of the '<em>Column</em>' class.
@@ -1706,17 +1705,17 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN_FEATURE_COUNT = GRAPHICAL_CONTAINER_FEATURE_COUNT + 0;
+	int COLUMN_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.ImageViewImpl <em>Image View</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.ObjectImpl <em>Object</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.ImageViewImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getImageView()
+	 * @see uidiagram.impl.ObjectImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getObject()
 	 * @generated
 	 */
-	int IMAGE_VIEW = 14;
+	int OBJECT = 14;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
@@ -1725,7 +1724,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__TITLE = GRAPHICAL_INDIVIDUAL__TITLE;
+	int OBJECT__TITLE = GRAPHICAL_INDIVIDUAL__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -1734,7 +1733,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
+	int OBJECT__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -1743,7 +1742,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
+	int OBJECT__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -1752,7 +1751,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
+	int OBJECT__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
@@ -1761,7 +1760,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int OBJECT__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1770,7 +1769,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
+	int OBJECT__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
@@ -1779,7 +1778,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
+	int OBJECT__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
 
 	/**
 	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
@@ -1788,7 +1787,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+	int OBJECT__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Font</b></em>' attribute.
@@ -1797,7 +1796,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+	int OBJECT__FONT = GRAPHICAL_INDIVIDUAL__FONT;
 
 	/**
 	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
@@ -1806,7 +1805,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+	int OBJECT__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
 
 	/**
 	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
@@ -1815,7 +1814,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+	int OBJECT__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
@@ -1824,16 +1823,25 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
+	int OBJECT__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
 
 	/**
-	 * The number of structural features of the '<em>Image View</em>' class.
+	 * The feature id for the '<em><b>Src</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_VIEW_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
+	int OBJECT__SRC = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Object</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.BlockquoteImpl <em>Blockquote</em>}' class.
@@ -1954,23 +1962,41 @@ public interface UidiagramPackage extends EPackage {
 	int BLOCKQUOTE__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
 
 	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCKQUOTE__URL = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Contenido</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCKQUOTE__CONTENIDO = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Blockquote</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BLOCKQUOTE_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
+	int BLOCKQUOTE_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.UlImpl <em>Ul</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.SelectImpl <em>Select</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.UlImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getUl()
+	 * @see uidiagram.impl.SelectImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getSelect()
 	 * @generated
 	 */
-	int UL = 16;
+	int SELECT = 16;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
@@ -1979,7 +2005,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__TITLE = GRAPHICAL_INDIVIDUAL__TITLE;
+	int SELECT__TITLE = GRAPHICAL_CONTAINER__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -1988,7 +2014,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
+	int SELECT__POSITION_X = GRAPHICAL_CONTAINER__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -1997,7 +2023,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
+	int SELECT__POSITION_Y = GRAPHICAL_CONTAINER__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -2006,7 +2032,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
+	int SELECT__WIDTH = GRAPHICAL_CONTAINER__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
@@ -2015,7 +2041,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int SELECT__HEIGTH = GRAPHICAL_CONTAINER__HEIGTH;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -2024,7 +2050,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
+	int SELECT__BACKGROUND_COLOR = GRAPHICAL_CONTAINER__BACKGROUND_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
@@ -2033,7 +2059,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
+	int SELECT__TITLE_FONT = GRAPHICAL_CONTAINER__TITLE_FONT;
 
 	/**
 	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
@@ -2042,7 +2068,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+	int SELECT__TITLE_FONT_SIZE = GRAPHICAL_CONTAINER__TITLE_FONT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Font</b></em>' attribute.
@@ -2051,7 +2077,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+	int SELECT__FONT = GRAPHICAL_CONTAINER__FONT;
 
 	/**
 	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
@@ -2060,7 +2086,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+	int SELECT__TEXT_STYLE = GRAPHICAL_CONTAINER__TEXT_STYLE;
 
 	/**
 	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
@@ -2069,7 +2095,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+	int SELECT__TEXT_COLOR = GRAPHICAL_CONTAINER__TEXT_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
@@ -2078,16 +2104,161 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UL__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
+	int SELECT__TEXT_SIZE = GRAPHICAL_CONTAINER__TEXT_SIZE;
 
 	/**
-	 * The number of structural features of the '<em>Ul</em>' class.
+	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UL_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
+	int SELECT__LST_CHILD_MODEL_ELEMENTS = GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Lst Option</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECT__LST_OPTION = GRAPHICAL_CONTAINER_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Select</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECT_FEATURE_COUNT = GRAPHICAL_CONTAINER_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link uidiagram.impl.OptionImpl <em>Option</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see uidiagram.impl.OptionImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getOption()
+	 * @generated
+	 */
+	int OPTION = 17;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__TITLE = GRAPHICAL_INDIVIDUAL__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Position X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
+
+	/**
+	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
+
+	/**
+	 * The feature id for the '<em><b>Width</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
+
+	/**
+	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+
+	/**
+	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
+
+	/**
+	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__FONT = GRAPHICAL_INDIVIDUAL__FONT;
+
+	/**
+	 * The feature id for the '<em><b>Text Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__TEXT_STYLE = GRAPHICAL_INDIVIDUAL__TEXT_STYLE;
+
+	/**
+	 * The feature id for the '<em><b>Text Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__TEXT_COLOR = GRAPHICAL_INDIVIDUAL__TEXT_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Text Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION__TEXT_SIZE = GRAPHICAL_INDIVIDUAL__TEXT_SIZE;
+
+	/**
+	 * The number of structural features of the '<em>Option</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 
 	/**
@@ -2490,6 +2661,17 @@ public interface UidiagramPackage extends EPackage {
 	EClass getIFrame();
 
 	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.IFrame#getUrl <em>Url</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Url</em>'.
+	 * @see uidiagram.IFrame#getUrl()
+	 * @see #getIFrame()
+	 * @generated
+	 */
+	EAttribute getIFrame_Url();
+
+	/**
 	 * Returns the meta object for class '{@link uidiagram.Label <em>Label</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2520,14 +2702,25 @@ public interface UidiagramPackage extends EPackage {
 	EClass getButton();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.Select <em>Select</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.Radio <em>Radio</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Select</em>'.
-	 * @see uidiagram.Select
+	 * @return the meta object for class '<em>Radio</em>'.
+	 * @see uidiagram.Radio
 	 * @generated
 	 */
-	EClass getSelect();
+	EClass getRadio();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.Radio#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see uidiagram.Radio#getName()
+	 * @see #getRadio()
+	 * @generated
+	 */
+	EAttribute getRadio_Name();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.Table <em>Table</em>}'.
@@ -2561,14 +2754,25 @@ public interface UidiagramPackage extends EPackage {
 	EClass getColumn();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.ImageView <em>Image View</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.Object <em>Object</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Image View</em>'.
-	 * @see uidiagram.ImageView
+	 * @return the meta object for class '<em>Object</em>'.
+	 * @see uidiagram.Object
 	 * @generated
 	 */
-	EClass getImageView();
+	EClass getObject();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.Object#getSrc <em>Src</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Src</em>'.
+	 * @see uidiagram.Object#getSrc()
+	 * @see #getObject()
+	 * @generated
+	 */
+	EAttribute getObject_Src();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.Blockquote <em>Blockquote</em>}'.
@@ -2581,14 +2785,57 @@ public interface UidiagramPackage extends EPackage {
 	EClass getBlockquote();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.Ul <em>Ul</em>}'.
+	 * Returns the meta object for the attribute '{@link uidiagram.Blockquote#getUrl <em>Url</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ul</em>'.
-	 * @see uidiagram.Ul
+	 * @return the meta object for the attribute '<em>Url</em>'.
+	 * @see uidiagram.Blockquote#getUrl()
+	 * @see #getBlockquote()
 	 * @generated
 	 */
-	EClass getUl();
+	EAttribute getBlockquote_Url();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.Blockquote#getContenido <em>Contenido</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Contenido</em>'.
+	 * @see uidiagram.Blockquote#getContenido()
+	 * @see #getBlockquote()
+	 * @generated
+	 */
+	EAttribute getBlockquote_Contenido();
+
+	/**
+	 * Returns the meta object for class '{@link uidiagram.Select <em>Select</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Select</em>'.
+	 * @see uidiagram.Select
+	 * @generated
+	 */
+	EClass getSelect();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link uidiagram.Select#getLstOption <em>Lst Option</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Lst Option</em>'.
+	 * @see uidiagram.Select#getLstOption()
+	 * @see #getSelect()
+	 * @generated
+	 */
+	EReference getSelect_LstOption();
+
+	/**
+	 * Returns the meta object for class '{@link uidiagram.Option <em>Option</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Option</em>'.
+	 * @see uidiagram.Option
+	 * @generated
+	 */
+	EClass getOption();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2925,6 +3172,14 @@ public interface UidiagramPackage extends EPackage {
 		EClass IFRAME = eINSTANCE.getIFrame();
 
 		/**
+		 * The meta object literal for the '<em><b>Url</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IFRAME__URL = eINSTANCE.getIFrame_Url();
+
+		/**
 		 * The meta object literal for the '{@link uidiagram.impl.LabelImpl <em>Label</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2955,14 +3210,22 @@ public interface UidiagramPackage extends EPackage {
 		EClass BUTTON = eINSTANCE.getButton();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.SelectImpl <em>Select</em>}' class.
+		 * The meta object literal for the '{@link uidiagram.impl.RadioImpl <em>Radio</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.SelectImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getSelect()
+		 * @see uidiagram.impl.RadioImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getRadio()
 		 * @generated
 		 */
-		EClass SELECT = eINSTANCE.getSelect();
+		EClass RADIO = eINSTANCE.getRadio();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RADIO__NAME = eINSTANCE.getRadio_Name();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.TableImpl <em>Table</em>}' class.
@@ -2993,14 +3256,22 @@ public interface UidiagramPackage extends EPackage {
 		EClass COLUMN = eINSTANCE.getColumn();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.ImageViewImpl <em>Image View</em>}' class.
+		 * The meta object literal for the '{@link uidiagram.impl.ObjectImpl <em>Object</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.ImageViewImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getImageView()
+		 * @see uidiagram.impl.ObjectImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getObject()
 		 * @generated
 		 */
-		EClass IMAGE_VIEW = eINSTANCE.getImageView();
+		EClass OBJECT = eINSTANCE.getObject();
+
+		/**
+		 * The meta object literal for the '<em><b>Src</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT__SRC = eINSTANCE.getObject_Src();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.BlockquoteImpl <em>Blockquote</em>}' class.
@@ -3013,14 +3284,48 @@ public interface UidiagramPackage extends EPackage {
 		EClass BLOCKQUOTE = eINSTANCE.getBlockquote();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.UlImpl <em>Ul</em>}' class.
+		 * The meta object literal for the '<em><b>Url</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.UlImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getUl()
 		 * @generated
 		 */
-		EClass UL = eINSTANCE.getUl();
+		EAttribute BLOCKQUOTE__URL = eINSTANCE.getBlockquote_Url();
+
+		/**
+		 * The meta object literal for the '<em><b>Contenido</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCKQUOTE__CONTENIDO = eINSTANCE.getBlockquote_Contenido();
+
+		/**
+		 * The meta object literal for the '{@link uidiagram.impl.SelectImpl <em>Select</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see uidiagram.impl.SelectImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getSelect()
+		 * @generated
+		 */
+		EClass SELECT = eINSTANCE.getSelect();
+
+		/**
+		 * The meta object literal for the '<em><b>Lst Option</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SELECT__LST_OPTION = eINSTANCE.getSelect_LstOption();
+
+		/**
+		 * The meta object literal for the '{@link uidiagram.impl.OptionImpl <em>Option</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see uidiagram.impl.OptionImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getOption()
+		 * @generated
+		 */
+		EClass OPTION = eINSTANCE.getOption();
 
 	}
 

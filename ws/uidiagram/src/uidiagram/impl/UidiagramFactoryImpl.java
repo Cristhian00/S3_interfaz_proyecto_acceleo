@@ -10,7 +10,21 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
-import uidiagram.*;
+import uidiagram.Blockquote;
+import uidiagram.Button;
+import uidiagram.Column;
+import uidiagram.IFrame;
+import uidiagram.Input;
+import uidiagram.Label;
+import uidiagram.ModelFactory;
+import uidiagram.Option;
+import uidiagram.Radio;
+import uidiagram.Select;
+import uidiagram.Table;
+import uidiagram.UI_Diagram;
+import uidiagram.UidiagramFactory;
+import uidiagram.UidiagramPackage;
+import uidiagram.UserInterface;
 
 /**
  * <!-- begin-user-doc -->
@@ -64,12 +78,13 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 			case UidiagramPackage.LABEL: return createLabel();
 			case UidiagramPackage.INPUT: return createInput();
 			case UidiagramPackage.BUTTON: return createButton();
-			case UidiagramPackage.SELECT: return createSelect();
+			case UidiagramPackage.RADIO: return createRadio();
 			case UidiagramPackage.TABLE: return createTable();
 			case UidiagramPackage.COLUMN: return createColumn();
-			case UidiagramPackage.IMAGE_VIEW: return createImageView();
+			case UidiagramPackage.OBJECT: return createObject();
 			case UidiagramPackage.BLOCKQUOTE: return createBlockquote();
-			case UidiagramPackage.UL: return createUl();
+			case UidiagramPackage.SELECT: return createSelect();
+			case UidiagramPackage.OPTION: return createOption();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -160,9 +175,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Select createSelect() {
-		SelectImpl select = new SelectImpl();
-		return select;
+	public Radio createRadio() {
+		RadioImpl radio = new RadioImpl();
+		return radio;
 	}
 
 	/**
@@ -190,9 +205,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ImageView createImageView() {
-		ImageViewImpl imageView = new ImageViewImpl();
-		return imageView;
+	public uidiagram.Object createObject() {
+		ObjectImpl object = new ObjectImpl();
+		return object;
 	}
 
 	/**
@@ -210,9 +225,19 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Ul createUl() {
-		UlImpl ul = new UlImpl();
-		return ul;
+	public Select createSelect() {
+		SelectImpl select = new SelectImpl();
+		return select;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Option createOption() {
+		OptionImpl option = new OptionImpl();
+		return option;
 	}
 
 	/**

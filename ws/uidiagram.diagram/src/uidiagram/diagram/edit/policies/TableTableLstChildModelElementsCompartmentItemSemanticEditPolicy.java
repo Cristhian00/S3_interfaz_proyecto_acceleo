@@ -11,12 +11,13 @@ import uidiagram.diagram.edit.commands.ButtonCreateCommand;
 import uidiagram.diagram.edit.commands.ColumnCreateCommand;
 import uidiagram.diagram.edit.commands.Container2CreateCommand;
 import uidiagram.diagram.edit.commands.IFrameCreateCommand;
-import uidiagram.diagram.edit.commands.ImageViewCreateCommand;
 import uidiagram.diagram.edit.commands.InputCreateCommand;
 import uidiagram.diagram.edit.commands.LabelCreateCommand;
+import uidiagram.diagram.edit.commands.ObjectCreateCommand;
+import uidiagram.diagram.edit.commands.OptionCreateCommand;
+import uidiagram.diagram.edit.commands.RadioCreateCommand;
 import uidiagram.diagram.edit.commands.SelectCreateCommand;
 import uidiagram.diagram.edit.commands.TableCreateCommand;
-import uidiagram.diagram.edit.commands.UlCreateCommand;
 import uidiagram.diagram.providers.UidiagramElementTypes;
 
 /**
@@ -51,8 +52,8 @@ public class TableTableLstChildModelElementsCompartmentItemSemanticEditPolicy
 		if (UidiagramElementTypes.Button_3006 == req.getElementType()) {
 			return getGEFWrapper(new ButtonCreateCommand(req));
 		}
-		if (UidiagramElementTypes.Select_3007 == req.getElementType()) {
-			return getGEFWrapper(new SelectCreateCommand(req));
+		if (UidiagramElementTypes.Radio_3023 == req.getElementType()) {
+			return getGEFWrapper(new RadioCreateCommand(req));
 		}
 		if (UidiagramElementTypes.Table_3008 == req.getElementType()) {
 			return getGEFWrapper(new TableCreateCommand(req));
@@ -60,14 +61,17 @@ public class TableTableLstChildModelElementsCompartmentItemSemanticEditPolicy
 		if (UidiagramElementTypes.Column_3021 == req.getElementType()) {
 			return getGEFWrapper(new ColumnCreateCommand(req));
 		}
-		if (UidiagramElementTypes.ImageView_3009 == req.getElementType()) {
-			return getGEFWrapper(new ImageViewCreateCommand(req));
+		if (UidiagramElementTypes.Object_3024 == req.getElementType()) {
+			return getGEFWrapper(new ObjectCreateCommand(req));
 		}
 		if (UidiagramElementTypes.Blockquote_3010 == req.getElementType()) {
 			return getGEFWrapper(new BlockquoteCreateCommand(req));
 		}
-		if (UidiagramElementTypes.Ul_3011 == req.getElementType()) {
-			return getGEFWrapper(new UlCreateCommand(req));
+		if (UidiagramElementTypes.Select_3007 == req.getElementType()) {
+			return getGEFWrapper(new SelectCreateCommand(req));
+		}
+		if (UidiagramElementTypes.Option_3025 == req.getElementType()) {
+			return getGEFWrapper(new OptionCreateCommand(req));
 		}
 		return super.getCreateCommand(req);
 	}

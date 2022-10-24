@@ -4,39 +4,235 @@
  */]
 [module generate('http://uidiagram')]
 
-
 [**
  * The documentation of the template generateElement.
  * @param anUserInterface
  */]
 [template public generateElement(anUserInterface : UserInterface)]
 [comment @main/]
-[file (anUserInterface.title +'.html', false, 'UTF-8')]
+[file (anUserInterface.title.replace(' ', '').trim()+'.html', false, 'UTF-8')]
+<!DOCTYPE html>
+<html lang="en">
 
-<form action="action_page.php">
-  <div class="container">
-    <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+		*, *:before, *:after {
+ 			box-sizing: border-box;
+		}
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+		table, th, td {
+  			border: 1px solid black;
+		}
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+		label, input, button, select, blockquote, iframe, object, select {
+			position: absolute;
+		}
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <hr>
+		label {
+			font-size: 15px;
+		}
 
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Register</button>
-  </div>
+		caption {
+   			padding: 0.2em;
+		}
 
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
-</form>
+		body {
+  			min-height: 100vh;
+  			font-family: "Raleway", sans-serif;
+		}
 
+		.container {
+  			position: absolute;
+			border: 2px outset black;
+			background:#FFFFF7
+		}
+
+		.center {
+			position: absolute;
+			height: 550px;
+			margin-left: -200px;
+			margin-top: -200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 30px;
+			transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+			transition-delay: 0s;
+			color: #333;
+		}
+
+		.center {
+			width: 100%;
+			padding: 15px;
+			margin: 5px;
+			border-radius: 1px;
+			border: 1px outset red;
+			font-family: inherit;
+		}
+
+		.btn {
+			background: #eb94d0;
+			background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+			background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+			background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+			background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+			background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+			-webkit-border-radius: 28;
+			  -moz-border-radius: 28;
+			  border-radius: 28px;
+			text-shadow: 3px 2px 1px #9daef5;
+			  -webkit-box-shadow: 6px 5px 24px #666666;
+			  -moz-box-shadow: 6px 5px 24px #666666;
+			  box-shadow: 6px 5px 24px #666666;
+			font-family: Arial;
+			  color: #fafafa;
+			  font-size: 20px;
+			  text-decoration: none;
+		}
+
+		.btn:hover {
+			background: #2079b0;
+			background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+			background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+			background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+			background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+			background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+			text-decoration: none;
+		}
+
+		body{
+			background:#EBFFF7
+		}
+
+		input {
+			box-sizing:border-box;
+			background:none;
+			outline:none;
+			resize:none;
+			border:0;
+			font-family:'Montserrat',sans-serif;
+			transition:all .3s;
+			border-bottom:2px solid #bebed2
+		}
+
+		input:focus {
+			border-bottom:2px solid #78788c
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center">
+		[generateCodeWidgets(anUserInterface)/]
+	</div>
+</body>
+
+</html>
 [/file]
+[/template]
+
+[template public generateCodeWidgets(anUserInterface : UserInterface)]
+[for(widget : ModelElement | lstModelElements)]
+	[if (widget.oclIsKindOf(GraphicalIndividual))]
+		[generateIndividualElement(widget)/]
+	[/if]
+	[if (widget.oclIsKindOf(GraphicalContainer))]
+		[generateGraphicalContainer(widget)/]
+	[/if]
+[/for]
+[/template]
+
+[template public generateGraphicalContainer(anGraphicalContainer : ModelElement)]
+[if (anGraphicalContainer.oclIsKindOf(Container)) ]
+    <div style="top: [anGraphicalContainer.positionY/]px; left: [anGraphicalContainer.positionX/]px; 
+		width: [anGraphicalContainer.width/]px; height: [anGraphicalContainer.heigth/]px" class="container">
+	[for (widget : ModelElement | anGraphicalContainer.oclAsType(Container).lstChildModelElements)]
+		[if (widget.oclIsKindOf(GraphicalIndividual))]
+		[generateIndividualElement(widget)/]
+	[/if]
+	[if (widget.oclIsKindOf(GraphicalContainer))]
+		[generateGraphicalContainer(widget)/]
+	[/if]
+	[/for]
+    </div>
+[/if]
+[if (anGraphicalContainer.oclIsKindOf(Table))]
+	<table style="border: 1px solid black">
+		<tr>
+		[for (column : ModelElement | anGraphicalContainer.oclAsType(Table).lstColumns)]
+			<th>[column.title/]</th>
+		[/for]
+		</tr>
+	</table>
+[/if]
+[if (anGraphicalContainer.oclIsKindOf(Select))]
+    <select id="[anGraphicalContainer.title/]" style="top: [anGraphicalContainer.positionY/]px; left: [anGraphicalContainer.positionX/]px
+	width: [anGraphicalContainer.width/]px">
+		[for (option : ModelElement | anGraphicalContainer.oclAsType(Select).lstOption)]
+			<option value="[option.title/]">[option.title/]</option>
+		[/for]
+	</select>
+[/if]
+[/template]
+
+[template public generateIndividualElement(anIndividualElement : ModelElement)]
+[if (anIndividualElement.oclIsKindOf(Label))]
+	[comment <label for="[anIndividualElement.title">[anIndividualElement.title</label>/]
+	<label style="top: [anIndividualElement.positionY/]px; left: [anIndividualElement.positionX/]px; 
+		width: [anIndividualElement.width/]px; height: [anIndividualElement.heigth/]px; margin-top: 5px" 
+		for="[anIndividualElement.title/]">[anIndividualElement.title/]
+	</label>
+  
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(Input))]
+	[comment <input type="[anIndividualElement.title" placeholder="[anIndividualElement.title"></input>/]
+    <input style="top: [anIndividualElement.positionY/]px; left: [anIndividualElement.positionX/]px; 
+		width: [anIndividualElement.width/]px; height: [anIndividualElement.heigth/]px; margin-top: 5px" 
+		type="text" id="f[anIndividualElement.title/]" for="[anIndividualElement.title/]"
+	placeholder="[anIndividualElement.title/]">
+	</input>
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(Radio))]
+	<form>
+
+	</form>
+    <label style="top: [anIndividualElement.positionY/]px; left: [anIndividualElement.positionX/]px; 
+		width: [anIndividualElement.width/]px; height: [anIndividualElement.heigth/]px; margin-top: 5px" 
+		for="[anIndividualElement.title/]">[anIndividualElement.title/]
+	</label>
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(Button))]
+    <button class="btn" style="top: [anIndividualElement.positionY/]px; left: [anIndividualElement.positionX/]px; 
+		width: [anIndividualElement.width/]px; height: [anIndividualElement.heigth/]px; margin-top: 5px" type="button">[anIndividualElement.title/]</button>
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(Object))]
+	<object data="img.jgp" width="[anIndividualElement.width/]px" height="[anIndividualElement.heigth/]px"
+	style="top: [anIndividualElement.positionY/]px; left: [anIndividualElement.positionX/]px; 
+	width: [anIndividualElement.width/]px; height: [anIndividualElement.heigth/]px"></object>
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(IFrame))]
+	<iframe src="https://www.w3schools.com" title="[anIndividualElement.title/]" 
+	style="top: [anIndividualElement.positionY/]px; left: [anIndividualElement.positionX/]px; width: [anIndividualElement.width/]px; 
+	height: [anIndividualElement.heigth/]px"></iframe>
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(Blockquote))]
+    <blockquote cite="http://www.worldwildlife.org/who/index.html" style="top: [anIndividualElement.positionY/]px; 
+	left: [anIndividualElement.positionX/]px; width: [anIndividualElement.width/]px; 
+	height: [anIndividualElement.heigth/]px">
+		For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, 
+		WWF works in 100 countries and is supported by 1.2 
+	</blockquote>
+[/if]
 [/template]

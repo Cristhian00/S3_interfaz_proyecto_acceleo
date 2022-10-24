@@ -106,7 +106,7 @@ public class UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart exten
 			if (type == UidiagramElementTypes.Button_3015) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.Select_3016) {
+			if (type == UidiagramElementTypes.Radio_3026) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.Table_3017) {
@@ -115,13 +115,16 @@ public class UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart exten
 			if (type == UidiagramElementTypes.Column_3022) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.ImageView_3018) {
+			if (type == UidiagramElementTypes.Object_3027) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.Blockquote_3019) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.Ul_3020) {
+			if (type == UidiagramElementTypes.Select_3016) {
+				return this;
+			}
+			if (type == UidiagramElementTypes.Option_3028) {
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

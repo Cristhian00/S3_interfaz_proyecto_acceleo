@@ -61,10 +61,11 @@
       <details key="label" value="title"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="IFrame" eSuperTypes="#//GraphicalContainer">
+  <eClassifiers xsi:type="ecore:EClass" name="IFrame" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
       <details key="label" value="title"/>
     </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Label" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
@@ -85,34 +86,49 @@
       <details key="label.icon" value="false"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Select" eSuperTypes="#//GraphicalIndividual">
+  <eClassifiers xsi:type="ecore:EClass" name="Radio" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
       <details key="label" value="title"/>
     </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Table" eSuperTypes="#//GraphicalContainer">
     <eAnnotations source="gmf.node">
       <details key="label" value="title"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstColumns" upperBound="-1"
-        eType="#//Column" containment="true"/>
+        eType="#//Column" containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Column" eSuperTypes="#//GraphicalContainer">
+  <eClassifiers xsi:type="ecore:EClass" name="Column" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
       <details key="label" value="title"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ImageView" eSuperTypes="#//GraphicalIndividual">
+  <eClassifiers xsi:type="ecore:EClass" name="Object" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
       <details key="label" value="title"/>
     </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="src" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Blockquote" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
       <details key="label" value="title"/>
     </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contenido" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Ul" eSuperTypes="#//GraphicalIndividual">
+  <eClassifiers xsi:type="ecore:EClass" name="Select" eSuperTypes="#//GraphicalContainer">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="title"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstOption" upperBound="-1"
+        eType="#//Option" containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Option" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
       <details key="label" value="title"/>
     </eAnnotations>

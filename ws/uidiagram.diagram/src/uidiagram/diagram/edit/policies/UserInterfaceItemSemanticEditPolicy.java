@@ -4,6 +4,7 @@
 package uidiagram.diagram.edit.policies;
 
 import java.util.Iterator;
+
 import org.eclipse.emf.ecore.EAnnotation;
 import org.eclipse.gef.commands.Command;
 import org.eclipse.gmf.runtime.common.core.command.ICompositeCommand;
@@ -17,14 +18,17 @@ import org.eclipse.gmf.runtime.notation.View;
 import uidiagram.diagram.edit.parts.Blockquote2EditPart;
 import uidiagram.diagram.edit.parts.Button2EditPart;
 import uidiagram.diagram.edit.parts.Column2EditPart;
+import uidiagram.diagram.edit.parts.Column3EditPart;
 import uidiagram.diagram.edit.parts.ContainerEditPart;
 import uidiagram.diagram.edit.parts.IFrame2EditPart;
-import uidiagram.diagram.edit.parts.ImageView2EditPart;
 import uidiagram.diagram.edit.parts.Input2EditPart;
 import uidiagram.diagram.edit.parts.Label2EditPart;
+import uidiagram.diagram.edit.parts.Object2EditPart;
+import uidiagram.diagram.edit.parts.Option2EditPart;
+import uidiagram.diagram.edit.parts.Option3EditPart;
+import uidiagram.diagram.edit.parts.Radio2EditPart;
 import uidiagram.diagram.edit.parts.Select2EditPart;
 import uidiagram.diagram.edit.parts.Table2EditPart;
-import uidiagram.diagram.edit.parts.Ul2EditPart;
 import uidiagram.diagram.edit.parts.UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
 import uidiagram.diagram.providers.UidiagramElementTypes;
@@ -103,7 +107,7 @@ public class UserInterfaceItemSemanticEditPolicy extends UidiagramBaseItemSemant
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case Select2EditPart.VISUAL_ID:
+					case Radio2EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
@@ -115,13 +119,13 @@ public class UserInterfaceItemSemanticEditPolicy extends UidiagramBaseItemSemant
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case Column2EditPart.VISUAL_ID:
+					case Column3EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case ImageView2EditPart.VISUAL_ID:
+					case Object2EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
@@ -133,7 +137,13 @@ public class UserInterfaceItemSemanticEditPolicy extends UidiagramBaseItemSemant
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case Ul2EditPart.VISUAL_ID:
+					case Select2EditPart.VISUAL_ID:
+						cmd.add(new DestroyElementCommand(
+								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
+						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
+						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
+						break;
+					case Option3EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 

@@ -253,13 +253,13 @@ public class Button2EditPart extends ShapeNodeEditPart {
 	public class ButtonFigure extends RoundedRectangle {
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private WrappingLabel fFigureButtonLabelFigure;
 
 		/**
-			 * @generated
-			 */
+		 * @generated
+		 */
 		public ButtonFigure() {
 			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8), getMapMode().DPtoLP(8)));
 			this.setBorder(new MarginBorder(getMapMode().DPtoLP(5), getMapMode().DPtoLP(5), getMapMode().DPtoLP(5),
@@ -268,8 +268,8 @@ public class Button2EditPart extends ShapeNodeEditPart {
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private void createContents() {
 
 			fFigureButtonLabelFigure = new WrappingLabel();
@@ -281,8 +281,8 @@ public class Button2EditPart extends ShapeNodeEditPart {
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		public WrappingLabel getFigureButtonLabelFigure() {
 			return fFigureButtonLabelFigure;
 		}

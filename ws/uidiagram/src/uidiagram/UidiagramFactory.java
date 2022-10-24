@@ -94,13 +94,13 @@ public interface UidiagramFactory extends EFactory {
 	Button createButton();
 
 	/**
-	 * Returns a new object of class '<em>Select</em>'.
+	 * Returns a new object of class '<em>Radio</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Select</em>'.
+	 * @return a new object of class '<em>Radio</em>'.
 	 * @generated
 	 */
-	Select createSelect();
+	Radio createRadio();
 
 	/**
 	 * Returns a new object of class '<em>Table</em>'.
@@ -121,13 +121,13 @@ public interface UidiagramFactory extends EFactory {
 	Column createColumn();
 
 	/**
-	 * Returns a new object of class '<em>Image View</em>'.
+	 * Returns a new object of class '<em>Object</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Image View</em>'.
+	 * @return a new object of class '<em>Object</em>'.
 	 * @generated
 	 */
-	ImageView createImageView();
+	Object createObject();
 
 	/**
 	 * Returns a new object of class '<em>Blockquote</em>'.
@@ -139,13 +139,22 @@ public interface UidiagramFactory extends EFactory {
 	Blockquote createBlockquote();
 
 	/**
-	 * Returns a new object of class '<em>Ul</em>'.
+	 * Returns a new object of class '<em>Select</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ul</em>'.
+	 * @return a new object of class '<em>Select</em>'.
 	 * @generated
 	 */
-	Ul createUl();
+	Select createSelect();
+
+	/**
+	 * Returns a new object of class '<em>Option</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Option</em>'.
+	 * @generated
+	 */
+	Option createOption();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -4,7 +4,6 @@ package uidiagram;
 
 import org.eclipse.emf.common.util.EList;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Table</b></em>'.
@@ -22,7 +21,6 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface Table extends GraphicalContainer {
-
 	/**
 	 * Returns the value of the '<em><b>Lst Columns</b></em>' containment reference list.
 	 * The list contents are of type {@link uidiagram.Column}.
@@ -38,4 +36,5 @@ public interface Table extends GraphicalContainer {
 	 * @generated
 	 */
 	EList<Column> getLstColumns();
+
 } // Table

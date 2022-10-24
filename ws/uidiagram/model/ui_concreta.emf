@@ -63,8 +63,8 @@ class Container extends GraphicalContainer {
 }
 
 @gmf.node(label = "title")
-class IFrame extends GraphicalContainer {
-	
+class IFrame extends GraphicalIndividual {
+	attr String url;
 }
 
 
@@ -84,31 +84,39 @@ class Button extends GraphicalIndividual {
 }
 
 @gmf.node(label = "title")
-class Select extends GraphicalIndividual {
-	
+class Radio extends GraphicalIndividual {
+	attr String name;
 }
 
 @gmf.node( label= "title" )
 class Table extends GraphicalContainer {
+	@gmf.compartment
 	val Column[*] lstColumns;
 }
 
 @gmf.node( label= "title" )
-class Column extends GraphicalContainer {
+class Column extends GraphicalIndividual {
 	
 }
 
 @gmf.node(label = "title")
-class ImageView extends GraphicalIndividual {
-	
+class Object extends GraphicalIndividual {
+	attr String src;
 }
 
 @gmf.node(label = "title")
 class Blockquote extends GraphicalIndividual {
-	
+	attr String url;
+	attr String contenido;
 }
 
 @gmf.node( label = "title")
-class Ul extends GraphicalIndividual {
+class Select extends GraphicalContainer {
+	@gmf.compartment
+	val Option[*] lstOption;
+}
+
+@gmf.node( label= "title" )
+class Option extends GraphicalIndividual {
 	
 }

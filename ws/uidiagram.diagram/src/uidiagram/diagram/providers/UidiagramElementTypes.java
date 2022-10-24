@@ -23,24 +23,28 @@ import uidiagram.diagram.edit.parts.BlockquoteEditPart;
 import uidiagram.diagram.edit.parts.Button2EditPart;
 import uidiagram.diagram.edit.parts.ButtonEditPart;
 import uidiagram.diagram.edit.parts.Column2EditPart;
+import uidiagram.diagram.edit.parts.Column3EditPart;
 import uidiagram.diagram.edit.parts.ColumnEditPart;
 import uidiagram.diagram.edit.parts.Container2EditPart;
 import uidiagram.diagram.edit.parts.ContainerEditPart;
 import uidiagram.diagram.edit.parts.IFrame2EditPart;
 import uidiagram.diagram.edit.parts.IFrameEditPart;
-import uidiagram.diagram.edit.parts.ImageView2EditPart;
-import uidiagram.diagram.edit.parts.ImageViewEditPart;
 import uidiagram.diagram.edit.parts.Input2EditPart;
 import uidiagram.diagram.edit.parts.InputEditPart;
 import uidiagram.diagram.edit.parts.Label2EditPart;
 import uidiagram.diagram.edit.parts.LabelEditPart;
+import uidiagram.diagram.edit.parts.Object2EditPart;
+import uidiagram.diagram.edit.parts.ObjectEditPart;
+import uidiagram.diagram.edit.parts.Option2EditPart;
+import uidiagram.diagram.edit.parts.Option3EditPart;
+import uidiagram.diagram.edit.parts.OptionEditPart;
+import uidiagram.diagram.edit.parts.Radio2EditPart;
+import uidiagram.diagram.edit.parts.RadioEditPart;
 import uidiagram.diagram.edit.parts.Select2EditPart;
 import uidiagram.diagram.edit.parts.SelectEditPart;
 import uidiagram.diagram.edit.parts.Table2EditPart;
 import uidiagram.diagram.edit.parts.TableEditPart;
 import uidiagram.diagram.edit.parts.UI_DiagramEditPart;
-import uidiagram.diagram.edit.parts.Ul2EditPart;
-import uidiagram.diagram.edit.parts.UlEditPart;
 import uidiagram.diagram.edit.parts.UserInterfaceEditPart;
 import uidiagram.diagram.part.UidiagramDiagramEditorPlugin;
 
@@ -79,116 +83,112 @@ public class UidiagramElementTypes {
 	* @generated
 	*/
 	public static final IElementType UserInterface_2001 = getElementType("uidiagram.diagram.UserInterface_2001"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType Container_3001 = getElementType("uidiagram.diagram.Container_3001"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType Container_3002 = getElementType("uidiagram.diagram.Container_3002"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType IFrame_3003 = getElementType("uidiagram.diagram.IFrame_3003"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType Label_3004 = getElementType("uidiagram.diagram.Label_3004"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType Input_3005 = getElementType("uidiagram.diagram.Input_3005"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType Button_3006 = getElementType("uidiagram.diagram.Button_3006"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
-	public static final IElementType Select_3007 = getElementType("uidiagram.diagram.Select_3007"); //$NON-NLS-1$
-
+	public static final IElementType Radio_3023 = getElementType("uidiagram.diagram.Radio_3023"); //$NON-NLS-1$
 	/**
 	* @generated
 	*/
 	public static final IElementType Table_3008 = getElementType("uidiagram.diagram.Table_3008"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType Column_3021 = getElementType("uidiagram.diagram.Column_3021"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
-	public static final IElementType ImageView_3009 = getElementType("uidiagram.diagram.ImageView_3009"); //$NON-NLS-1$
-
+	public static final IElementType Object_3024 = getElementType("uidiagram.diagram.Object_3024"); //$NON-NLS-1$
 	/**
 	* @generated
 	*/
 	public static final IElementType Blockquote_3010 = getElementType("uidiagram.diagram.Blockquote_3010"); //$NON-NLS-1$
+	/**
+	* @generated
+	*/
+	public static final IElementType Select_3007 = getElementType("uidiagram.diagram.Select_3007"); //$NON-NLS-1$
+	/**
+	* @generated
+	*/
+	public static final IElementType Option_3025 = getElementType("uidiagram.diagram.Option_3025"); //$NON-NLS-1$
+	/**
+	* @generated
+	*/
+	public static final IElementType Option_3029 = getElementType("uidiagram.diagram.Option_3029"); //$NON-NLS-1$
 
 	/**
 	* @generated
 	*/
-	public static final IElementType Ul_3011 = getElementType("uidiagram.diagram.Ul_3011"); //$NON-NLS-1$
+	public static final IElementType Column_3030 = getElementType("uidiagram.diagram.Column_3030"); //$NON-NLS-1$
 
 	/**
 	* @generated
 	*/
 	public static final IElementType IFrame_3012 = getElementType("uidiagram.diagram.IFrame_3012"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType Label_3013 = getElementType("uidiagram.diagram.Label_3013"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType Input_3014 = getElementType("uidiagram.diagram.Input_3014"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType Button_3015 = getElementType("uidiagram.diagram.Button_3015"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
-	public static final IElementType Select_3016 = getElementType("uidiagram.diagram.Select_3016"); //$NON-NLS-1$
-
+	public static final IElementType Radio_3026 = getElementType("uidiagram.diagram.Radio_3026"); //$NON-NLS-1$
 	/**
 	* @generated
 	*/
 	public static final IElementType Table_3017 = getElementType("uidiagram.diagram.Table_3017"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
 	public static final IElementType Column_3022 = getElementType("uidiagram.diagram.Column_3022"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
-	public static final IElementType ImageView_3018 = getElementType("uidiagram.diagram.ImageView_3018"); //$NON-NLS-1$
-
+	public static final IElementType Object_3027 = getElementType("uidiagram.diagram.Object_3027"); //$NON-NLS-1$
 	/**
 	* @generated
 	*/
 	public static final IElementType Blockquote_3019 = getElementType("uidiagram.diagram.Blockquote_3019"); //$NON-NLS-1$
-
 	/**
 	* @generated
 	*/
-	public static final IElementType Ul_3020 = getElementType("uidiagram.diagram.Ul_3020"); //$NON-NLS-1$
+	public static final IElementType Select_3016 = getElementType("uidiagram.diagram.Select_3016"); //$NON-NLS-1$
+	/**
+	* @generated
+	*/
+	public static final IElementType Option_3028 = getElementType("uidiagram.diagram.Option_3028"); //$NON-NLS-1$
 
 	/**
 	* @generated
@@ -244,17 +244,23 @@ public class UidiagramElementTypes {
 
 			elements.put(Button_3006, UidiagramPackage.eINSTANCE.getButton());
 
-			elements.put(Select_3007, UidiagramPackage.eINSTANCE.getSelect());
+			elements.put(Radio_3023, UidiagramPackage.eINSTANCE.getRadio());
 
 			elements.put(Table_3008, UidiagramPackage.eINSTANCE.getTable());
 
 			elements.put(Column_3021, UidiagramPackage.eINSTANCE.getColumn());
 
-			elements.put(ImageView_3009, UidiagramPackage.eINSTANCE.getImageView());
+			elements.put(Object_3024, UidiagramPackage.eINSTANCE.getObject());
 
 			elements.put(Blockquote_3010, UidiagramPackage.eINSTANCE.getBlockquote());
 
-			elements.put(Ul_3011, UidiagramPackage.eINSTANCE.getUl());
+			elements.put(Select_3007, UidiagramPackage.eINSTANCE.getSelect());
+
+			elements.put(Option_3025, UidiagramPackage.eINSTANCE.getOption());
+
+			elements.put(Option_3029, UidiagramPackage.eINSTANCE.getOption());
+
+			elements.put(Column_3030, UidiagramPackage.eINSTANCE.getColumn());
 
 			elements.put(IFrame_3012, UidiagramPackage.eINSTANCE.getIFrame());
 
@@ -264,17 +270,19 @@ public class UidiagramElementTypes {
 
 			elements.put(Button_3015, UidiagramPackage.eINSTANCE.getButton());
 
-			elements.put(Select_3016, UidiagramPackage.eINSTANCE.getSelect());
+			elements.put(Radio_3026, UidiagramPackage.eINSTANCE.getRadio());
 
 			elements.put(Table_3017, UidiagramPackage.eINSTANCE.getTable());
 
 			elements.put(Column_3022, UidiagramPackage.eINSTANCE.getColumn());
 
-			elements.put(ImageView_3018, UidiagramPackage.eINSTANCE.getImageView());
+			elements.put(Object_3027, UidiagramPackage.eINSTANCE.getObject());
 
 			elements.put(Blockquote_3019, UidiagramPackage.eINSTANCE.getBlockquote());
 
-			elements.put(Ul_3020, UidiagramPackage.eINSTANCE.getUl());
+			elements.put(Select_3016, UidiagramPackage.eINSTANCE.getSelect());
+
+			elements.put(Option_3028, UidiagramPackage.eINSTANCE.getOption());
 		}
 		return (ENamedElement) elements.get(type);
 	}
@@ -300,22 +308,26 @@ public class UidiagramElementTypes {
 			KNOWN_ELEMENT_TYPES.add(Label_3004);
 			KNOWN_ELEMENT_TYPES.add(Input_3005);
 			KNOWN_ELEMENT_TYPES.add(Button_3006);
-			KNOWN_ELEMENT_TYPES.add(Select_3007);
+			KNOWN_ELEMENT_TYPES.add(Radio_3023);
 			KNOWN_ELEMENT_TYPES.add(Table_3008);
 			KNOWN_ELEMENT_TYPES.add(Column_3021);
-			KNOWN_ELEMENT_TYPES.add(ImageView_3009);
+			KNOWN_ELEMENT_TYPES.add(Object_3024);
 			KNOWN_ELEMENT_TYPES.add(Blockquote_3010);
-			KNOWN_ELEMENT_TYPES.add(Ul_3011);
+			KNOWN_ELEMENT_TYPES.add(Select_3007);
+			KNOWN_ELEMENT_TYPES.add(Option_3025);
+			KNOWN_ELEMENT_TYPES.add(Option_3029);
+			KNOWN_ELEMENT_TYPES.add(Column_3030);
 			KNOWN_ELEMENT_TYPES.add(IFrame_3012);
 			KNOWN_ELEMENT_TYPES.add(Label_3013);
 			KNOWN_ELEMENT_TYPES.add(Input_3014);
 			KNOWN_ELEMENT_TYPES.add(Button_3015);
-			KNOWN_ELEMENT_TYPES.add(Select_3016);
+			KNOWN_ELEMENT_TYPES.add(Radio_3026);
 			KNOWN_ELEMENT_TYPES.add(Table_3017);
 			KNOWN_ELEMENT_TYPES.add(Column_3022);
-			KNOWN_ELEMENT_TYPES.add(ImageView_3018);
+			KNOWN_ELEMENT_TYPES.add(Object_3027);
 			KNOWN_ELEMENT_TYPES.add(Blockquote_3019);
-			KNOWN_ELEMENT_TYPES.add(Ul_3020);
+			KNOWN_ELEMENT_TYPES.add(Select_3016);
+			KNOWN_ELEMENT_TYPES.add(Option_3028);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
 	}
@@ -341,18 +353,24 @@ public class UidiagramElementTypes {
 			return Input_3005;
 		case ButtonEditPart.VISUAL_ID:
 			return Button_3006;
-		case SelectEditPart.VISUAL_ID:
-			return Select_3007;
+		case RadioEditPart.VISUAL_ID:
+			return Radio_3023;
 		case TableEditPart.VISUAL_ID:
 			return Table_3008;
 		case ColumnEditPart.VISUAL_ID:
 			return Column_3021;
-		case ImageViewEditPart.VISUAL_ID:
-			return ImageView_3009;
+		case ObjectEditPart.VISUAL_ID:
+			return Object_3024;
 		case BlockquoteEditPart.VISUAL_ID:
 			return Blockquote_3010;
-		case UlEditPart.VISUAL_ID:
-			return Ul_3011;
+		case SelectEditPart.VISUAL_ID:
+			return Select_3007;
+		case OptionEditPart.VISUAL_ID:
+			return Option_3025;
+		case Option2EditPart.VISUAL_ID:
+			return Option_3029;
+		case Column2EditPart.VISUAL_ID:
+			return Column_3030;
 		case IFrame2EditPart.VISUAL_ID:
 			return IFrame_3012;
 		case Label2EditPart.VISUAL_ID:
@@ -361,18 +379,20 @@ public class UidiagramElementTypes {
 			return Input_3014;
 		case Button2EditPart.VISUAL_ID:
 			return Button_3015;
-		case Select2EditPart.VISUAL_ID:
-			return Select_3016;
+		case Radio2EditPart.VISUAL_ID:
+			return Radio_3026;
 		case Table2EditPart.VISUAL_ID:
 			return Table_3017;
-		case Column2EditPart.VISUAL_ID:
+		case Column3EditPart.VISUAL_ID:
 			return Column_3022;
-		case ImageView2EditPart.VISUAL_ID:
-			return ImageView_3018;
+		case Object2EditPart.VISUAL_ID:
+			return Object_3027;
 		case Blockquote2EditPart.VISUAL_ID:
 			return Blockquote_3019;
-		case Ul2EditPart.VISUAL_ID:
-			return Ul_3020;
+		case Select2EditPart.VISUAL_ID:
+			return Select_3016;
+		case Option3EditPart.VISUAL_ID:
+			return Option_3028;
 		}
 		return null;
 	}

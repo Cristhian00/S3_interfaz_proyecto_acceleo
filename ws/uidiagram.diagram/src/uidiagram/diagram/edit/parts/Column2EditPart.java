@@ -5,7 +5,6 @@ package uidiagram.diagram.edit.parts;
 
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.MarginBorder;
-import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
@@ -28,7 +27,6 @@ import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
 
 import uidiagram.diagram.edit.policies.Column2ItemSemanticEditPolicy;
-import uidiagram.diagram.edit.policies.OpenDiagramEditPolicy;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
 
 /**
@@ -39,7 +37,7 @@ public class Column2EditPart extends ShapeNodeEditPart {
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 3022;
+	public static final int VISUAL_ID = 3030;
 
 	/**
 	* @generated
@@ -65,7 +63,7 @@ public class Column2EditPart extends ShapeNodeEditPart {
 		super.createDefaultEditPolicies();
 		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new Column2ItemSemanticEditPolicy());
 		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
-		installEditPolicy(EditPolicyRoles.OPEN_ROLE, new OpenDiagramEditPolicy()); // XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
 		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
 	}
 
@@ -116,12 +114,6 @@ public class Column2EditPart extends ShapeNodeEditPart {
 			((ColumnTitle2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureColumnLabelFigure());
 			return true;
 		}
-		if (childEditPart instanceof ColumnColumnLstChildModelElementsCompartment2EditPart) {
-			IFigure pane = getPrimaryShape().getColumnLstChildModelElementsCompartmentFigure();
-			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
-			pane.add(((ColumnColumnLstChildModelElementsCompartment2EditPart) childEditPart).getFigure());
-			return true;
-		}
 		return false;
 	}
 
@@ -130,11 +122,6 @@ public class Column2EditPart extends ShapeNodeEditPart {
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof ColumnTitle2EditPart) {
-			return true;
-		}
-		if (childEditPart instanceof ColumnColumnLstChildModelElementsCompartment2EditPart) {
-			IFigure pane = getPrimaryShape().getColumnLstChildModelElementsCompartmentFigure();
-			pane.remove(((ColumnColumnLstChildModelElementsCompartment2EditPart) childEditPart).getFigure());
 			return true;
 		}
 		return false;
@@ -164,9 +151,6 @@ public class Column2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-		if (editPart instanceof ColumnColumnLstChildModelElementsCompartment2EditPart) {
-			return getPrimaryShape().getColumnLstChildModelElementsCompartmentFigure();
-		}
 		return getContentPane();
 	}
 
@@ -272,10 +256,6 @@ public class Column2EditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		private WrappingLabel fFigureColumnLabelFigure;
-		/**
-		 * @generated
-		 */
-		private RectangleFigure fColumnLstChildModelElementsCompartmentFigure;
 
 		/**
 		 * @generated
@@ -295,15 +275,8 @@ public class Column2EditPart extends ShapeNodeEditPart {
 			fFigureColumnLabelFigure = new WrappingLabel();
 
 			fFigureColumnLabelFigure.setText("Column");
-			fFigureColumnLabelFigure.setMaximumSize(new Dimension(getMapMode().DPtoLP(10000), getMapMode().DPtoLP(50)));
 
 			this.add(fFigureColumnLabelFigure);
-
-			fColumnLstChildModelElementsCompartmentFigure = new RectangleFigure();
-
-			fColumnLstChildModelElementsCompartmentFigure.setOutline(false);
-
-			this.add(fColumnLstChildModelElementsCompartmentFigure);
 
 		}
 
@@ -312,13 +285,6 @@ public class Column2EditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureColumnLabelFigure() {
 			return fFigureColumnLabelFigure;
-		}
-
-		/**
-		 * @generated
-		 */
-		public RectangleFigure getColumnLstChildModelElementsCompartmentFigure() {
-			return fColumnLstChildModelElementsCompartmentFigure;
 		}
 
 	}

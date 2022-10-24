@@ -128,6 +128,12 @@ public class TableEditPart extends ShapeNodeEditPart {
 			pane.add(((TableTableLstChildModelElementsCompartmentEditPart) childEditPart).getFigure());
 			return true;
 		}
+		if (childEditPart instanceof TableTableLstColumnsCompartmentEditPart) {
+			IFigure pane = getPrimaryShape().getTableLstColumnsCompartmentFigure();
+			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
+			pane.add(((TableTableLstColumnsCompartmentEditPart) childEditPart).getFigure());
+			return true;
+		}
 		return false;
 	}
 
@@ -141,6 +147,11 @@ public class TableEditPart extends ShapeNodeEditPart {
 		if (childEditPart instanceof TableTableLstChildModelElementsCompartmentEditPart) {
 			IFigure pane = getPrimaryShape().getTableLstChildModelElementsCompartmentFigure();
 			pane.remove(((TableTableLstChildModelElementsCompartmentEditPart) childEditPart).getFigure());
+			return true;
+		}
+		if (childEditPart instanceof TableTableLstColumnsCompartmentEditPart) {
+			IFigure pane = getPrimaryShape().getTableLstColumnsCompartmentFigure();
+			pane.remove(((TableTableLstColumnsCompartmentEditPart) childEditPart).getFigure());
 			return true;
 		}
 		return false;
@@ -172,6 +183,9 @@ public class TableEditPart extends ShapeNodeEditPart {
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
 		if (editPart instanceof TableTableLstChildModelElementsCompartmentEditPart) {
 			return getPrimaryShape().getTableLstChildModelElementsCompartmentFigure();
+		}
+		if (editPart instanceof TableTableLstColumnsCompartmentEditPart) {
+			return getPrimaryShape().getTableLstColumnsCompartmentFigure();
 		}
 		return getContentPane();
 	}
@@ -275,18 +289,22 @@ public class TableEditPart extends ShapeNodeEditPart {
 	public class TableFigure extends RoundedRectangle {
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private WrappingLabel fFigureTableLabelFigure;
-
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private RectangleFigure fTableLstChildModelElementsCompartmentFigure;
 
 		/**
-				 * @generated
-				 */
+		* @generated
+		*/
+		private RectangleFigure fTableLstColumnsCompartmentFigure;
+
+		/**
+			 * @generated
+			 */
 		public TableFigure() {
 			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8), getMapMode().DPtoLP(8)));
 			this.setBorder(new MarginBorder(getMapMode().DPtoLP(5), getMapMode().DPtoLP(5), getMapMode().DPtoLP(5),
@@ -295,8 +313,8 @@ public class TableEditPart extends ShapeNodeEditPart {
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private void createContents() {
 
 			fFigureTableLabelFigure = new WrappingLabel();
@@ -312,24 +330,37 @@ public class TableEditPart extends ShapeNodeEditPart {
 
 			this.add(fTableLstChildModelElementsCompartmentFigure);
 
+			fTableLstColumnsCompartmentFigure = new RectangleFigure();
+
+			fTableLstColumnsCompartmentFigure.setOutline(false);
+
+			this.add(fTableLstColumnsCompartmentFigure);
+
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		public WrappingLabel getFigureTableLabelFigure() {
 			return fFigureTableLabelFigure;
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		public RectangleFigure getTableLstChildModelElementsCompartmentFigure() {
 			return fTableLstChildModelElementsCompartmentFigure;
 		}
 
+		/**
+		* @generated
+		*/
+		public RectangleFigure getTableLstColumnsCompartmentFigure() {
+			return fTableLstColumnsCompartmentFigure;
+		}
+
 	}
-	
+
 	protected void handleNotificationEvent(Notification arg0) {
 		// SET was the type i need
 		if (arg0.getEventType() == Notification.SET) {
@@ -384,5 +415,4 @@ public class TableEditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
-
 }

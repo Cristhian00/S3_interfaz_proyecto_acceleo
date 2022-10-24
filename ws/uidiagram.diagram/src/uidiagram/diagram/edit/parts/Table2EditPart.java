@@ -122,6 +122,12 @@ public class Table2EditPart extends ShapeNodeEditPart {
 			pane.add(((TableTableLstChildModelElementsCompartment2EditPart) childEditPart).getFigure());
 			return true;
 		}
+		if (childEditPart instanceof TableTableLstColumnsCompartment2EditPart) {
+			IFigure pane = getPrimaryShape().getTableLstColumnsCompartmentFigure();
+			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
+			pane.add(((TableTableLstColumnsCompartment2EditPart) childEditPart).getFigure());
+			return true;
+		}
 		return false;
 	}
 
@@ -135,6 +141,11 @@ public class Table2EditPart extends ShapeNodeEditPart {
 		if (childEditPart instanceof TableTableLstChildModelElementsCompartment2EditPart) {
 			IFigure pane = getPrimaryShape().getTableLstChildModelElementsCompartmentFigure();
 			pane.remove(((TableTableLstChildModelElementsCompartment2EditPart) childEditPart).getFigure());
+			return true;
+		}
+		if (childEditPart instanceof TableTableLstColumnsCompartment2EditPart) {
+			IFigure pane = getPrimaryShape().getTableLstColumnsCompartmentFigure();
+			pane.remove(((TableTableLstColumnsCompartment2EditPart) childEditPart).getFigure());
 			return true;
 		}
 		return false;
@@ -166,6 +177,9 @@ public class Table2EditPart extends ShapeNodeEditPart {
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
 		if (editPart instanceof TableTableLstChildModelElementsCompartment2EditPart) {
 			return getPrimaryShape().getTableLstChildModelElementsCompartmentFigure();
+		}
+		if (editPart instanceof TableTableLstColumnsCompartment2EditPart) {
+			return getPrimaryShape().getTableLstColumnsCompartmentFigure();
 		}
 		return getContentPane();
 	}
@@ -269,18 +283,22 @@ public class Table2EditPart extends ShapeNodeEditPart {
 	public class TableFigure extends RoundedRectangle {
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private WrappingLabel fFigureTableLabelFigure;
-
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private RectangleFigure fTableLstChildModelElementsCompartmentFigure;
 
 		/**
-				 * @generated
-				 */
+		* @generated
+		*/
+		private RectangleFigure fTableLstColumnsCompartmentFigure;
+
+		/**
+			 * @generated
+			 */
 		public TableFigure() {
 			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8), getMapMode().DPtoLP(8)));
 			this.setBorder(new MarginBorder(getMapMode().DPtoLP(5), getMapMode().DPtoLP(5), getMapMode().DPtoLP(5),
@@ -289,8 +307,8 @@ public class Table2EditPart extends ShapeNodeEditPart {
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private void createContents() {
 
 			fFigureTableLabelFigure = new WrappingLabel();
@@ -306,20 +324,33 @@ public class Table2EditPart extends ShapeNodeEditPart {
 
 			this.add(fTableLstChildModelElementsCompartmentFigure);
 
+			fTableLstColumnsCompartmentFigure = new RectangleFigure();
+
+			fTableLstColumnsCompartmentFigure.setOutline(false);
+
+			this.add(fTableLstColumnsCompartmentFigure);
+
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		public WrappingLabel getFigureTableLabelFigure() {
 			return fFigureTableLabelFigure;
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		public RectangleFigure getTableLstChildModelElementsCompartmentFigure() {
 			return fTableLstChildModelElementsCompartmentFigure;
+		}
+
+		/**
+		* @generated
+		*/
+		public RectangleFigure getTableLstColumnsCompartmentFigure() {
+			return fTableLstColumnsCompartmentFigure;
 		}
 
 	}

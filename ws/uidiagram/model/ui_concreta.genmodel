@@ -46,17 +46,29 @@
     </genClasses>
     <genClasses image="false" ecoreClass="ui_concreta.ecore#//GraphicalIndividual"/>
     <genClasses ecoreClass="ui_concreta.ecore#//Container"/>
-    <genClasses ecoreClass="ui_concreta.ecore#//IFrame"/>
+    <genClasses ecoreClass="ui_concreta.ecore#//IFrame">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//IFrame/url"/>
+    </genClasses>
     <genClasses ecoreClass="ui_concreta.ecore#//Label"/>
     <genClasses ecoreClass="ui_concreta.ecore#//Input"/>
     <genClasses ecoreClass="ui_concreta.ecore#//Button"/>
-    <genClasses ecoreClass="ui_concreta.ecore#//Select"/>
+    <genClasses ecoreClass="ui_concreta.ecore#//Radio">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//Radio/name"/>
+    </genClasses>
     <genClasses ecoreClass="ui_concreta.ecore#//Table">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ui_concreta.ecore#//Table/lstColumns"/>
     </genClasses>
     <genClasses ecoreClass="ui_concreta.ecore#//Column"/>
-    <genClasses ecoreClass="ui_concreta.ecore#//ImageView"/>
-    <genClasses ecoreClass="ui_concreta.ecore#//Blockquote"/>
-    <genClasses ecoreClass="ui_concreta.ecore#//Ul"/>
+    <genClasses ecoreClass="ui_concreta.ecore#//Object">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//Object/src"/>
+    </genClasses>
+    <genClasses ecoreClass="ui_concreta.ecore#//Blockquote">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//Blockquote/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui_concreta.ecore#//Blockquote/contenido"/>
+    </genClasses>
+    <genClasses ecoreClass="ui_concreta.ecore#//Select">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ui_concreta.ecore#//Select/lstOption"/>
+    </genClasses>
+    <genClasses ecoreClass="ui_concreta.ecore#//Option"/>
   </genPackages>
 </genmodel:GenModel>

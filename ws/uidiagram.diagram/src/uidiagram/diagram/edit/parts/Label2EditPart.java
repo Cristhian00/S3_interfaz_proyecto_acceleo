@@ -251,21 +251,21 @@ public class Label2EditPart extends ShapeNodeEditPart {
 	public class LabelFigure extends RectangleFigure {
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private WrappingLabel fFigureLabelLabelFigure;
 
 		/**
-			 * @generated
-			 */
+		 * @generated
+		 */
 		public LabelFigure() {
 			this.setOutline(false);
 			createContents();
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private void createContents() {
 
 			fFigureLabelLabelFigure = new WrappingLabel();
@@ -277,8 +277,8 @@ public class Label2EditPart extends ShapeNodeEditPart {
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		public WrappingLabel getFigureLabelLabelFigure() {
 			return fFigureLabelLabelFigure;
 		}

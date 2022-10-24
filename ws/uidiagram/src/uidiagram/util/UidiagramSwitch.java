@@ -7,7 +7,24 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
-import uidiagram.*;
+import uidiagram.Blockquote;
+import uidiagram.Button;
+import uidiagram.Column;
+import uidiagram.Container;
+import uidiagram.GraphicalContainer;
+import uidiagram.GraphicalIndividual;
+import uidiagram.IFrame;
+import uidiagram.Input;
+import uidiagram.Label;
+import uidiagram.ModelElement;
+import uidiagram.ModelFactory;
+import uidiagram.Option;
+import uidiagram.Radio;
+import uidiagram.Select;
+import uidiagram.Table;
+import uidiagram.UI_Diagram;
+import uidiagram.UidiagramPackage;
+import uidiagram.UserInterface;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,7 +132,7 @@ public class UidiagramSwitch<T> extends Switch<T> {
 			case UidiagramPackage.IFRAME: {
 				IFrame iFrame = (IFrame)theEObject;
 				T result = caseIFrame(iFrame);
-				if (result == null) result = caseGraphicalContainer(iFrame);
+				if (result == null) result = caseGraphicalIndividual(iFrame);
 				if (result == null) result = caseModelElement(iFrame);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -144,11 +161,11 @@ public class UidiagramSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.SELECT: {
-				Select select = (Select)theEObject;
-				T result = caseSelect(select);
-				if (result == null) result = caseGraphicalIndividual(select);
-				if (result == null) result = caseModelElement(select);
+			case UidiagramPackage.RADIO: {
+				Radio radio = (Radio)theEObject;
+				T result = caseRadio(radio);
+				if (result == null) result = caseGraphicalIndividual(radio);
+				if (result == null) result = caseModelElement(radio);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -163,16 +180,16 @@ public class UidiagramSwitch<T> extends Switch<T> {
 			case UidiagramPackage.COLUMN: {
 				Column column = (Column)theEObject;
 				T result = caseColumn(column);
-				if (result == null) result = caseGraphicalContainer(column);
+				if (result == null) result = caseGraphicalIndividual(column);
 				if (result == null) result = caseModelElement(column);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.IMAGE_VIEW: {
-				ImageView imageView = (ImageView)theEObject;
-				T result = caseImageView(imageView);
-				if (result == null) result = caseGraphicalIndividual(imageView);
-				if (result == null) result = caseModelElement(imageView);
+			case UidiagramPackage.OBJECT: {
+				uidiagram.Object object = (uidiagram.Object)theEObject;
+				T result = caseObject(object);
+				if (result == null) result = caseGraphicalIndividual(object);
+				if (result == null) result = caseModelElement(object);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -184,11 +201,19 @@ public class UidiagramSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.UL: {
-				Ul ul = (Ul)theEObject;
-				T result = caseUl(ul);
-				if (result == null) result = caseGraphicalIndividual(ul);
-				if (result == null) result = caseModelElement(ul);
+			case UidiagramPackage.SELECT: {
+				Select select = (Select)theEObject;
+				T result = caseSelect(select);
+				if (result == null) result = caseGraphicalContainer(select);
+				if (result == null) result = caseModelElement(select);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case UidiagramPackage.OPTION: {
+				Option option = (Option)theEObject;
+				T result = caseOption(option);
+				if (result == null) result = caseGraphicalIndividual(option);
+				if (result == null) result = caseModelElement(option);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -362,17 +387,17 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Select</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Radio</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Select</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Radio</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSelect(Select object) {
+	public T caseRadio(Radio object) {
 		return null;
 	}
 
@@ -407,17 +432,17 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Image View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Object</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Image View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Object</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImageView(ImageView object) {
+	public T caseObject(uidiagram.Object object) {
 		return null;
 	}
 
@@ -437,17 +462,32 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Ul</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Select</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Ul</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Select</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUl(Ul object) {
+	public T caseSelect(Select object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Option</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Option</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOption(Option object) {
 		return null;
 	}
 

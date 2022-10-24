@@ -28,14 +28,17 @@ import uidiagram.UidiagramPackage;
 import uidiagram.diagram.edit.parts.Blockquote2EditPart;
 import uidiagram.diagram.edit.parts.Button2EditPart;
 import uidiagram.diagram.edit.parts.Column2EditPart;
+import uidiagram.diagram.edit.parts.Column3EditPart;
 import uidiagram.diagram.edit.parts.ContainerEditPart;
 import uidiagram.diagram.edit.parts.IFrame2EditPart;
-import uidiagram.diagram.edit.parts.ImageView2EditPart;
 import uidiagram.diagram.edit.parts.Input2EditPart;
 import uidiagram.diagram.edit.parts.Label2EditPart;
+import uidiagram.diagram.edit.parts.Object2EditPart;
+import uidiagram.diagram.edit.parts.Option2EditPart;
+import uidiagram.diagram.edit.parts.Option3EditPart;
+import uidiagram.diagram.edit.parts.Radio2EditPart;
 import uidiagram.diagram.edit.parts.Select2EditPart;
 import uidiagram.diagram.edit.parts.Table2EditPart;
-import uidiagram.diagram.edit.parts.Ul2EditPart;
 import uidiagram.diagram.part.UidiagramDiagramUpdater;
 import uidiagram.diagram.part.UidiagramNodeDescriptor;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
@@ -98,12 +101,13 @@ public class UserInterfaceUserInterfaceLstModelElementsCompartmentCanonicalEditP
 		case Label2EditPart.VISUAL_ID:
 		case Input2EditPart.VISUAL_ID:
 		case Button2EditPart.VISUAL_ID:
-		case Select2EditPart.VISUAL_ID:
+		case Radio2EditPart.VISUAL_ID:
 		case Table2EditPart.VISUAL_ID:
-		case Column2EditPart.VISUAL_ID:
-		case ImageView2EditPart.VISUAL_ID:
+		case Column3EditPart.VISUAL_ID:
+		case Object2EditPart.VISUAL_ID:
 		case Blockquote2EditPart.VISUAL_ID:
-		case Ul2EditPart.VISUAL_ID:
+		case Select2EditPart.VISUAL_ID:
+		case Option3EditPart.VISUAL_ID:
 			return true;
 		}
 		return false;

@@ -9,7 +9,24 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import uidiagram.*;
+import uidiagram.Blockquote;
+import uidiagram.Button;
+import uidiagram.Column;
+import uidiagram.Container;
+import uidiagram.GraphicalContainer;
+import uidiagram.GraphicalIndividual;
+import uidiagram.IFrame;
+import uidiagram.Input;
+import uidiagram.Label;
+import uidiagram.ModelElement;
+import uidiagram.ModelFactory;
+import uidiagram.Option;
+import uidiagram.Radio;
+import uidiagram.Select;
+import uidiagram.Table;
+import uidiagram.UI_Diagram;
+import uidiagram.UidiagramPackage;
+import uidiagram.UserInterface;
 
 /**
  * <!-- begin-user-doc -->
@@ -112,8 +129,8 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 				return createButtonAdapter();
 			}
 			@Override
-			public Adapter caseSelect(Select object) {
-				return createSelectAdapter();
+			public Adapter caseRadio(Radio object) {
+				return createRadioAdapter();
 			}
 			@Override
 			public Adapter caseTable(Table object) {
@@ -124,16 +141,20 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 				return createColumnAdapter();
 			}
 			@Override
-			public Adapter caseImageView(ImageView object) {
-				return createImageViewAdapter();
+			public Adapter caseObject(uidiagram.Object object) {
+				return createObjectAdapter();
 			}
 			@Override
 			public Adapter caseBlockquote(Blockquote object) {
 				return createBlockquoteAdapter();
 			}
 			@Override
-			public Adapter caseUl(Ul object) {
-				return createUlAdapter();
+			public Adapter caseSelect(Select object) {
+				return createSelectAdapter();
+			}
+			@Override
+			public Adapter caseOption(Option object) {
+				return createOptionAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -310,16 +331,16 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.Select <em>Select</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.Radio <em>Radio</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.Select
+	 * @see uidiagram.Radio
 	 * @generated
 	 */
-	public Adapter createSelectAdapter() {
+	public Adapter createRadioAdapter() {
 		return null;
 	}
 
@@ -352,16 +373,16 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.ImageView <em>Image View</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.Object <em>Object</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.ImageView
+	 * @see uidiagram.Object
 	 * @generated
 	 */
-	public Adapter createImageViewAdapter() {
+	public Adapter createObjectAdapter() {
 		return null;
 	}
 
@@ -380,16 +401,30 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.Ul <em>Ul</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.Select <em>Select</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.Ul
+	 * @see uidiagram.Select
 	 * @generated
 	 */
-	public Adapter createUlAdapter() {
+	public Adapter createSelectAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link uidiagram.Option <em>Option</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see uidiagram.Option
+	 * @generated
+	 */
+	public Adapter createOptionAdapter() {
 		return null;
 	}
 

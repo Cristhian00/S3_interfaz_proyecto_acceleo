@@ -16,6 +16,7 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 import org.eclipse.gmf.runtime.notation.View;
 
 import uidiagram.Column;
+import uidiagram.Table;
 import uidiagram.UidiagramFactory;
 import uidiagram.UserInterface;
 
@@ -57,8 +58,8 @@ public class Column2CreateCommand extends EditElementCommand {
 	protected CommandResult doExecuteWithResult(IProgressMonitor monitor, IAdaptable info) throws ExecutionException {
 		Column newElement = UidiagramFactory.eINSTANCE.createColumn();
 
-		UserInterface owner = (UserInterface) getElementToEdit();
-		owner.getLstModelElements().add(newElement);
+		Table owner = (Table) getElementToEdit();
+		owner.getLstColumns().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

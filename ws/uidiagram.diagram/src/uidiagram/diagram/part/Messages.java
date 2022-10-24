@@ -301,72 +301,82 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String ImageView6CreationTool_title;
+	public static String Input6CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String ImageView6CreationTool_desc;
+	public static String Input6CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Input7CreationTool_title;
+	public static String Label7CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Input7CreationTool_desc;
+	public static String Label7CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Label8CreationTool_title;
+	public static String Object8CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Label8CreationTool_desc;
+	public static String Object8CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Select9CreationTool_title;
+	public static String Option9CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Select9CreationTool_desc;
+	public static String Option9CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Table10CreationTool_title;
+	public static String Radio10CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Table10CreationTool_desc;
+	public static String Radio10CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Ul11CreationTool_title;
+	public static String Select11CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Ul11CreationTool_desc;
+	public static String Select11CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String UserInterface12CreationTool_title;
+	public static String Table12CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String UserInterface12CreationTool_desc;
+	public static String Table12CreationTool_desc;
+
+	/**
+	* @generated
+	*/
+	public static String UserInterface13CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String UserInterface13CreationTool_desc;
 
 	/**
 	* @generated
@@ -386,22 +396,22 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String IFrameIFrameLstChildModelElementsCompartmentEditPart_title;
-
-	/**
-	* @generated
-	*/
 	public static String TableTableLstChildModelElementsCompartmentEditPart_title;
 
 	/**
 	* @generated
 	*/
-	public static String ColumnColumnLstChildModelElementsCompartmentEditPart_title;
+	public static String TableTableLstColumnsCompartmentEditPart_title;
 
 	/**
 	* @generated
 	*/
-	public static String IFrameIFrameLstChildModelElementsCompartment2EditPart_title;
+	public static String SelectSelectLstChildModelElementsCompartmentEditPart_title;
+
+	/**
+	* @generated
+	*/
+	public static String SelectSelectLstOptionCompartmentEditPart_title;
 
 	/**
 	* @generated
@@ -411,7 +421,17 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String ColumnColumnLstChildModelElementsCompartment2EditPart_title;
+	public static String TableTableLstColumnsCompartment2EditPart_title;
+
+	/**
+	* @generated
+	*/
+	public static String SelectSelectLstChildModelElementsCompartment2EditPart_title;
+
+	/**
+	* @generated
+	*/
+	public static String SelectSelectLstOptionCompartment2EditPart_title;
 
 	/**
 	* @generated

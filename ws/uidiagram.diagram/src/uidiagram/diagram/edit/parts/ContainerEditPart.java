@@ -275,12 +275,12 @@ public class ContainerEditPart extends ShapeNodeEditPart {
 	public class ContainerFigure extends RoundedRectangle {
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private WrappingLabel fFigureContainerLabelFigure;
 		/**
-			 * @generated
-			 */
+		 * @generated
+		 */
 		private RectangleFigure fContainerLstChildModelElementsCompartmentFigure;
 
 		/**
@@ -315,15 +315,15 @@ public class ContainerEditPart extends ShapeNodeEditPart {
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		public WrappingLabel getFigureContainerLabelFigure() {
 			return fFigureContainerLabelFigure;
 		}
 
 		/**
-			 * @generated
-			 */
+		 * @generated
+		 */
 		public RectangleFigure getContainerLstChildModelElementsCompartmentFigure() {
 			return fContainerLstChildModelElementsCompartmentFigure;
 		}
@@ -384,4 +384,5 @@ public class ContainerEditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
+
 }

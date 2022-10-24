@@ -5,6 +5,7 @@ package uidiagram.diagram.edit.parts;
 
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.MarginBorder;
+import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
@@ -26,6 +27,7 @@ import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
 
+import uidiagram.diagram.edit.policies.OpenDiagramEditPolicy;
 import uidiagram.diagram.edit.policies.Select2ItemSemanticEditPolicy;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
 
@@ -63,7 +65,7 @@ public class Select2EditPart extends ShapeNodeEditPart {
 		super.createDefaultEditPolicies();
 		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new Select2ItemSemanticEditPolicy());
 		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
-		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+		installEditPolicy(EditPolicyRoles.OPEN_ROLE, new OpenDiagramEditPolicy()); // XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
 		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
 	}
 
@@ -114,6 +116,18 @@ public class Select2EditPart extends ShapeNodeEditPart {
 			((SelectTitle2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureSelectLabelFigure());
 			return true;
 		}
+		if (childEditPart instanceof SelectSelectLstChildModelElementsCompartment2EditPart) {
+			IFigure pane = getPrimaryShape().getSelectLstChildModelElementsCompartmentFigure();
+			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
+			pane.add(((SelectSelectLstChildModelElementsCompartment2EditPart) childEditPart).getFigure());
+			return true;
+		}
+		if (childEditPart instanceof SelectSelectLstOptionCompartment2EditPart) {
+			IFigure pane = getPrimaryShape().getSelectLstOptionCompartmentFigure();
+			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
+			pane.add(((SelectSelectLstOptionCompartment2EditPart) childEditPart).getFigure());
+			return true;
+		}
 		return false;
 	}
 
@@ -122,6 +136,16 @@ public class Select2EditPart extends ShapeNodeEditPart {
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof SelectTitle2EditPart) {
+			return true;
+		}
+		if (childEditPart instanceof SelectSelectLstChildModelElementsCompartment2EditPart) {
+			IFigure pane = getPrimaryShape().getSelectLstChildModelElementsCompartmentFigure();
+			pane.remove(((SelectSelectLstChildModelElementsCompartment2EditPart) childEditPart).getFigure());
+			return true;
+		}
+		if (childEditPart instanceof SelectSelectLstOptionCompartment2EditPart) {
+			IFigure pane = getPrimaryShape().getSelectLstOptionCompartmentFigure();
+			pane.remove(((SelectSelectLstOptionCompartment2EditPart) childEditPart).getFigure());
 			return true;
 		}
 		return false;
@@ -151,6 +175,12 @@ public class Select2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
+		if (editPart instanceof SelectSelectLstChildModelElementsCompartment2EditPart) {
+			return getPrimaryShape().getSelectLstChildModelElementsCompartmentFigure();
+		}
+		if (editPart instanceof SelectSelectLstOptionCompartment2EditPart) {
+			return getPrimaryShape().getSelectLstOptionCompartmentFigure();
+		}
 		return getContentPane();
 	}
 
@@ -256,10 +286,19 @@ public class Select2EditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		private WrappingLabel fFigureSelectLabelFigure;
-
 		/**
 		 * @generated
 		 */
+		private RectangleFigure fSelectLstChildModelElementsCompartmentFigure;
+
+		/**
+		* @generated
+		*/
+		private RectangleFigure fSelectLstOptionCompartmentFigure;
+
+		/**
+			 * @generated
+			 */
 		public SelectFigure() {
 			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8), getMapMode().DPtoLP(8)));
 			this.setBorder(new MarginBorder(getMapMode().DPtoLP(5), getMapMode().DPtoLP(5), getMapMode().DPtoLP(5),
@@ -275,8 +314,21 @@ public class Select2EditPart extends ShapeNodeEditPart {
 			fFigureSelectLabelFigure = new WrappingLabel();
 
 			fFigureSelectLabelFigure.setText("Select");
+			fFigureSelectLabelFigure.setMaximumSize(new Dimension(getMapMode().DPtoLP(10000), getMapMode().DPtoLP(50)));
 
 			this.add(fFigureSelectLabelFigure);
+
+			fSelectLstChildModelElementsCompartmentFigure = new RectangleFigure();
+
+			fSelectLstChildModelElementsCompartmentFigure.setOutline(false);
+
+			this.add(fSelectLstChildModelElementsCompartmentFigure);
+
+			fSelectLstOptionCompartmentFigure = new RectangleFigure();
+
+			fSelectLstOptionCompartmentFigure.setOutline(false);
+
+			this.add(fSelectLstOptionCompartmentFigure);
 
 		}
 
@@ -285,6 +337,20 @@ public class Select2EditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureSelectLabelFigure() {
 			return fFigureSelectLabelFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public RectangleFigure getSelectLstChildModelElementsCompartmentFigure() {
+			return fSelectLstChildModelElementsCompartmentFigure;
+		}
+
+		/**
+		* @generated
+		*/
+		public RectangleFigure getSelectLstOptionCompartmentFigure() {
+			return fSelectLstOptionCompartmentFigure;
 		}
 
 	}

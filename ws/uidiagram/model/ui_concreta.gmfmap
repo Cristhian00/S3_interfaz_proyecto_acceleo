@@ -21,7 +21,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="ui_concreta.gmftool#//@palette/@tools.0/@tools.11"/>
+          href="ui_concreta.gmftool#//@palette/@tools.0/@tools.12"/>
       <diagramNode
           href="ui_concreta.gmfgraph#UserInterface"/>
       <children
@@ -110,8 +110,14 @@
             <containmentFeature
                 href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
           </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.11/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
           <compartments
-              children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.10">
+              children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.11">
             <compartment
                 href="ui_concreta.gmfgraph#ContainerLstChildModelElementsCompartment"/>
           </compartments>
@@ -121,8 +127,7 @@
           compartment="//@nodes.0/@ownedChild/@compartments.0">
         <containmentFeature
             href="ui_concreta.ecore#//UserInterface/lstModelElements"/>
-        <ownedChild
-            relatedDiagrams="//@diagram">
+        <ownedChild>
           <domainMetaElement
               href="ui_concreta.ecore#//IFrame"/>
           <labelMappings
@@ -137,77 +142,6 @@
               href="ui_concreta.gmftool#//@palette/@tools.0/@tools.4"/>
           <diagramNode
               href="ui_concreta.gmfgraph#IFrame"/>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.1/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.2/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.3/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.4/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.5/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.6/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.7/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.8/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.9/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.1/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.10/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <compartments
-              children="//@nodes.0/@ownedChild/@children.1/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.1/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.1/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.1/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.1/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.1/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.1/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.1/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.1/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.1/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.1/@ownedChild/@children.10">
-            <compartment
-                href="ui_concreta.gmfgraph#IFrameLstChildModelElementsCompartment"/>
-          </compartments>
         </ownedChild>
       </children>
       <children
@@ -226,7 +160,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.7"/>
+              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.6"/>
           <diagramNode
               href="ui_concreta.gmfgraph#Label"/>
         </ownedChild>
@@ -247,7 +181,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.6"/>
+              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.5"/>
           <diagramNode
               href="ui_concreta.gmfgraph#Input"/>
         </ownedChild>
@@ -279,19 +213,19 @@
             href="ui_concreta.ecore#//UserInterface/lstModelElements"/>
         <ownedChild>
           <domainMetaElement
-              href="ui_concreta.ecore#//Select"/>
+              href="ui_concreta.ecore#//Radio"/>
           <labelMappings
               xsi:type="gmfmap:FeatureLabelMapping">
             <diagramLabel
-                href="ui_concreta.gmfgraph#SelectLabel"/>
+                href="ui_concreta.gmfgraph#RadioLabel"/>
             <features
                 href="ui_concreta.ecore#//ModelElement/title"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.8"/>
+              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.9"/>
           <diagramNode
-              href="ui_concreta.gmfgraph#Select"/>
+              href="ui_concreta.gmfgraph#Radio"/>
         </ownedChild>
       </children>
       <children
@@ -311,7 +245,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.9"/>
+              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.11"/>
           <diagramNode
               href="ui_concreta.gmfgraph#Table"/>
           <children
@@ -380,10 +314,27 @@
             <containmentFeature
                 href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
           </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.6/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.11/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.6/@ownedChild/@compartments.1"
+              referencedChild="//@nodes.0/@ownedChild/@children.7/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//Table/lstColumns"/>
+          </children>
           <compartments
-              children="//@nodes.0/@ownedChild/@children.6/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.10">
+              children="//@nodes.0/@ownedChild/@children.6/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.6/@ownedChild/@children.11">
             <compartment
                 href="ui_concreta.gmfgraph#TableLstChildModelElementsCompartment"/>
+          </compartments>
+          <compartments
+              children="//@nodes.0/@ownedChild/@children.6/@ownedChild/@children.12">
+            <compartment
+                href="ui_concreta.gmfgraph#TableLstColumnsCompartment"/>
           </compartments>
         </ownedChild>
       </children>
@@ -391,8 +342,7 @@
           compartment="//@nodes.0/@ownedChild/@compartments.0">
         <containmentFeature
             href="ui_concreta.ecore#//UserInterface/lstModelElements"/>
-        <ownedChild
-            relatedDiagrams="//@diagram">
+        <ownedChild>
           <domainMetaElement
               href="ui_concreta.ecore#//Column"/>
           <labelMappings
@@ -407,77 +357,6 @@
               href="ui_concreta.gmftool#//@palette/@tools.0/@tools.2"/>
           <diagramNode
               href="ui_concreta.gmfgraph#Column"/>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.1/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.2/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.3/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.4/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.5/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.6/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.7/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.8/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.9/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.7/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.10/@ownedChild">
-            <containmentFeature
-                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
-          </children>
-          <compartments
-              children="//@nodes.0/@ownedChild/@children.7/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.7/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.7/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.7/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.7/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.7/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.7/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.7/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.7/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.7/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.7/@ownedChild/@children.10">
-            <compartment
-                href="ui_concreta.gmfgraph#ColumnLstChildModelElementsCompartment"/>
-          </compartments>
         </ownedChild>
       </children>
       <children
@@ -486,19 +365,19 @@
             href="ui_concreta.ecore#//UserInterface/lstModelElements"/>
         <ownedChild>
           <domainMetaElement
-              href="ui_concreta.ecore#//ImageView"/>
+              href="ui_concreta.ecore#//Object"/>
           <labelMappings
               xsi:type="gmfmap:FeatureLabelMapping">
             <diagramLabel
-                href="ui_concreta.gmfgraph#ImageViewLabel"/>
+                href="ui_concreta.gmfgraph#ObjectLabel"/>
             <features
                 href="ui_concreta.ecore#//ModelElement/title"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.5"/>
+              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.7"/>
           <diagramNode
-              href="ui_concreta.gmfgraph#ImageView"/>
+              href="ui_concreta.gmfgraph#Object"/>
         </ownedChild>
       </children>
       <children
@@ -526,13 +405,14 @@
           compartment="//@nodes.0/@ownedChild/@compartments.0">
         <containmentFeature
             href="ui_concreta.ecore#//UserInterface/lstModelElements"/>
-        <ownedChild>
+        <ownedChild
+            relatedDiagrams="//@diagram">
           <domainMetaElement
-              href="ui_concreta.ecore#//Ul"/>
+              href="ui_concreta.ecore#//Select"/>
           <labelMappings
               xsi:type="gmfmap:FeatureLabelMapping">
             <diagramLabel
-                href="ui_concreta.gmfgraph#UlLabel"/>
+                href="ui_concreta.gmfgraph#SelectLabel"/>
             <features
                 href="ui_concreta.ecore#//ModelElement/title"/>
           </labelMappings>
@@ -540,11 +420,120 @@
               xsi:type="gmftool:CreationTool"
               href="ui_concreta.gmftool#//@palette/@tools.0/@tools.10"/>
           <diagramNode
-              href="ui_concreta.gmfgraph#Ul"/>
+              href="ui_concreta.gmfgraph#Select"/>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.1/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.2/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.3/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.4/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.5/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.6/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.7/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.8/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.9/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.10/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.11/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.10/@ownedChild/@compartments.1"
+              referencedChild="//@nodes.0/@ownedChild/@children.11/@ownedChild">
+            <containmentFeature
+                href="ui_concreta.ecore#//Select/lstOption"/>
+          </children>
+          <compartments
+              children="//@nodes.0/@ownedChild/@children.10/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.10/@ownedChild/@children.11">
+            <compartment
+                href="ui_concreta.gmfgraph#SelectLstChildModelElementsCompartment"/>
+          </compartments>
+          <compartments
+              children="//@nodes.0/@ownedChild/@children.10/@ownedChild/@children.12">
+            <compartment
+                href="ui_concreta.gmfgraph#SelectLstOptionCompartment"/>
+          </compartments>
+        </ownedChild>
+      </children>
+      <children
+          compartment="//@nodes.0/@ownedChild/@compartments.0">
+        <containmentFeature
+            href="ui_concreta.ecore#//UserInterface/lstModelElements"/>
+        <ownedChild>
+          <domainMetaElement
+              href="ui_concreta.ecore#//Option"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping">
+            <diagramLabel
+                href="ui_concreta.gmfgraph#OptionLabel"/>
+            <features
+                href="ui_concreta.ecore#//ModelElement/title"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="ui_concreta.gmftool#//@palette/@tools.0/@tools.8"/>
+          <diagramNode
+              href="ui_concreta.gmfgraph#Option"/>
         </ownedChild>
       </children>
       <compartments
-          children="//@nodes.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.10">
+          children="//@nodes.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.11">
         <compartment
             href="ui_concreta.gmfgraph#UserInterfaceLstModelElementsCompartment"/>
       </compartments>

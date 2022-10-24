@@ -48,10 +48,10 @@ import uidiagram.diagram.edit.parts.ButtonEditPart;
 import uidiagram.diagram.edit.parts.ButtonTitle2EditPart;
 import uidiagram.diagram.edit.parts.ButtonTitleEditPart;
 import uidiagram.diagram.edit.parts.Column2EditPart;
-import uidiagram.diagram.edit.parts.ColumnColumnLstChildModelElementsCompartment2EditPart;
-import uidiagram.diagram.edit.parts.ColumnColumnLstChildModelElementsCompartmentEditPart;
+import uidiagram.diagram.edit.parts.Column3EditPart;
 import uidiagram.diagram.edit.parts.ColumnEditPart;
 import uidiagram.diagram.edit.parts.ColumnTitle2EditPart;
+import uidiagram.diagram.edit.parts.ColumnTitle3EditPart;
 import uidiagram.diagram.edit.parts.ColumnTitleEditPart;
 import uidiagram.diagram.edit.parts.Container2EditPart;
 import uidiagram.diagram.edit.parts.ContainerContainerLstChildModelElementsCompartment2EditPart;
@@ -61,14 +61,8 @@ import uidiagram.diagram.edit.parts.ContainerTitle2EditPart;
 import uidiagram.diagram.edit.parts.ContainerTitleEditPart;
 import uidiagram.diagram.edit.parts.IFrame2EditPart;
 import uidiagram.diagram.edit.parts.IFrameEditPart;
-import uidiagram.diagram.edit.parts.IFrameIFrameLstChildModelElementsCompartment2EditPart;
-import uidiagram.diagram.edit.parts.IFrameIFrameLstChildModelElementsCompartmentEditPart;
 import uidiagram.diagram.edit.parts.IFrameTitle2EditPart;
 import uidiagram.diagram.edit.parts.IFrameTitleEditPart;
-import uidiagram.diagram.edit.parts.ImageView2EditPart;
-import uidiagram.diagram.edit.parts.ImageViewEditPart;
-import uidiagram.diagram.edit.parts.ImageViewTitle2EditPart;
-import uidiagram.diagram.edit.parts.ImageViewTitleEditPart;
 import uidiagram.diagram.edit.parts.Input2EditPart;
 import uidiagram.diagram.edit.parts.InputEditPart;
 import uidiagram.diagram.edit.parts.InputTitle2EditPart;
@@ -77,21 +71,37 @@ import uidiagram.diagram.edit.parts.Label2EditPart;
 import uidiagram.diagram.edit.parts.LabelEditPart;
 import uidiagram.diagram.edit.parts.LabelTitle2EditPart;
 import uidiagram.diagram.edit.parts.LabelTitleEditPart;
+import uidiagram.diagram.edit.parts.Object2EditPart;
+import uidiagram.diagram.edit.parts.ObjectEditPart;
+import uidiagram.diagram.edit.parts.ObjectTitle2EditPart;
+import uidiagram.diagram.edit.parts.ObjectTitleEditPart;
+import uidiagram.diagram.edit.parts.Option2EditPart;
+import uidiagram.diagram.edit.parts.Option3EditPart;
+import uidiagram.diagram.edit.parts.OptionEditPart;
+import uidiagram.diagram.edit.parts.OptionTitle2EditPart;
+import uidiagram.diagram.edit.parts.OptionTitle3EditPart;
+import uidiagram.diagram.edit.parts.OptionTitleEditPart;
+import uidiagram.diagram.edit.parts.Radio2EditPart;
+import uidiagram.diagram.edit.parts.RadioEditPart;
+import uidiagram.diagram.edit.parts.RadioTitle2EditPart;
+import uidiagram.diagram.edit.parts.RadioTitleEditPart;
 import uidiagram.diagram.edit.parts.Select2EditPart;
 import uidiagram.diagram.edit.parts.SelectEditPart;
+import uidiagram.diagram.edit.parts.SelectSelectLstChildModelElementsCompartment2EditPart;
+import uidiagram.diagram.edit.parts.SelectSelectLstChildModelElementsCompartmentEditPart;
+import uidiagram.diagram.edit.parts.SelectSelectLstOptionCompartment2EditPart;
+import uidiagram.diagram.edit.parts.SelectSelectLstOptionCompartmentEditPart;
 import uidiagram.diagram.edit.parts.SelectTitle2EditPart;
 import uidiagram.diagram.edit.parts.SelectTitleEditPart;
 import uidiagram.diagram.edit.parts.Table2EditPart;
 import uidiagram.diagram.edit.parts.TableEditPart;
 import uidiagram.diagram.edit.parts.TableTableLstChildModelElementsCompartment2EditPart;
 import uidiagram.diagram.edit.parts.TableTableLstChildModelElementsCompartmentEditPart;
+import uidiagram.diagram.edit.parts.TableTableLstColumnsCompartment2EditPart;
+import uidiagram.diagram.edit.parts.TableTableLstColumnsCompartmentEditPart;
 import uidiagram.diagram.edit.parts.TableTitle2EditPart;
 import uidiagram.diagram.edit.parts.TableTitleEditPart;
 import uidiagram.diagram.edit.parts.UI_DiagramEditPart;
-import uidiagram.diagram.edit.parts.Ul2EditPart;
-import uidiagram.diagram.edit.parts.UlEditPart;
-import uidiagram.diagram.edit.parts.UlTitle2EditPart;
-import uidiagram.diagram.edit.parts.UlTitleEditPart;
 import uidiagram.diagram.edit.parts.UserInterfaceEditPart;
 import uidiagram.diagram.edit.parts.UserInterfaceTitleEditPart;
 import uidiagram.diagram.edit.parts.UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart;
@@ -184,23 +194,27 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				case LabelEditPart.VISUAL_ID:
 				case InputEditPart.VISUAL_ID:
 				case ButtonEditPart.VISUAL_ID:
-				case SelectEditPart.VISUAL_ID:
+				case RadioEditPart.VISUAL_ID:
 				case TableEditPart.VISUAL_ID:
 				case ColumnEditPart.VISUAL_ID:
-				case ImageViewEditPart.VISUAL_ID:
+				case ObjectEditPart.VISUAL_ID:
 				case BlockquoteEditPart.VISUAL_ID:
-				case UlEditPart.VISUAL_ID:
+				case SelectEditPart.VISUAL_ID:
+				case OptionEditPart.VISUAL_ID:
 				case Container2EditPart.VISUAL_ID:
+				case Option2EditPart.VISUAL_ID:
+				case Column2EditPart.VISUAL_ID:
 				case IFrame2EditPart.VISUAL_ID:
 				case Label2EditPart.VISUAL_ID:
 				case Input2EditPart.VISUAL_ID:
 				case Button2EditPart.VISUAL_ID:
-				case Select2EditPart.VISUAL_ID:
+				case Radio2EditPart.VISUAL_ID:
 				case Table2EditPart.VISUAL_ID:
-				case Column2EditPart.VISUAL_ID:
-				case ImageView2EditPart.VISUAL_ID:
+				case Column3EditPart.VISUAL_ID:
+				case Object2EditPart.VISUAL_ID:
 				case Blockquote2EditPart.VISUAL_ID:
-				case Ul2EditPart.VISUAL_ID:
+				case Select2EditPart.VISUAL_ID:
+				case Option3EditPart.VISUAL_ID:
 					if (domainElement == null || visualID != UidiagramVisualIDRegistry
 							.getNodeVisualID(op.getContainerView(), domainElement)) {
 						return false; // visual id in semantic hint should match visual id for domain element
@@ -214,15 +228,17 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		return UserInterfaceEditPart.VISUAL_ID == visualID || ContainerEditPart.VISUAL_ID == visualID
 				|| Container2EditPart.VISUAL_ID == visualID || IFrameEditPart.VISUAL_ID == visualID
 				|| LabelEditPart.VISUAL_ID == visualID || InputEditPart.VISUAL_ID == visualID
-				|| ButtonEditPart.VISUAL_ID == visualID || SelectEditPart.VISUAL_ID == visualID
+				|| ButtonEditPart.VISUAL_ID == visualID || RadioEditPart.VISUAL_ID == visualID
 				|| TableEditPart.VISUAL_ID == visualID || ColumnEditPart.VISUAL_ID == visualID
-				|| ImageViewEditPart.VISUAL_ID == visualID || BlockquoteEditPart.VISUAL_ID == visualID
-				|| UlEditPart.VISUAL_ID == visualID || IFrame2EditPart.VISUAL_ID == visualID
-				|| Label2EditPart.VISUAL_ID == visualID || Input2EditPart.VISUAL_ID == visualID
-				|| Button2EditPart.VISUAL_ID == visualID || Select2EditPart.VISUAL_ID == visualID
-				|| Table2EditPart.VISUAL_ID == visualID || Column2EditPart.VISUAL_ID == visualID
-				|| ImageView2EditPart.VISUAL_ID == visualID || Blockquote2EditPart.VISUAL_ID == visualID
-				|| Ul2EditPart.VISUAL_ID == visualID;
+				|| ObjectEditPart.VISUAL_ID == visualID || BlockquoteEditPart.VISUAL_ID == visualID
+				|| SelectEditPart.VISUAL_ID == visualID || OptionEditPart.VISUAL_ID == visualID
+				|| Option2EditPart.VISUAL_ID == visualID || Column2EditPart.VISUAL_ID == visualID
+				|| IFrame2EditPart.VISUAL_ID == visualID || Label2EditPart.VISUAL_ID == visualID
+				|| Input2EditPart.VISUAL_ID == visualID || Button2EditPart.VISUAL_ID == visualID
+				|| Radio2EditPart.VISUAL_ID == visualID || Table2EditPart.VISUAL_ID == visualID
+				|| Column3EditPart.VISUAL_ID == visualID || Object2EditPart.VISUAL_ID == visualID
+				|| Blockquote2EditPart.VISUAL_ID == visualID || Select2EditPart.VISUAL_ID == visualID
+				|| Option3EditPart.VISUAL_ID == visualID;
 	}
 
 	/**
@@ -285,18 +301,24 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 			return createInput_3005(domainElement, containerView, index, persisted, preferencesHint);
 		case ButtonEditPart.VISUAL_ID:
 			return createButton_3006(domainElement, containerView, index, persisted, preferencesHint);
-		case SelectEditPart.VISUAL_ID:
-			return createSelect_3007(domainElement, containerView, index, persisted, preferencesHint);
+		case RadioEditPart.VISUAL_ID:
+			return createRadio_3023(domainElement, containerView, index, persisted, preferencesHint);
 		case TableEditPart.VISUAL_ID:
 			return createTable_3008(domainElement, containerView, index, persisted, preferencesHint);
 		case ColumnEditPart.VISUAL_ID:
 			return createColumn_3021(domainElement, containerView, index, persisted, preferencesHint);
-		case ImageViewEditPart.VISUAL_ID:
-			return createImageView_3009(domainElement, containerView, index, persisted, preferencesHint);
+		case ObjectEditPart.VISUAL_ID:
+			return createObject_3024(domainElement, containerView, index, persisted, preferencesHint);
 		case BlockquoteEditPart.VISUAL_ID:
 			return createBlockquote_3010(domainElement, containerView, index, persisted, preferencesHint);
-		case UlEditPart.VISUAL_ID:
-			return createUl_3011(domainElement, containerView, index, persisted, preferencesHint);
+		case SelectEditPart.VISUAL_ID:
+			return createSelect_3007(domainElement, containerView, index, persisted, preferencesHint);
+		case OptionEditPart.VISUAL_ID:
+			return createOption_3025(domainElement, containerView, index, persisted, preferencesHint);
+		case Option2EditPart.VISUAL_ID:
+			return createOption_3029(domainElement, containerView, index, persisted, preferencesHint);
+		case Column2EditPart.VISUAL_ID:
+			return createColumn_3030(domainElement, containerView, index, persisted, preferencesHint);
 		case IFrame2EditPart.VISUAL_ID:
 			return createIFrame_3012(domainElement, containerView, index, persisted, preferencesHint);
 		case Label2EditPart.VISUAL_ID:
@@ -305,18 +327,20 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 			return createInput_3014(domainElement, containerView, index, persisted, preferencesHint);
 		case Button2EditPart.VISUAL_ID:
 			return createButton_3015(domainElement, containerView, index, persisted, preferencesHint);
-		case Select2EditPart.VISUAL_ID:
-			return createSelect_3016(domainElement, containerView, index, persisted, preferencesHint);
+		case Radio2EditPart.VISUAL_ID:
+			return createRadio_3026(domainElement, containerView, index, persisted, preferencesHint);
 		case Table2EditPart.VISUAL_ID:
 			return createTable_3017(domainElement, containerView, index, persisted, preferencesHint);
-		case Column2EditPart.VISUAL_ID:
+		case Column3EditPart.VISUAL_ID:
 			return createColumn_3022(domainElement, containerView, index, persisted, preferencesHint);
-		case ImageView2EditPart.VISUAL_ID:
-			return createImageView_3018(domainElement, containerView, index, persisted, preferencesHint);
+		case Object2EditPart.VISUAL_ID:
+			return createObject_3027(domainElement, containerView, index, persisted, preferencesHint);
 		case Blockquote2EditPart.VISUAL_ID:
 			return createBlockquote_3019(domainElement, containerView, index, persisted, preferencesHint);
-		case Ul2EditPart.VISUAL_ID:
-			return createUl_3020(domainElement, containerView, index, persisted, preferencesHint);
+		case Select2EditPart.VISUAL_ID:
+			return createSelect_3016(domainElement, containerView, index, persisted, preferencesHint);
+		case Option3EditPart.VISUAL_ID:
+			return createOption_3028(domainElement, containerView, index, persisted, preferencesHint);
 		}
 		// can't happen, provided #provides(CreateNodeViewOperation) is correct
 		return null;
@@ -464,7 +488,6 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	public Node createIFrame_3003(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
-		node.getStyles().add(NotationFactory.eINSTANCE.createHintedDiagramLinkStyle());
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(UidiagramVisualIDRegistry.getType(IFrameEditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
@@ -492,9 +515,6 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
 		Node label5007 = createLabel(node, UidiagramVisualIDRegistry.getType(IFrameTitleEditPart.VISUAL_ID));
-		createCompartment(node,
-				UidiagramVisualIDRegistry.getType(IFrameIFrameLstChildModelElementsCompartmentEditPart.VISUAL_ID), true,
-				false, false, false);
 		return node;
 	}
 
@@ -609,11 +629,11 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	/**
 	* @generated
 	*/
-	public Node createSelect_3007(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createRadio_3023(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(UidiagramVisualIDRegistry.getType(SelectEditPart.VISUAL_ID));
+		node.setType(UidiagramVisualIDRegistry.getType(RadioEditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -638,7 +658,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5006 = createLabel(node, UidiagramVisualIDRegistry.getType(SelectTitleEditPart.VISUAL_ID));
+		Node label5028 = createLabel(node, UidiagramVisualIDRegistry.getType(RadioTitleEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -679,6 +699,8 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		createCompartment(node,
 				UidiagramVisualIDRegistry.getType(TableTableLstChildModelElementsCompartmentEditPart.VISUAL_ID), true,
 				false, false, false);
+		createCompartment(node, UidiagramVisualIDRegistry.getType(TableTableLstColumnsCompartmentEditPart.VISUAL_ID),
+				true, false, false, false);
 		return node;
 	}
 
@@ -688,7 +710,6 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	public Node createColumn_3021(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
-		node.getStyles().add(NotationFactory.eINSTANCE.createHintedDiagramLinkStyle());
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(UidiagramVisualIDRegistry.getType(ColumnEditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
@@ -716,20 +737,17 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
 		Node label5026 = createLabel(node, UidiagramVisualIDRegistry.getType(ColumnTitleEditPart.VISUAL_ID));
-		createCompartment(node,
-				UidiagramVisualIDRegistry.getType(ColumnColumnLstChildModelElementsCompartmentEditPart.VISUAL_ID), true,
-				false, false, false);
 		return node;
 	}
 
 	/**
 	* @generated
 	*/
-	public Node createImageView_3009(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createObject_3024(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(UidiagramVisualIDRegistry.getType(ImageViewEditPart.VISUAL_ID));
+		node.setType(UidiagramVisualIDRegistry.getType(ObjectEditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -754,7 +772,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5014 = createLabel(node, UidiagramVisualIDRegistry.getType(ImageViewTitleEditPart.VISUAL_ID));
+		Node label5029 = createLabel(node, UidiagramVisualIDRegistry.getType(ObjectTitleEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -797,11 +815,12 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	/**
 	* @generated
 	*/
-	public Node createUl_3011(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createSelect_3007(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.getStyles().add(NotationFactory.eINSTANCE.createHintedDiagramLinkStyle());
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(UidiagramVisualIDRegistry.getType(UlEditPart.VISUAL_ID));
+		node.setType(UidiagramVisualIDRegistry.getType(SelectEditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -826,7 +845,120 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5016 = createLabel(node, UidiagramVisualIDRegistry.getType(UlTitleEditPart.VISUAL_ID));
+		Node label5006 = createLabel(node, UidiagramVisualIDRegistry.getType(SelectTitleEditPart.VISUAL_ID));
+		createCompartment(node,
+				UidiagramVisualIDRegistry.getType(SelectSelectLstChildModelElementsCompartmentEditPart.VISUAL_ID), true,
+				false, false, false);
+		createCompartment(node, UidiagramVisualIDRegistry.getType(SelectSelectLstOptionCompartmentEditPart.VISUAL_ID),
+				true, false, false, false);
+		return node;
+	}
+
+	/**
+	* @generated
+	*/
+	public Node createOption_3025(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(UidiagramVisualIDRegistry.getType(OptionEditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5030 = createLabel(node, UidiagramVisualIDRegistry.getType(OptionTitleEditPart.VISUAL_ID));
+		return node;
+	}
+
+	/**
+	* @generated
+	*/
+	public Node createOption_3029(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(UidiagramVisualIDRegistry.getType(Option2EditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5034 = createLabel(node, UidiagramVisualIDRegistry.getType(OptionTitle2EditPart.VISUAL_ID));
+		return node;
+	}
+
+	/**
+	* @generated
+	*/
+	public Node createColumn_3030(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(UidiagramVisualIDRegistry.getType(Column2EditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5035 = createLabel(node, UidiagramVisualIDRegistry.getType(ColumnTitle2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -836,7 +968,6 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	public Node createIFrame_3012(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
-		node.getStyles().add(NotationFactory.eINSTANCE.createHintedDiagramLinkStyle());
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(UidiagramVisualIDRegistry.getType(IFrame2EditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
@@ -864,9 +995,6 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
 		Node label5008 = createLabel(node, UidiagramVisualIDRegistry.getType(IFrameTitle2EditPart.VISUAL_ID));
-		createCompartment(node,
-				UidiagramVisualIDRegistry.getType(IFrameIFrameLstChildModelElementsCompartment2EditPart.VISUAL_ID),
-				true, false, false, false);
 		return node;
 	}
 
@@ -981,11 +1109,11 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	/**
 	* @generated
 	*/
-	public Node createSelect_3016(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createRadio_3026(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(UidiagramVisualIDRegistry.getType(Select2EditPart.VISUAL_ID));
+		node.setType(UidiagramVisualIDRegistry.getType(Radio2EditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -1010,7 +1138,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5009 = createLabel(node, UidiagramVisualIDRegistry.getType(SelectTitle2EditPart.VISUAL_ID));
+		Node label5031 = createLabel(node, UidiagramVisualIDRegistry.getType(RadioTitle2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1051,6 +1179,8 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		createCompartment(node,
 				UidiagramVisualIDRegistry.getType(TableTableLstChildModelElementsCompartment2EditPart.VISUAL_ID), true,
 				false, false, false);
+		createCompartment(node, UidiagramVisualIDRegistry.getType(TableTableLstColumnsCompartment2EditPart.VISUAL_ID),
+				true, false, false, false);
 		return node;
 	}
 
@@ -1060,9 +1190,8 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	public Node createColumn_3022(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
-		node.getStyles().add(NotationFactory.eINSTANCE.createHintedDiagramLinkStyle());
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(UidiagramVisualIDRegistry.getType(Column2EditPart.VISUAL_ID));
+		node.setType(UidiagramVisualIDRegistry.getType(Column3EditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -1087,21 +1216,18 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5027 = createLabel(node, UidiagramVisualIDRegistry.getType(ColumnTitle2EditPart.VISUAL_ID));
-		createCompartment(node,
-				UidiagramVisualIDRegistry.getType(ColumnColumnLstChildModelElementsCompartment2EditPart.VISUAL_ID),
-				true, false, false, false);
+		Node label5027 = createLabel(node, UidiagramVisualIDRegistry.getType(ColumnTitle3EditPart.VISUAL_ID));
 		return node;
 	}
 
 	/**
 	* @generated
 	*/
-	public Node createImageView_3018(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createObject_3027(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(UidiagramVisualIDRegistry.getType(ImageView2EditPart.VISUAL_ID));
+		node.setType(UidiagramVisualIDRegistry.getType(Object2EditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -1126,7 +1252,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5023 = createLabel(node, UidiagramVisualIDRegistry.getType(ImageViewTitle2EditPart.VISUAL_ID));
+		Node label5032 = createLabel(node, UidiagramVisualIDRegistry.getType(ObjectTitle2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1169,11 +1295,12 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	/**
 	* @generated
 	*/
-	public Node createUl_3020(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createSelect_3016(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.getStyles().add(NotationFactory.eINSTANCE.createHintedDiagramLinkStyle());
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(UidiagramVisualIDRegistry.getType(Ul2EditPart.VISUAL_ID));
+		node.setType(UidiagramVisualIDRegistry.getType(Select2EditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -1198,7 +1325,48 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5025 = createLabel(node, UidiagramVisualIDRegistry.getType(UlTitle2EditPart.VISUAL_ID));
+		Node label5009 = createLabel(node, UidiagramVisualIDRegistry.getType(SelectTitle2EditPart.VISUAL_ID));
+		createCompartment(node,
+				UidiagramVisualIDRegistry.getType(SelectSelectLstChildModelElementsCompartment2EditPart.VISUAL_ID),
+				true, false, false, false);
+		createCompartment(node, UidiagramVisualIDRegistry.getType(SelectSelectLstOptionCompartment2EditPart.VISUAL_ID),
+				true, false, false, false);
+		return node;
+	}
+
+	/**
+	* @generated
+	*/
+	public Node createOption_3028(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(UidiagramVisualIDRegistry.getType(Option3EditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5033 = createLabel(node, UidiagramVisualIDRegistry.getType(OptionTitle3EditPart.VISUAL_ID));
 		return node;
 	}
 

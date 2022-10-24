@@ -259,13 +259,13 @@ public class InputEditPart extends ShapeNodeEditPart {
 	public class InputFigure extends RoundedRectangle {
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private WrappingLabel fFigureInputLabelFigure;
 
 		/**
-			 * @generated
-			 */
+		 * @generated
+		 */
 		public InputFigure() {
 			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8), getMapMode().DPtoLP(8)));
 			this.setBorder(new MarginBorder(getMapMode().DPtoLP(5), getMapMode().DPtoLP(5), getMapMode().DPtoLP(5),
@@ -274,8 +274,8 @@ public class InputEditPart extends ShapeNodeEditPart {
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private void createContents() {
 
 			fFigureInputLabelFigure = new WrappingLabel();
@@ -287,14 +287,14 @@ public class InputEditPart extends ShapeNodeEditPart {
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		public WrappingLabel getFigureInputLabelFigure() {
 			return fFigureInputLabelFigure;
 		}
 
 	}
-	
+
 	protected void handleNotificationEvent(Notification arg0) {
 		// SET was the type i need
 		if (arg0.getEventType() == Notification.SET) {
@@ -349,5 +349,4 @@ public class InputEditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
-
 }

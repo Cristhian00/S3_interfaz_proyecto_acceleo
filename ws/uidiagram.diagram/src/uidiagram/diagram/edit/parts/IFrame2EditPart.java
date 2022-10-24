@@ -5,7 +5,6 @@ package uidiagram.diagram.edit.parts;
 
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.MarginBorder;
-import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
@@ -28,7 +27,6 @@ import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
 
 import uidiagram.diagram.edit.policies.IFrame2ItemSemanticEditPolicy;
-import uidiagram.diagram.edit.policies.OpenDiagramEditPolicy;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
 
 /**
@@ -65,7 +63,7 @@ public class IFrame2EditPart extends ShapeNodeEditPart {
 		super.createDefaultEditPolicies();
 		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new IFrame2ItemSemanticEditPolicy());
 		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
-		installEditPolicy(EditPolicyRoles.OPEN_ROLE, new OpenDiagramEditPolicy()); // XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
 		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
 	}
 
@@ -116,12 +114,6 @@ public class IFrame2EditPart extends ShapeNodeEditPart {
 			((IFrameTitle2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureIFrameLabelFigure());
 			return true;
 		}
-		if (childEditPart instanceof IFrameIFrameLstChildModelElementsCompartment2EditPart) {
-			IFigure pane = getPrimaryShape().getIFrameLstChildModelElementsCompartmentFigure();
-			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
-			pane.add(((IFrameIFrameLstChildModelElementsCompartment2EditPart) childEditPart).getFigure());
-			return true;
-		}
 		return false;
 	}
 
@@ -130,11 +122,6 @@ public class IFrame2EditPart extends ShapeNodeEditPart {
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof IFrameTitle2EditPart) {
-			return true;
-		}
-		if (childEditPart instanceof IFrameIFrameLstChildModelElementsCompartment2EditPart) {
-			IFigure pane = getPrimaryShape().getIFrameLstChildModelElementsCompartmentFigure();
-			pane.remove(((IFrameIFrameLstChildModelElementsCompartment2EditPart) childEditPart).getFigure());
 			return true;
 		}
 		return false;
@@ -164,9 +151,6 @@ public class IFrame2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-		if (editPart instanceof IFrameIFrameLstChildModelElementsCompartment2EditPart) {
-			return getPrimaryShape().getIFrameLstChildModelElementsCompartmentFigure();
-		}
 		return getContentPane();
 	}
 
@@ -272,10 +256,6 @@ public class IFrame2EditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		private WrappingLabel fFigureIFrameLabelFigure;
-		/**
-		 * @generated
-		 */
-		private RectangleFigure fIFrameLstChildModelElementsCompartmentFigure;
 
 		/**
 		 * @generated
@@ -295,15 +275,8 @@ public class IFrame2EditPart extends ShapeNodeEditPart {
 			fFigureIFrameLabelFigure = new WrappingLabel();
 
 			fFigureIFrameLabelFigure.setText("IFrame");
-			fFigureIFrameLabelFigure.setMaximumSize(new Dimension(getMapMode().DPtoLP(10000), getMapMode().DPtoLP(50)));
 
 			this.add(fFigureIFrameLabelFigure);
-
-			fIFrameLstChildModelElementsCompartmentFigure = new RectangleFigure();
-
-			fIFrameLstChildModelElementsCompartmentFigure.setOutline(false);
-
-			this.add(fIFrameLstChildModelElementsCompartmentFigure);
 
 		}
 
@@ -312,13 +285,6 @@ public class IFrame2EditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureIFrameLabelFigure() {
 			return fFigureIFrameLabelFigure;
-		}
-
-		/**
-		 * @generated
-		 */
-		public RectangleFigure getIFrameLstChildModelElementsCompartmentFigure() {
-			return fIFrameLstChildModelElementsCompartmentFigure;
 		}
 
 	}

@@ -30,12 +30,13 @@ import uidiagram.diagram.edit.parts.ButtonEditPart;
 import uidiagram.diagram.edit.parts.ColumnEditPart;
 import uidiagram.diagram.edit.parts.Container2EditPart;
 import uidiagram.diagram.edit.parts.IFrameEditPart;
-import uidiagram.diagram.edit.parts.ImageViewEditPart;
 import uidiagram.diagram.edit.parts.InputEditPart;
 import uidiagram.diagram.edit.parts.LabelEditPart;
+import uidiagram.diagram.edit.parts.ObjectEditPart;
+import uidiagram.diagram.edit.parts.OptionEditPart;
+import uidiagram.diagram.edit.parts.RadioEditPart;
 import uidiagram.diagram.edit.parts.SelectEditPart;
 import uidiagram.diagram.edit.parts.TableEditPart;
-import uidiagram.diagram.edit.parts.UlEditPart;
 import uidiagram.diagram.part.UidiagramDiagramUpdater;
 import uidiagram.diagram.part.UidiagramNodeDescriptor;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
@@ -98,12 +99,13 @@ public class TableTableLstChildModelElementsCompartmentCanonicalEditPolicy exten
 		case LabelEditPart.VISUAL_ID:
 		case InputEditPart.VISUAL_ID:
 		case ButtonEditPart.VISUAL_ID:
-		case SelectEditPart.VISUAL_ID:
+		case RadioEditPart.VISUAL_ID:
 		case TableEditPart.VISUAL_ID:
 		case ColumnEditPart.VISUAL_ID:
-		case ImageViewEditPart.VISUAL_ID:
+		case ObjectEditPart.VISUAL_ID:
 		case BlockquoteEditPart.VISUAL_ID:
-		case UlEditPart.VISUAL_ID:
+		case SelectEditPart.VISUAL_ID:
+		case OptionEditPart.VISUAL_ID:
 			return true;
 		}
 		return false;

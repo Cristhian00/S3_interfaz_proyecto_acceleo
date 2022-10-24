@@ -22,23 +22,27 @@ import uidiagram.diagram.edit.parts.BlockquoteTitleEditPart;
 import uidiagram.diagram.edit.parts.ButtonTitle2EditPart;
 import uidiagram.diagram.edit.parts.ButtonTitleEditPart;
 import uidiagram.diagram.edit.parts.ColumnTitle2EditPart;
+import uidiagram.diagram.edit.parts.ColumnTitle3EditPart;
 import uidiagram.diagram.edit.parts.ColumnTitleEditPart;
 import uidiagram.diagram.edit.parts.ContainerTitle2EditPart;
 import uidiagram.diagram.edit.parts.ContainerTitleEditPart;
 import uidiagram.diagram.edit.parts.IFrameTitle2EditPart;
 import uidiagram.diagram.edit.parts.IFrameTitleEditPart;
-import uidiagram.diagram.edit.parts.ImageViewTitle2EditPart;
-import uidiagram.diagram.edit.parts.ImageViewTitleEditPart;
 import uidiagram.diagram.edit.parts.InputTitle2EditPart;
 import uidiagram.diagram.edit.parts.InputTitleEditPart;
 import uidiagram.diagram.edit.parts.LabelTitle2EditPart;
 import uidiagram.diagram.edit.parts.LabelTitleEditPart;
+import uidiagram.diagram.edit.parts.ObjectTitle2EditPart;
+import uidiagram.diagram.edit.parts.ObjectTitleEditPart;
+import uidiagram.diagram.edit.parts.OptionTitle2EditPart;
+import uidiagram.diagram.edit.parts.OptionTitle3EditPart;
+import uidiagram.diagram.edit.parts.OptionTitleEditPart;
+import uidiagram.diagram.edit.parts.RadioTitle2EditPart;
+import uidiagram.diagram.edit.parts.RadioTitleEditPart;
 import uidiagram.diagram.edit.parts.SelectTitle2EditPart;
 import uidiagram.diagram.edit.parts.SelectTitleEditPart;
 import uidiagram.diagram.edit.parts.TableTitle2EditPart;
 import uidiagram.diagram.edit.parts.TableTitleEditPart;
-import uidiagram.diagram.edit.parts.UlTitle2EditPart;
-import uidiagram.diagram.edit.parts.UlTitleEditPart;
 import uidiagram.diagram.edit.parts.UserInterfaceTitleEditPart;
 import uidiagram.diagram.parsers.MessageFormatParser;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
@@ -170,18 +174,18 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
-	private IParser selectTitle_5006Parser;
+	private IParser radioTitle_5028Parser;
 
 	/**
 	* @generated
 	*/
-	private IParser getSelectTitle_5006Parser() {
-		if (selectTitle_5006Parser == null) {
+	private IParser getRadioTitle_5028Parser() {
+		if (radioTitle_5028Parser == null) {
 			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Title() };
 			MessageFormatParser parser = new MessageFormatParser(features);
-			selectTitle_5006Parser = parser;
+			radioTitle_5028Parser = parser;
 		}
-		return selectTitle_5006Parser;
+		return radioTitle_5028Parser;
 	}
 
 	/**
@@ -221,18 +225,18 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
-	private IParser imageViewTitle_5014Parser;
+	private IParser objectTitle_5029Parser;
 
 	/**
 	* @generated
 	*/
-	private IParser getImageViewTitle_5014Parser() {
-		if (imageViewTitle_5014Parser == null) {
+	private IParser getObjectTitle_5029Parser() {
+		if (objectTitle_5029Parser == null) {
 			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Title() };
 			MessageFormatParser parser = new MessageFormatParser(features);
-			imageViewTitle_5014Parser = parser;
+			objectTitle_5029Parser = parser;
 		}
-		return imageViewTitle_5014Parser;
+		return objectTitle_5029Parser;
 	}
 
 	/**
@@ -255,18 +259,69 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
-	private IParser ulTitle_5016Parser;
+	private IParser selectTitle_5006Parser;
 
 	/**
 	* @generated
 	*/
-	private IParser getUlTitle_5016Parser() {
-		if (ulTitle_5016Parser == null) {
+	private IParser getSelectTitle_5006Parser() {
+		if (selectTitle_5006Parser == null) {
 			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Title() };
 			MessageFormatParser parser = new MessageFormatParser(features);
-			ulTitle_5016Parser = parser;
+			selectTitle_5006Parser = parser;
 		}
-		return ulTitle_5016Parser;
+		return selectTitle_5006Parser;
+	}
+
+	/**
+	* @generated
+	*/
+	private IParser optionTitle_5030Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getOptionTitle_5030Parser() {
+		if (optionTitle_5030Parser == null) {
+			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Title() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			optionTitle_5030Parser = parser;
+		}
+		return optionTitle_5030Parser;
+	}
+
+	/**
+	* @generated
+	*/
+	private IParser optionTitle_5034Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getOptionTitle_5034Parser() {
+		if (optionTitle_5034Parser == null) {
+			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Title() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			optionTitle_5034Parser = parser;
+		}
+		return optionTitle_5034Parser;
+	}
+
+	/**
+	* @generated
+	*/
+	private IParser columnTitle_5035Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getColumnTitle_5035Parser() {
+		if (columnTitle_5035Parser == null) {
+			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Title() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			columnTitle_5035Parser = parser;
+		}
+		return columnTitle_5035Parser;
 	}
 
 	/**
@@ -340,18 +395,18 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
-	private IParser selectTitle_5009Parser;
+	private IParser radioTitle_5031Parser;
 
 	/**
 	* @generated
 	*/
-	private IParser getSelectTitle_5009Parser() {
-		if (selectTitle_5009Parser == null) {
+	private IParser getRadioTitle_5031Parser() {
+		if (radioTitle_5031Parser == null) {
 			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Title() };
 			MessageFormatParser parser = new MessageFormatParser(features);
-			selectTitle_5009Parser = parser;
+			radioTitle_5031Parser = parser;
 		}
-		return selectTitle_5009Parser;
+		return radioTitle_5031Parser;
 	}
 
 	/**
@@ -391,18 +446,18 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
-	private IParser imageViewTitle_5023Parser;
+	private IParser objectTitle_5032Parser;
 
 	/**
 	* @generated
 	*/
-	private IParser getImageViewTitle_5023Parser() {
-		if (imageViewTitle_5023Parser == null) {
+	private IParser getObjectTitle_5032Parser() {
+		if (objectTitle_5032Parser == null) {
 			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Title() };
 			MessageFormatParser parser = new MessageFormatParser(features);
-			imageViewTitle_5023Parser = parser;
+			objectTitle_5032Parser = parser;
 		}
-		return imageViewTitle_5023Parser;
+		return objectTitle_5032Parser;
 	}
 
 	/**
@@ -425,18 +480,35 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
-	private IParser ulTitle_5025Parser;
+	private IParser selectTitle_5009Parser;
 
 	/**
 	* @generated
 	*/
-	private IParser getUlTitle_5025Parser() {
-		if (ulTitle_5025Parser == null) {
+	private IParser getSelectTitle_5009Parser() {
+		if (selectTitle_5009Parser == null) {
 			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Title() };
 			MessageFormatParser parser = new MessageFormatParser(features);
-			ulTitle_5025Parser = parser;
+			selectTitle_5009Parser = parser;
 		}
-		return ulTitle_5025Parser;
+		return selectTitle_5009Parser;
+	}
+
+	/**
+	* @generated
+	*/
+	private IParser optionTitle_5033Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getOptionTitle_5033Parser() {
+		if (optionTitle_5033Parser == null) {
+			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Title() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			optionTitle_5033Parser = parser;
+		}
+		return optionTitle_5033Parser;
 	}
 
 	/**
@@ -458,18 +530,24 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 			return getInputTitle_5011Parser();
 		case ButtonTitleEditPart.VISUAL_ID:
 			return getButtonTitle_5012Parser();
-		case SelectTitleEditPart.VISUAL_ID:
-			return getSelectTitle_5006Parser();
+		case RadioTitleEditPart.VISUAL_ID:
+			return getRadioTitle_5028Parser();
 		case TableTitleEditPart.VISUAL_ID:
 			return getTableTitle_5013Parser();
 		case ColumnTitleEditPart.VISUAL_ID:
 			return getColumnTitle_5026Parser();
-		case ImageViewTitleEditPart.VISUAL_ID:
-			return getImageViewTitle_5014Parser();
+		case ObjectTitleEditPart.VISUAL_ID:
+			return getObjectTitle_5029Parser();
 		case BlockquoteTitleEditPart.VISUAL_ID:
 			return getBlockquoteTitle_5015Parser();
-		case UlTitleEditPart.VISUAL_ID:
-			return getUlTitle_5016Parser();
+		case SelectTitleEditPart.VISUAL_ID:
+			return getSelectTitle_5006Parser();
+		case OptionTitleEditPart.VISUAL_ID:
+			return getOptionTitle_5030Parser();
+		case OptionTitle2EditPart.VISUAL_ID:
+			return getOptionTitle_5034Parser();
+		case ColumnTitle2EditPart.VISUAL_ID:
+			return getColumnTitle_5035Parser();
 		case IFrameTitle2EditPart.VISUAL_ID:
 			return getIFrameTitle_5008Parser();
 		case LabelTitle2EditPart.VISUAL_ID:
@@ -478,18 +556,20 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 			return getInputTitle_5020Parser();
 		case ButtonTitle2EditPart.VISUAL_ID:
 			return getButtonTitle_5021Parser();
-		case SelectTitle2EditPart.VISUAL_ID:
-			return getSelectTitle_5009Parser();
+		case RadioTitle2EditPart.VISUAL_ID:
+			return getRadioTitle_5031Parser();
 		case TableTitle2EditPart.VISUAL_ID:
 			return getTableTitle_5022Parser();
-		case ColumnTitle2EditPart.VISUAL_ID:
+		case ColumnTitle3EditPart.VISUAL_ID:
 			return getColumnTitle_5027Parser();
-		case ImageViewTitle2EditPart.VISUAL_ID:
-			return getImageViewTitle_5023Parser();
+		case ObjectTitle2EditPart.VISUAL_ID:
+			return getObjectTitle_5032Parser();
 		case BlockquoteTitle2EditPart.VISUAL_ID:
 			return getBlockquoteTitle_5024Parser();
-		case UlTitle2EditPart.VISUAL_ID:
-			return getUlTitle_5025Parser();
+		case SelectTitle2EditPart.VISUAL_ID:
+			return getSelectTitle_5009Parser();
+		case OptionTitle3EditPart.VISUAL_ID:
+			return getOptionTitle_5033Parser();
 		}
 		return null;
 	}
