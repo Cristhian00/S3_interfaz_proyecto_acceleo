@@ -12,8 +12,36 @@
  			box-sizing: border-box;
 		}
 
-		table, th, td {
-  			border: 1px solid black;
+		body {font-family: Arial, Helvetica, sans-serif;}
+
+		table {
+			font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    		font-size: 12px;    
+			text-align: left;    
+			border-collapse: collapse; 
+		}
+
+		th {     
+			font-size: 13px;     
+			font-weight: normal;     
+			padding: 5px;     
+			background: #b9c9fe;
+    		border-top: 4px solid #aabcfe;    
+			border-bottom: 1px solid #fff; 
+			color: #039; 
+		}
+
+		td {    
+			padding: 5px;     
+			background: #e8edff;     
+			border-bottom: 1px solid #fff;
+    		color: #669;    
+			border-top: 1px solid transparent; 
+		}
+
+		tr:hover td { 
+			background: #d0dafd; 
+			color: #339; 
 		}
 
 		label, input, button, select, blockquote, iframe, object, select {
@@ -21,7 +49,10 @@
 		}
 
 		label {
+			font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 			font-size: 15px;
+			font-size: 18px;
+			color: black;
 		}
 
 		caption {
@@ -35,8 +66,8 @@
 
 		.container {
   			position: absolute;
-			border: 2px outset black;
-			background:#FFFFF7
+			background: rgb(94,87,217);
+			background: linear-gradient(90deg, rgba(94,87,217,0.28335084033613445) 4%, rgba(9,123,78,0.29175420168067223) 15%, rgba(9,122,117,0.17690826330532217) 39%, rgba(9,121,114,0.26934523809523814) 63%, rgba(0,212,255,0.10407913165266103) 85%);
 		}
 
 		.center {
@@ -59,7 +90,6 @@
 			padding: 15px;
 			margin: 5px;
 			border-radius: 1px;
-			border: 1px outset red;
 			font-family: inherit;
 		}
 
@@ -116,21 +146,11 @@
 
 <body>
 	<div class="center">
+		
+		
 				    <div style="top: 3px; left: 5px; 
-						width: 301px; height: 201px" class="container">
-							<label style="top: 68px; left: 10px; 
-								width: 61px; height: 21px; margin-top: 5px" 
-								for="Apellido:">Apellido:
-							</label>
-						  
-						
-						
-						
-						
-						
-						
-						
-							<label style="top: 33px; left: 10px; 
+						width: 377px; height: 227px" class="container">
+							<label style="top: 43px; left: 10px; 
 								width: 71px; height: 21px; margin-top: 5px" 
 								for="Nombre:">Nombre:
 							</label>
@@ -143,10 +163,10 @@
 						
 						
 						
-						    <input style="top: 31px; left: 110px; 
-								width: 131px; height: 26px; margin-top: 5px" 
+						    <input style="top: 41px; left: 110px; 
+								width: 177px; height: 26px; margin-top: 5px" 
 								type="text" id="fINombre" for="INombre"
-							placeholder="INombre">
+								placeholder="INombre">
 							</input>
 						
 						
@@ -155,10 +175,10 @@
 						
 						
 						
-						    <input style="top: 66px; left: 110px; 
-								width: 131px; height: 26px; margin-top: 5px" 
+						    <input style="top: 73px; left: 5px; 
+								width: 177px; height: 26px; margin-top: 5px" 
 								type="text" id="fIApellido" for="IApellido"
-							placeholder="IApellido">
+								placeholder="IApellido">
 							</input>
 						
 						
@@ -167,10 +187,10 @@
 						
 						
 						
-						    <input style="top: 101px; left: 110px; 
-								width: 131px; height: 26px; margin-top: 5px" 
+						    <input style="top: 111px; left: 110px; 
+								width: 177px; height: 26px; margin-top: 5px" 
 								type="text" id="fIEmail" for="IEmail"
-							placeholder="IEmail">
+								placeholder="IEmail">
 							</input>
 						
 						
@@ -178,7 +198,7 @@
 						
 						
 						
-							<label style="top: 103px; left: 10px; 
+							<label style="top: 113px; left: 10px; 
 								width: 51px; height: 21px; margin-top: 5px" 
 								for="Email:">Email:
 							</label>
@@ -193,13 +213,13 @@
 						
 						
 						
-						    <button class="btn" style="top: 133px; left: 55px; 
-								width: 136px; height: 35px; margin-top: 5px" type="button">guardar</button>
+						    <button class="btn" style="top: 160px; left: 95px; 
+								width: 136px; height: 39px; margin-top: 5px" type="button">guardar</button>
 						
 						
 						
 						
-							<label style="top: 3px; left: 65px; 
+							<label style="top: 8px; left: 82px; 
 								width: 161px; height: 23px; margin-top: 5px" 
 								for="Registrar Cliente">Registrar Cliente
 							</label>
@@ -213,23 +233,25 @@
 						
 				    </div>
 				
-				    <div style="top: 3px; left: 325px; 
-						width: 686px; height: 521px" class="container">
+		
+		
+				    <div style="top: 3px; left: 460px; 
+						width: 731px; height: 556px" class="container">
 						
 						
 						
 						
 						
 						
-						    <blockquote cite="http://www.worldwildlife.org/who/index.html" style="top: 50px; 
-							left: 0px; width: 206px; 
+						    <blockquote cite="http://www.worldwildlife.org/who/index.html" style="top: 33px; 
+							left: 470px; width: 206px; 
 							height: 126px">
 								For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, 
 								WWF works in 100 countries and is supported by 1.2 
 							</blockquote>
 						
-							<label style="top: 8px; left: 5px; 
-								width: 191px; height: 21px; margin-top: 5px" 
+							<label style="top: 3px; left: 465px; 
+								width: 240px; height: 21px; margin-top: 5px" 
 								for="The blockquote element:">The blockquote element:
 							</label>
 						  
@@ -245,26 +267,29 @@
 						
 						
 						
-							<iframe src="https://www.w3schools.com" title="W3Schools" 
-							style="top: 240px; left: 5px; width: 541px; 
-							height: 256px"></iframe>
+							<iframe src="https://www.mercadolibre.com.co" title="Mercado Libre" 
+							style="top: 248px; left: 5px; width: 541px; 
+							height: 285px"></iframe>
 						
 						
 						
 						
 						
 						
-							<object data="img.jgp" width="229px" height="150px"
-							style="top: 33px; left: 415px; 
-							width: 229px; height: 150px"></object>
+							<img src="img.jpg" width="306px" height="206px"
+								style="top: 8px; left: 10px; 
+								width: 306px; height: 206px; position: absolute;">
 						
 						
 						
-						    <select id="Select language" style="top: 38px; left: 240px
-							width: 101px">
+						    <select id="Select language" style="top: 253px; left: 560px;
+								width: 126px; position: absolute;">
+									<option value="Java">Java</option>
+									<option value="Elixir">Elixir</option>
+									<option value="Ruby">Ruby</option>
 							</select>
 						
-							<label style="top: 200px; left: 5px; 
+							<label style="top: 218px; left: 5px; 
 								width: 96px; height: 24px; margin-top: 5px" 
 								for="Iframe:">Iframe:
 							</label>
@@ -276,9 +301,9 @@
 						
 						
 						
-							<label style="top: 10px; left: 235px; 
+							<label style="top: 213px; left: 555px; 
 								width: 161px; height: 24px; margin-top: 5px" 
-								for="Select(radio button): ">Select(radio button): 
+								for="Select language:">Select language:
 							</label>
 						  
 						
@@ -290,11 +315,22 @@
 						
 				    </div>
 				
-				    <div style="top: 218px; left: 10px; 
-						width: 296px; height: 289px" class="container">
-							<table style="border: 1px solid black">
+		
+		
+				    <div style="top: 248px; left: 0px; 
+						width: 431px; height: 305px" class="container">
+						
+							<table style="border: 1px solid black; top: 43px; left: 10px;
+						 		width: 300px; height: 197px; position: absolute">
 								<tr>
+									<td style="width: 30%; height: 5px">nombre</td>
+						
+									<td style="width: 30%; height: 5px">apellido</td>
+						
+									<td style="width: 30%; height: 5px">email</td>
+						
 								</tr>
+								<tr></tr>
 							</table>
 						
 							<label style="top: 8px; left: 10px; 

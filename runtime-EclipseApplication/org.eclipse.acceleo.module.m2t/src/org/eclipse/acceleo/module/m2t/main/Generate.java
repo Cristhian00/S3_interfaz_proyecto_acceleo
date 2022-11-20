@@ -340,9 +340,6 @@ public class Generate extends AbstractAcceleoGenerator {
     @Override
     public void registerPackages(ResourceSet resourceSet) {
         super.registerPackages(resourceSet);
-        if (!isInWorkspace(uidiagram.UidiagramPackage.class)) {
-            resourceSet.getPackageRegistry().put(uidiagram.UidiagramPackage.eINSTANCE.getNsURI(), uidiagram.UidiagramPackage.eINSTANCE);
-        }
         
         /*
          * If you want to change the content of this method, do NOT forget to change the "@generated"

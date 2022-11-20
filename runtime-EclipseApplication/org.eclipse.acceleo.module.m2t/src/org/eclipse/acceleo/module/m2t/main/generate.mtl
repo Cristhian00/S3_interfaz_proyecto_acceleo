@@ -25,8 +25,36 @@
  			box-sizing: border-box;
 		}
 
-		table, th, td {
-  			border: 1px solid black;
+		body {font-family: Arial, Helvetica, sans-serif;}
+
+		table {
+			font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    		font-size: 12px;    
+			text-align: left;    
+			border-collapse: collapse; 
+		}
+
+		th {     
+			font-size: 13px;     
+			font-weight: normal;     
+			padding: 5px;     
+			background: #b9c9fe;
+    		border-top: 4px solid #aabcfe;    
+			border-bottom: 1px solid #fff; 
+			color: #039; 
+		}
+
+		td {    
+			padding: 5px;     
+			background: #e8edff;     
+			border-bottom: 1px solid #fff;
+    		color: #669;    
+			border-top: 1px solid transparent; 
+		}
+
+		tr:hover td { 
+			background: #d0dafd; 
+			color: #339; 
 		}
 
 		label, input, button, select, blockquote, iframe, object, select {
@@ -34,7 +62,10 @@
 		}
 
 		label {
+			font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 			font-size: 15px;
+			font-size: 18px;
+			color: black;
 		}
 
 		caption {
@@ -48,8 +79,8 @@
 
 		.container {
   			position: absolute;
-			border: 2px outset black;
-			background:#FFFFF7
+			background: rgb(94,87,217);
+			background: linear-gradient(90deg, rgba(94,87,217,0.28335084033613445) 4%, rgba(9,123,78,0.29175420168067223) 15%, rgba(9,122,117,0.17690826330532217) 39%, rgba(9,121,114,0.26934523809523814) 63%, rgba(0,212,255,0.10407913165266103) 85%);
 		}
 
 		.center {
@@ -72,7 +103,6 @@
 			padding: 15px;
 			margin: 5px;
 			border-radius: 1px;
-			border: 1px outset red;
 			font-family: inherit;
 		}
 
@@ -139,10 +169,12 @@
 
 [template public generateCodeWidgets(anUserInterface : UserInterface)]
 [for(widget : ModelElement | lstModelElements)]
+
 	[if (widget.oclIsKindOf(GraphicalIndividual))]
 		[generateIndividualElement(widget)/]
 	[/if]
 	[if (widget.oclIsKindOf(GraphicalContainer))]
+
 		[generateGraphicalContainer(widget)/]
 	[/if]
 [/for]
@@ -163,18 +195,22 @@
     </div>
 [/if]
 [if (anGraphicalContainer.oclIsKindOf(Table))]
-	<table style="border: 1px solid black">
+
+	<table style="border: 1px solid black; top: [anGraphicalContainer.positionY/]px; left: [anGraphicalContainer.positionX/]px;
+ 		width: [anGraphicalContainer.width/]px; height: [anGraphicalContainer.heigth/]px; position: absolute">
 		<tr>
-		[for (column : ModelElement | anGraphicalContainer.oclAsType(Table).lstColumns)]
-			<th>[column.title/]</th>
+		[for (column : ModelElement | anGraphicalContainer.oclAsType(Table).lstChildModelElements)]
+			<td style="width: 30%; height: 5px">[column.title/]</td>
+
 		[/for]
 		</tr>
+		<tr></tr>
 	</table>
 [/if]
 [if (anGraphicalContainer.oclIsKindOf(Select))]
-    <select id="[anGraphicalContainer.title/]" style="top: [anGraphicalContainer.positionY/]px; left: [anGraphicalContainer.positionX/]px
-	width: [anGraphicalContainer.width/]px">
-		[for (option : ModelElement | anGraphicalContainer.oclAsType(Select).lstOption)]
+    <select id="[anGraphicalContainer.title/]" style="top: [anGraphicalContainer.positionY/]px; left: [anGraphicalContainer.positionX/]px;
+		width: [anGraphicalContainer.width/]px; position: absolute;">
+		[for (option : ModelElement | anGraphicalContainer.oclAsType(Select).lstChildModelElements)]
 			<option value="[option.title/]">[option.title/]</option>
 		[/for]
 	</select>
@@ -196,7 +232,7 @@
     <input style="top: [anIndividualElement.positionY/]px; left: [anIndividualElement.positionX/]px; 
 		width: [anIndividualElement.width/]px; height: [anIndividualElement.heigth/]px; margin-top: 5px" 
 		type="text" id="f[anIndividualElement.title/]" for="[anIndividualElement.title/]"
-	placeholder="[anIndividualElement.title/]">
+		placeholder="[anIndividualElement.title/]">
 	</input>
 [/if]
 
@@ -216,13 +252,13 @@
 [/if]
 
 [if (anIndividualElement.oclIsKindOf(Object))]
-	<object data="img.jgp" width="[anIndividualElement.width/]px" height="[anIndividualElement.heigth/]px"
-	style="top: [anIndividualElement.positionY/]px; left: [anIndividualElement.positionX/]px; 
-	width: [anIndividualElement.width/]px; height: [anIndividualElement.heigth/]px"></object>
+	<img src="img.jpg" width="[anIndividualElement.width/]px" height="[anIndividualElement.heigth/]px"
+		style="top: [anIndividualElement.positionY/]px; left: [anIndividualElement.positionX/]px; 
+		width: [anIndividualElement.width/]px; height: [anIndividualElement.heigth/]px; position: absolute;">
 [/if]
 
 [if (anIndividualElement.oclIsKindOf(IFrame))]
-	<iframe src="https://www.w3schools.com" title="[anIndividualElement.title/]" 
+	<iframe src="https://www.mercadolibre.com.co" title="[anIndividualElement.title/]" 
 	style="top: [anIndividualElement.positionY/]px; left: [anIndividualElement.positionX/]px; width: [anIndividualElement.width/]px; 
 	height: [anIndividualElement.heigth/]px"></iframe>
 [/if]
